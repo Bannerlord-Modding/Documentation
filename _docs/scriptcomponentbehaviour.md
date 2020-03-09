@@ -27,3 +27,5 @@ A basic example of a ScriptComponentBehaviour is the `LumberJack` class in `Tale
 
 \*\* Note: It is probably better to override `OnInit()` instead of `OnTick()` here. Since this is how it was written by TaleWorlds, this example will remain as-is for the time being.
 
+Possible Reason: Meshes can not be Edited/Set etc in OnInit u have to wait atleast a Tick, else ur Game Crashes
+
