@@ -18,20 +18,20 @@
 * [MBObjectManager](_docs/mbobjectmanager.md)
 * [MBSubModuleBase](_docs/mbsubmodulebase.md)
 * [Mission](_docs/mission.md)
-* [MissionBehaviour](_docs/missionbehaviour.md)
-  * [MissionLogic](_docs/missionlogic.md)
-  * [MissionView](_docs/missionview.md)
+* [MissionBehaviour](_docs/missionbehaviour/)
+  * [MissionLogic](_docs/missionbehaviour/missionlogic.md)
+  * [MissionView](_docs/missionbehaviour/missionview.md)
 * [Scene](_docs/scene.md)
-* [ScreenLayer](_docs/screenlayer.md)
-  * [GauntletLayer](_docs/gauntletlayer.md)
-  * [SceneLayer](_docs/scenelayer.md)
+* [ScreenLayer](_docs/screenlayer/)
+  * [GauntletLayer](_docs/screenlayer/gauntletlayer.md)
+  * [SceneLayer](_docs/screenlayer/scenelayer.md)
 * [Team](_docs/team.md)
 * Game File Documentation
   * [SubModule](_xmldocs/submodule.md) \(.xml\)
 
 ## Gauntlet Documentation
 
-* [GauntletLayer](_docs/gauntletlayer.md)
+* [GauntletLayer](_docs/screenlayer/gauntletlayer.md)
 * [GauntletMovie](_docs/gauntletmovie.md)
 * [GauntletView](_docs/gauntletview.md)
 * [ScreenBase](_docs/screenbase.md)

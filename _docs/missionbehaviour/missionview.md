@@ -1,6 +1,6 @@
 # MissionView
 
-Mission Views are a type of [MissionBehaviour](missionbehaviour.md) that are usually intended for the client and generally involve interacting with UI elements.
+Mission Views are a type of [MissionBehaviour](./) that are usually intended for the client and generally involve interacting with UI elements.
 
 An example of this is the `MissionMainAgentController` MissionView, which handles anything from movement for the player \(via inputs\) to checking if the player is requesting to spawn as a bot.
 
