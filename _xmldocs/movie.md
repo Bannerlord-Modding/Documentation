@@ -1,6 +1,6 @@
 # Movie \(XML\)
 
-Movies are used when you open any new \[GauntletView\]\(\(../\_docs/GauntletView.md\)\) or \[ScreenBase\]\(\(../\_docs/ScreenBase.md\)\). They are loaded through the [GauntletMovie](../_docs/gauntletmovie.md) class.
+Movies are used when you open any new [GauntletView](../_docs/gauntletview.md) or [ScreenBase](../_docs/screenbase.md). They are loaded through the [GauntletMovie](../_docs/gauntletmovie.md) class.
 
 The template for a movie is as follows:
 
