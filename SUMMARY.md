@@ -2,9 +2,9 @@
 
 * [Bannerlord Documentation](README.md)
 * [Introduction](_intro/README.md)
-  * [Advanced](_intro/advanced.md)
-  * [The Basics](_intro/the-basics.md)
   * [Getting Started](_intro/getting-started.md)
+  * [The Basics](_intro/the-basics.md)
+  * [Advanced](_intro/advanced.md)
 * [General Documentation](_docs/README.md)
   * [MBObjectManager](_docs/mbobjectmanager.md)
   * [GauntletLayer](_docs/gauntletlayer.md)
