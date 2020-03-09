@@ -27,7 +27,7 @@
     * [GauntletLayer](_docs/screenlayer/gauntletlayer.md)
     * [SceneLayer](_docs/screenlayer/scenelayer.md)
   * [ScreenManager](_docs/screenmanager.md)
-  * [ScriptComponentBehavior](_docs/scriptcomponentbehaviour.md)
+  * [ScriptComponentBehaviour](_docs/scriptcomponentbehaviour.md)
   * [Team](_docs/team.md)
   * [ViewModel](_docs/viewmodel.md)
   * [Widget](_docs/widget.md)

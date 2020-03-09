@@ -1,8 +1,8 @@
-# ScriptComponentBehavior
+# ScriptComponentBehaviour
 
-ScriptComponentBehavior's can be used to do anything from animating \(rotating\) windmills, to creating custom weapon spawner, or even entirely new siege machines.
+ScriptComponentBehaviours can be used to do anything from animating \(rotating\) windmills, to creating custom weapon spawner, or even entirely new siege machines.
 
-A basic example of a ScriptComponentBehavior is the `LumberJack` class in `TaleWorlds.MountAndBlade.dll`:
+A basic example of a ScriptComponentBehaviour is the `LumberJack` class in `TaleWorlds.MountAndBlade.dll`:
 
 ```csharp
     public class Lumberjack : ScriptComponentBehaviour
