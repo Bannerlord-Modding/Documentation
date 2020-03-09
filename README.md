@@ -2,49 +2,50 @@
 
 ## Introduction to Modding
 
-- [Getting Started](_intro/Getting-Started.md)
-- [The Basics](_intro/The-Basics.md)
-- [Advanced](_intro/Advanced.md)
+* [Getting Started](_intro/getting-started.md)
+* [The Basics](_intro/the-basics.md)
+* [Advanced](_intro/advanced.md)
 
 ## General Documentation
 
-- [Agent](_docs/Agent.md)
-- [BasicCharacterObject](_docs/BasicCharacterObject.md)
-- [GameEntity](_docs/GameEntity.md)
-- [GlobalLayer](_docs/GlobalLayer.md)
-- [InformationManager](_docs/InformationManager.md)
-- [ItemObject](_docs/ItemObject.md)
-- [MBInitialScreenBase](_docs/MBInitialScreenBase.md) (Main Menu)
-- [MBObjectManager](_docs/MBObjectManager.md)
-- [MBSubModuleBase](_docs/MBSubModuleBase.md)
-- [Mission](_docs/Mission.md)
-- [MissionBehaviour](_docs/MissionBehaviour.md)
-  - [MissionLogic](_docs/MissionLogic.md)
-  - [MissionView](_docs/MissionView.md)
-- [Scene](_docs/Scene.md)
-- [ScreenLayer](_docs/ScreenLayer.md)
-  - [GauntletLayer](_docs/GauntletLayer.md)
-  - [SceneLayer](_docs/SceneLayer.md)
-- [Team](_docs/Team.md)
-- Game File Documentation
-  - [SubModule](_xmldocs/SubModule.md) (.xml)
+* [Agent](_docs/agent.md)
+* [BasicCharacterObject](_docs/basiccharacterobject.md)
+* [GameEntity](_docs/gameentity.md)
+* [GlobalLayer](_docs/globallayer.md)
+* [InformationManager](_docs/informationmanager.md)
+* [ItemObject](_docs/itemobject.md)
+* [MBInitialScreenBase](_docs/mbinitialscreenbase.md) \(Main Menu\)
+* [MBObjectManager](_docs/mbobjectmanager.md)
+* [MBSubModuleBase](_docs/mbsubmodulebase.md)
+* [Mission](_docs/mission.md)
+* [MissionBehaviour](_docs/missionbehaviour.md)
+  * [MissionLogic](_docs/missionlogic.md)
+  * [MissionView](_docs/missionview.md)
+* [Scene](_docs/scene.md)
+* [ScreenLayer](_docs/screenlayer.md)
+  * [GauntletLayer](_docs/gauntletlayer.md)
+  * [SceneLayer](_docs/scenelayer.md)
+* [Team](_docs/team.md)
+* Game File Documentation
+  * [SubModule](_xmldocs/submodule.md) \(.xml\)
 
 ## Gauntlet Documentation
 
-- [GauntletLayer](_docs/GauntletLayer.md)
-- [GauntletMovie](_docs/GauntletMovie.md)
-- [GauntletView](_docs/GauntletView.md)
-- [ScreenBase](_docs/ScreenBase.md)
-- [ScreenManager](_docs/ScreenManager.md)
-- [ViewModel](_docs/ViewModel.md)
-- Game File Documentation
-  - [Movie](_xmldocs/Movie.md) (.xml)
+* [GauntletLayer](_docs/gauntletlayer.md)
+* [GauntletMovie](_docs/gauntletmovie.md)
+* [GauntletView](_docs/gauntletview.md)
+* [ScreenBase](_docs/screenbase.md)
+* [ScreenManager](_docs/screenmanager.md)
+* [ViewModel](_docs/viewmodel.md)
+* Game File Documentation
+  * [Movie](_xmldocs/movie.md) \(.xml\)
 
 ## Scene Documentation
 
-- [GameEntity](_docs/GameEntity.md)
-- [Scene](_docs/Scene.md)
-- [ScriptComponentBehaviour](_docs/ScriptComponentBehaviour.md)
-- Game File Documentation
-  - [Atmosphere](_xmldocs/Atmosphere.md) (.xml)
-  - [Scene](_xmldocs/Scene.md) (.xscene)
+* [GameEntity](_docs/gameentity.md)
+* [Scene](_docs/scene.md)
+* [ScriptComponentBehaviour](_docs/scriptcomponentbehaviour.md)
+* Game File Documentation
+  * [Atmosphere](_xmldocs/atmosphere.md) \(.xml\)
+  * [Scene](_xmldocs/scene.md) \(.xscene\)
+

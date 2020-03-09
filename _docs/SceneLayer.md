@@ -1,3 +1,0 @@
-# SceneLayer
-
-Work in Progress

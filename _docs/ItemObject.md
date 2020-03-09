@@ -1,3 +1,0 @@
-# ItemObject
-
-Work in Progress

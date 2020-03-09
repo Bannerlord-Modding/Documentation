@@ -1,3 +1,0 @@
-# Team
-
-Work in Progress

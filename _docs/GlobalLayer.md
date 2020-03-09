@@ -1,3 +1,0 @@
-# GlobalLayer
-
-Work in Progress

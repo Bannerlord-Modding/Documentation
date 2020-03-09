@@ -1,3 +1,0 @@
-# GauntletLayer
-
-Work in Progress

@@ -1,3 +1,0 @@
-# Scene
-
-Work in Progress

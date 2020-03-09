@@ -1,3 +1,0 @@
-# ViewModel
-
-Work in Progress

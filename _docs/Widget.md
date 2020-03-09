@@ -1,3 +1,0 @@
-# Widget
-
-Work in Progress

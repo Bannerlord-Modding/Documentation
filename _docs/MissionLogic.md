@@ -1,3 +1,0 @@
-# MissionLogic
-
-Work in Progress

@@ -1,3 +1,0 @@
-# GauntletMovie
-
-Work in Progress
