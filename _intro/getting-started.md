@@ -22,7 +22,7 @@
 
 1. Create a folder in the `Modules` directory in your game files and name it whatever you want the name of your module to be.
 2. Create a `SubModule.xml` file in your new directory. You can [see an example here](https://pastebin.com/x8NU4FLN).
-3. Add a `ModuleData` and a `GUI` folder to your new directory. ModuleData will contain things such as modded items and characters, while GUI will contain Gauntlet UI elements for your mod.
+3. Add a `ModuleData` and a `GUI` and `bin` Folder to your new Directory. ModuleData will contain things such as modded items and characters, while GUI will contain Gauntlet UI elements for your mod.
 4. Inside your new `GUI` directory, create 2 more folders, once named `Brushes` and the other named `Prefabs`. Brushes will contain your Gauntlet Brushes, while Prefabs will contain your [Movies](../_xmldocs/movie.md) for Gauntlet.
 
 ## Setting up a project
