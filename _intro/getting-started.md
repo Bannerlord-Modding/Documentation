@@ -39,7 +39,7 @@ Before setting up a project, it is important to know that **this is not required
 
 1. Open your project properties and go to the `Debug` tab.
 2. Select the `Start external program` option and then browse for `ManagedStarter.exe` located in the `bin\Win64_Shipping_Client` directory in your game files.
-3. Set your working directory to the `bin\Win64_Shipping_Client` directory in your game files.
+3. Set your working directory to the `Modules\MyModule\bin` directory in your game files.
 4. Add the following command line arguments \(be sure to replace MyModule with the name of your module\):
    * `/singleplayer _MODULES_*Native*MyModule*_MODULES_`
 
