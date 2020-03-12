@@ -16,5 +16,6 @@ Example Usage \(spawning at main [Agent](agent.md)\):
 GameEntity.Instantiate(Mission.Current.Scene, "ship_a", Agent.Main.Frame)
 ```
 
-## Notes(Unsure)
-GameEntities are not Synced between Clients, unless you add a SynchedMissionObject Script Component
+## Multiplayer GameEntities
+
+Some GameEntities will not be synced between Clients, unless a SynchedMissionObject ScriptComponent is added.
