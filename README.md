@@ -14,7 +14,7 @@
 * [GlobalLayer](_docs/globallayer.md)
 * [InformationManager](_docs/informationmanager.md)
 * [ItemObject](_docs/itemobject.md)
-* [MBInitialScreenBase](_docs/mbinitialscreenbase.md) \(Main Menu\)
+* [MBInitialScreenBase](_docs/mbinitialscreenbase.md) \(SinglePlayer Main Menu\)
 * [MBObjectManager](_docs/mbobjectmanager.md)
 * [MBSubModuleBase](_docs/mbsubmodulebase.md)
 * [Mission](_docs/mission.md)

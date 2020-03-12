@@ -9,11 +9,14 @@
 * `MultiPlayerModule` - Whether or not your module is meant for Mutli Player mode.
 * `DependedModules` - Modules that your module requires in order to function properly.
 * `SubModules` - The SubModules \(DLLs\) that your modules consists of.
-* `Xmls` - Contains information about the XML files your module uses.
+* `Xmls` - Contains Paths to XML files in the ModuleData Folder(s).
 
 ## Important
 
-XMLs with the same id from two separate mods \(or the same mod\) will have their assets combined and **NOT** overwritten. However, if two objects within an XML have the same id \(e.g. two items\), the one loaded first will be overwritten with the one loaded after. Knowing this can be useful for overwritting native assets.
+XMLs with the same id from two separate mods \(or the same mod\) will have their assets combined and **NOT** overwritten. However, if two objects within an XML have the same id \(e.g. two items\), they will Overwrite each other in ModLoading Order as seen in the Launcher. Knowing this can be useful for overwritting native assets.
+
+`MPClassDivisions` Is currently broken.
+
 
 ## Example
 
@@ -30,7 +33,8 @@ XMLs with the same id from two separate mods \(or the same mod\) will have their
         <SubModule>
             <Name value = "MySubModule"/>
             <Version value = "1.0"/>
-            <DLLName value = "ExampleMod.dll"/>
+            <!-- Path to the DLL File, if your Mod is called MyModule then it should be   -->
+            <DLLName value = "../../Modules/MyModule/bin/ExampleMod.dll"/>
             <SubModuleClassType value = "ExampleModNameSpace.MySubModule"/>
             <Tags>
                 <Tag key="DedicatedServerType" value ="none" />
@@ -48,7 +52,7 @@ XMLs with the same id from two separate mods \(or the same mod\) will have their
         <XmlNode>
             <XmlName type="1" id="NPCCharacters" path="customcharacters"/>
         </XmlNode>
-    </Xmls>
+	</Xmls>
 </Module>
 ```
 
