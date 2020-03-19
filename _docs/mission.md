@@ -1,6 +1,6 @@
 # Mission
 
-You can think of Missions as GameModes("Battles"/"TeamDeathMatch") etc. Missions are instantiated with a [Scene](scene.md), [MissionViews](missionbehaviour/missionview.md), and [MissionBehaviours](missionbehaviour/).
+You can think of Missions as GameModes(Battles/TeamDeathMatch) etc. Missions are instantiated with a [Scene](scene.md), [MissionViews](missionbehaviour/missionview.md), and [MissionBehaviours](missionbehaviour/).
 
 More information on missions will be available once we gain access to the `CampaignSystem` DLLs.
 
