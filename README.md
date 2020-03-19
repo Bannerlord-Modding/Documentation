@@ -37,6 +37,7 @@
 * [ScreenBase](_docs/screenbase.md)
 * [ScreenManager](_docs/screenmanager.md)
 * [ViewModel](_docs/viewmodel.md)
+* [Widget](_docs/widget.md)
 * Game File Documentation
   * [Movie](_xmldocs/movie.md) \(.xml\)
 
