@@ -50,8 +50,9 @@ public class MyExampleScreen : ScreenBase
 
 ## Pushing your Screen
 
-To push you screen onto the screen stack, you can do following:
+To push your screen onto the screen stack, you can do following:
 
 ```csharp
 ScreenManager.PushScreen(ViewCreatorManager.CreateScreenView<MyExampleScreen>());
 ```
+
