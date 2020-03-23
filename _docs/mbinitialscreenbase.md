@@ -28,5 +28,5 @@ public class MyInitialScreen : MBInitialScreenBase
 }
 ```
 
-Replace the string `InitialScreen` with the name of your screen's XML file.
+Replace the string `InitialScreen` with the name of your [Movie](../_xmldocs/movie.md)'s XML file.
 

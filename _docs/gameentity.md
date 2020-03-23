@@ -19,3 +19,4 @@ GameEntity.Instantiate(Mission.Current.Scene, "ship_a", Agent.Main.Frame)
 ## Multiplayer GameEntities
 
 Some GameEntities will not be synced between Clients, unless a SynchedMissionObject ScriptComponent is added.
+
