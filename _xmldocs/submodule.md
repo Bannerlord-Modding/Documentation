@@ -19,7 +19,7 @@ XMLs with the same id from two separate mods \(or the same mod\) will have their
 
 ## Example
 
-```xml
+```markup
 <Module>
     <Name value = "My Module"/>
     <Id value = "MyModule"/>

@@ -9,7 +9,7 @@
 
 ## Tutorials
 
-* [Basic C\# Mod](_tutorials/basic-csharp-mod.md) \(Requires basic understanding of C\#\)
+* [Basic C\# Mod](_tutorials/basic-csharp-mod.md) \(Requires a basic understanding of C\#\)
 
 ## General Documentation
 

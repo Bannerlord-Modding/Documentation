@@ -1,8 +1,8 @@
-# Tutorial - Basic C# Mod
+# Basic C\# Mod
 
 ## Introduction
 
-The following guide will walk you through step-by-step on how to create a basic C# mod. This mod will add a button to the singleplayer title screen called `Message`. When clicked, this button will output `Hello World` to chat.
+The following guide will walk you through step-by-step on how to create a basic C\# mod. This mod will add a button to the singleplayer title screen called `Message`. When clicked, this button will output `Hello World` to chat.
 
 ## Preparation
 
@@ -10,18 +10,18 @@ The following guide will walk you through step-by-step on how to create a basic 
 
 Please follow the below instructions to download any tools needed and setup a project for modding.
 
-[Click here for more details](getting_started.md)
+[Click here for more details](https://github.com/Bannerlord-Modding/Documentation/tree/67543432a2e6e62349051b3b6d729d1f490d4ef3/_tutorials/getting_started.md)
 
-### Setting up your Module (SubModule.xml)
+### Setting up your Module \(SubModule.xml\)
 
 1. Go to your game files and locate the `Modules` directory.
 2. Create a new folder and name it whatever you want, then open it.
-3. Create a new folder named `bin` (don't navigate to it).
-4. Set the build output for your DLL (in Visual Studio) to the previously created `bin` folder.
-5. Create a new class in your VS Project and name it `MySubModule` (*can be anything*).
+3. Create a new folder named `bin` \(don't navigate to it\).
+4. Set the build output for your DLL \(in Visual Studio\) to the previously created `bin` folder.
+5. Create a new class in your VS Project and name it `MySubModule` \(_can be anything_\).
 6. Create a new `SubModule.xml` file and then paste the following into it:
 
-    ```xml
+   ```markup
     <Module>
         <Name value = "My Module"/>
         <Id value = "MyModule"/>
@@ -42,12 +42,12 @@ Please follow the below instructions to download any tools needed and setup a pr
         </SubModules>
         <Xmls/>
     </Module>
-    ```
+   ```
 
 7. Change the above values to match that of your Module/SubModule.
-8. Start the launcher and make sure your mod appears under `Singleplayer` > `Mods`.
+8. Start the launcher and make sure your mod appears under `Singleplayer` &gt; `Mods`.
 
-For more information on the Module folder structure, [Click Here](../_intro/folder-structure.md).
+For more information on the Module folder structure, [Click Here](https://github.com/Bannerlord-Modding/Documentation/tree/67543432a2e6e62349051b3b6d729d1f490d4ef3/_intro/folder-structure.md).
 
 ## Programming
 
@@ -56,15 +56,16 @@ For more information on the Module folder structure, [Click Here](../_intro/fold
 3. Setup an override for the `OnSubModuleLoad()` inherited method.
 4. Add the following code to your override method:
 
-    ```csharp
+   ```csharp
     Module.CurrentModule.AddInitialStateOption(new InitialStateOption("Message",
         new TextObject("Message", null),
         9990,
         () => { InformationManager.DisplayMessage(new InformationMessage("Hello World!")); },
         false));
-    ```
+   ```
 
 5. Compile your project and confirm that it was outputted to `Modules\MyModule\bin`.
-6. Open the Bannerlord launcher and navigate to `Singleplayer` > `Mods` then make sure that your mod is ticked and start the game.
-7. On the title screen, you should now see a button called `Message`, click it and you should see `Hello World` displayed in the bottom-left corner of your screen (in chat).
+6. Open the Bannerlord launcher and navigate to `Singleplayer` &gt; `Mods` then make sure that your mod is ticked and start the game.
+7. On the title screen, you should now see a button called `Message`, click it and you should see `Hello World` displayed in the bottom-left corner of your screen \(in chat\).
 8. You have now successfully created your first Bannerlord mod!
+

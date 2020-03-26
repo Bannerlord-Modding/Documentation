@@ -10,8 +10,9 @@ There are several aspects of the game you can mod without C\#. This includes sce
 
 More information on this will be made available once EA is released.
 
-## Modding with C#
+## Modding with C\#
 
 The module-based modding system makes modding in Bannerlord much easier than past games in the series and allows for much more complexity in your mods.
 
-For more information and a tutorial on how to create a basic C# mod for Bannerlord, [Click Here](../_tutorials/basic-csharp-mod.md).
+For more information and a tutorial on how to create a basic C\# mod for Bannerlord, [Click Here](https://github.com/Bannerlord-Modding/Documentation/tree/5394babbe703cf10fdd661d8b40911408c96c82f/_tutorials/basic-csharp-mod.md).
+
