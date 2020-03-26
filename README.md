@@ -4,7 +4,12 @@
 
 * [Getting Started](_intro/getting-started.md)
 * [The Basics](_intro/the-basics.md)
+* [Folder Structure](_intro/folder-structure.md)
 * [Advanced](_intro/advanced.md)
+
+## Tutorials
+
+* [Basic C# Mod](_tutorials/basic-csharp-mod.md) (Requires basic understanding of C#)
 
 ## General Documentation
 
@@ -21,6 +26,7 @@
 * [MissionBehaviour](_docs/missionbehaviour/)
   * [MissionLogic](_docs/missionbehaviour/missionlogic.md)
   * [MissionView](_docs/missionbehaviour/missionview.md)
+* [ModuleInfo](_docs/moduleinfo.md)
 * [Scene](_docs/scene.md)
 * [ScreenLayer](_docs/screenlayer/)
   * [GauntletLayer](_docs/screenlayer/gauntletlayer.md)
