@@ -4,7 +4,7 @@
 
 * [Getting Started](_intro/getting-started.md)
 * [The Basics](_intro/the-basics.md)
-* [Folder Structure](https://github.com/Bannerlord-Modding/Documentation/tree/f31271b080fd52732a8628f0b76ea8b41cda25d2/_intro/folder-structure.md)
+* [Folder Structure](_intro/folder-structure.md)
 * [Advanced](_intro/advanced.md)
 
 ## Tutorials
