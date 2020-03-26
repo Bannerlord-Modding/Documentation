@@ -6,5 +6,12 @@ Before proceeding, it is important to have a good understanding of the [SubModul
 
 ## Modding without C\#
 
-There are several aspects of the game you can mod without C\#. This includes items, cultures, characters, Gauntlet UIs, and many more.
+There are several aspects of the game you can mod without C\#. This includes scenes, items, cultures, characters, Gauntlet UIs, and many more.
 
+More information on this will be made available once EA is released.
+
+## Modding with C#
+
+The module-based modding system makes modding in Bannerlord much easier than past games in the series and allows for much more complexity in your mods.
+
+For more information and a tutorial on how to create a basic C# mod for Bannerlord, [Click Here](../_tutorials/basic-csharp-mod.md).
