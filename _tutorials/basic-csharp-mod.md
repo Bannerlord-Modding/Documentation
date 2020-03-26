@@ -52,19 +52,11 @@ For more information on the Module folder structure, [Click Here](../_intro/fold
 ## Programming
 
 1. Open your `MySubModule` class.
-2. Add the following using directives to your class:
+2. Inherit from the `MBSubModuleBase` class.
+3. Setup an override for the `OnSubModuleLoad()` inherited method.
+4. Add the following code to your override method:
 
-    ```cs
-    using TaleWorlds.Core;
-    using TaleWorlds.Localization;
-    using TaleWorlds.MountAndBlade;
-    ```
-
-3. Inherit from the `MBSubModuleBase` class.
-4. Setup an override for the `OnSubModuleLoad()` inherited method.
-5. Add the following code to your override method:
-
-    ```cs
+    ```csharp
     Module.CurrentModule.AddInitialStateOption(new InitialStateOption("Message",
         new TextObject("Message", null),
         9990,
@@ -72,7 +64,7 @@ For more information on the Module folder structure, [Click Here](../_intro/fold
         false));
     ```
 
-6. Compile your project and confirm that it was outputted to `Modules\MyModule\bin`.
-7. Open the Bannerlord launcher and navigate to `Singleplayer` > `Mods` then make sure that your mod is ticked and start the game.
-8. On the title screen, you should now see a button called `Message`, click it and you should see `Hello World` displayed in the bottom-left corner of your screen (in chat).
-9. You have now successfully created your first Bannerlord mod!
+5. Compile your project and confirm that it was outputted to `Modules\MyModule\bin`.
+6. Open the Bannerlord launcher and navigate to `Singleplayer` > `Mods` then make sure that your mod is ticked and start the game.
+7. On the title screen, you should now see a button called `Message`, click it and you should see `Hello World` displayed in the bottom-left corner of your screen (in chat).
+8. You have now successfully created your first Bannerlord mod!
