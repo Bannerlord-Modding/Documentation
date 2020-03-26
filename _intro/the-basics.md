@@ -14,5 +14,5 @@ More information on this will be made available once EA is released.
 
 The module-based modding system makes modding in Bannerlord much easier than past games in the series and allows for much more complexity in your mods.
 
-For more information and a tutorial on how to create a basic C\# mod for Bannerlord, [Click Here](_tutorials/basic-csharp-mod.md).
+For more information and a tutorial on how to create a basic C\# mod for Bannerlord, [Click Here](../_tutorials/basic-csharp-mod.md).
 
