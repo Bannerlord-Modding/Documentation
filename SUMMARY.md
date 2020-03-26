@@ -5,6 +5,8 @@
   * [Getting Started](_intro/getting-started.md)
   * [The Basics](_intro/the-basics.md)
   * [Advanced](_intro/advanced.md)
+* [Tutorials](_tutorials/README.md)
+  * [Basic C# Mod](_tutorials/basic-csharp-mod.md)
 * [General Documentation](_docs/README.md)
   * [Agent](_docs/agent.md)
   * [BasicCharacterObject](_docs/basiccharacterobject.md)
