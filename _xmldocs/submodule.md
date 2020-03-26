@@ -19,24 +19,24 @@ XMLs with the same id from two separate mods \(or the same mod\) will have their
 
 ## Example
 
-```markup
+```xml
 <Module>
-    <Name value = "My Module"/>
-    <Id value = "MyModule"/>
-    <Version value = "v1.0.0"/>
+    <Name value="My Module"/>
+    <Id value="MyModule"/>
+    <Version value="v1.0.0"/>
     <SingleplayerModule value="true"/>
     <MultiplayerModule value="false"/>
     <DependedModules/>
     <SubModules>
         <!-- The following SubModule element is optional. You can remove this portion if your mod does not have a DLL associated with it. -->
         <SubModule>
-            <Name value = "MySubModule"/>
+            <Name value="MySubModule"/>
             <!-- Path to the DLL File, if your Mod is called MyModule then it should be   -->
-            <DLLName value = "../../Modules/MyModule/bin/ExampleMod.dll"/>
-            <SubModuleClassType value = "ExampleModNameSpace.MySubModule"/>
+            <DLLName value="../../Modules/MyModule/bin/ExampleMod.dll"/>
+            <SubModuleClassType value="ExampleModNameSpace.MySubModule"/>
             <Tags>
-                <Tag key="DedicatedServerType" value ="none" />
-                <Tag key="IsNoRenderModeElement" value ="false" />
+                <Tag key="DedicatedServerType" value="none" />
+                <Tag key="IsNoRenderModeElement" value="false" />
             </Tags>
         </SubModule>
     </SubModules>

@@ -23,20 +23,20 @@ Please follow the below instructions to download any tools needed and setup a pr
 
     ```xml
     <Module>
-        <Name value = "My Module"/>
-        <Id value = "MyModule"/>
-        <Version value = "v1.0.0"/>
+        <Name value="My Module"/>
+        <Id value="MyModule"/>
+        <Version value="v1.0.0"/>
         <SingleplayerModule value="true"/>
         <MultiplayerModule value="false"/>
         <DependedModules/>
         <SubModules>
             <SubModule>
-                <Name value = "MySubModule"/>
-                <DLLName value = "../../Modules/MyModule/bin/ExampleMod.dll"/>
-                <SubModuleClassType value = "ExampleModNameSpace.MySubModule"/>
+                <Name value="MySubModule"/>
+                <DLLName value="../../Modules/MyModule/bin/ExampleMod.dll"/>
+                <SubModuleClassType value="ExampleModNameSpace.MySubModule"/>
                 <Tags>
-                    <Tag key="DedicatedServerType" value ="none" />
-                    <Tag key="IsNoRenderModeElement" value ="false" />
+                    <Tag key="DedicatedServerType" value="none" />
+                    <Tag key="IsNoRenderModeElement" value="false" />
                 </Tags>
             </SubModule>
         </SubModules>
