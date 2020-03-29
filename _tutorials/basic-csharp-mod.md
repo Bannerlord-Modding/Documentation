@@ -12,6 +12,8 @@ Please follow the below instructions to download any tools needed and setup a pr
 
 [Click here for more details](../_intro/getting-started.md)
 
+#### For this tutorial, we will be naming our project `ExampleMod`.
+
 ### Setting up your Module \(SubModule.xml\)
 
 1. Go to your game files and locate the `Modules` directory.
@@ -23,17 +25,17 @@ Please follow the below instructions to download any tools needed and setup a pr
 
    ```markup
     <Module>
-        <Name value="My Module"/>
-        <Id value="MyModule"/>
+        <Name value="Example Mod"/>
+        <Id value="ExampleMod"/>
         <Version value="v1.0.0"/>
         <SingleplayerModule value="true"/>
         <MultiplayerModule value="false"/>
         <DependedModules/>
         <SubModules>
             <SubModule>
-                <Name value="MySubModule"/>
-                <DLLName value="../../Modules/MyModule/bin/ExampleMod.dll"/>
-                <SubModuleClassType value="ExampleModNameSpace.MySubModule"/>
+                <Name value="ExampleMod"/>
+                <DLLName value="../../Modules/ExampleMod/bin/ExampleMod.dll"/>
+                <SubModuleClassType value="ExampleMod.MySubModule"/>
                 <Tags>
                     <Tag key="DedicatedServerType" value="none" />
                     <Tag key="IsNoRenderModeElement" value="false" />
@@ -44,7 +46,7 @@ Please follow the below instructions to download any tools needed and setup a pr
     </Module>
    ```
 
-7. Change the above values to match that of your Module/SubModule.
+7. If you are using different names, change the above values to match that of your Module/SubModule.
 8. Start the launcher and make sure your mod appears under `Singleplayer` &gt; `Mods`.
 
 For more information on the Module folder structure, [Click Here](../_intro/folder-structure.md).
@@ -72,7 +74,7 @@ For more information on the Module folder structure, [Click Here](../_intro/fold
         false));
    ```
 
-6. Compile your project and confirm that it was outputted to `Modules\MyModule\bin`.
+6. Compile your project and confirm that it was outputted to `Modules\ExampleMod\bin`.
 7. Open the Bannerlord launcher and navigate to `Singleplayer` &gt; `Mods` then make sure that your mod is ticked and start the game.
 8. On the title screen, you should now see a button called `Message`, click it and you should see `Hello World` displayed in the bottom-left corner of your screen \(in chat\).
 9. You have now successfully created your first Bannerlord mod!
