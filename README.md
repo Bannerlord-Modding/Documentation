@@ -26,7 +26,7 @@
 * [MissionBehaviour](_docs/missionbehaviour/)
   * [MissionLogic](_docs/missionbehaviour/missionlogic.md)
   * [MissionView](_docs/missionbehaviour/missionview.md)
-* [ModuleInfo](https://github.com/Bannerlord-Modding/Documentation/tree/f31271b080fd52732a8628f0b76ea8b41cda25d2/_docs/moduleinfo.md)
+* [ModuleInfo](_docs/moduleinfo.md)
 * [Scene](_docs/scene.md)
 * [ScreenLayer](_docs/screenlayer/)
   * [GauntletLayer](_docs/screenlayer/gauntletlayer.md)
