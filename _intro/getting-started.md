@@ -10,10 +10,6 @@
 
 * [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) \(not required for basic mods\)
 
-### C\# Decompiler
-
-* [DnSpy](https://github.com/0xd4d/dnSpy/releases) or [dotPeek](https://www.jetbrains.com/decompiler/download/) \(not required for basic mods\)
-
 ### Text Editor
 
 * I recommend [Visual Studio Code](https://code.visualstudio.com/download) and/or [Notepad++](https://notepad-plus-plus.org/downloads/)
