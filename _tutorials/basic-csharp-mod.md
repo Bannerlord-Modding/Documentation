@@ -34,7 +34,7 @@ Please follow the below instructions to download any tools needed and setup a pr
         <SubModules>
             <SubModule>
                 <Name value="ExampleMod"/>
-                <DLLName value="../../Modules/ExampleMod/bin/ExampleMod.dll"/>
+                <DLLName value="ExampleMod.dll"/>
                 <SubModuleClassType value="ExampleMod.MySubModule"/>
                 <Tags>
                     <Tag key="DedicatedServerType" value="none" />
@@ -74,7 +74,7 @@ For more information on the Module folder structure, [Click Here](../_intro/fold
         false));
    ```
 
-6. Compile your project and confirm that it was outputted to `Modules\ExampleMod\bin`.
+6. Compile your project and confirm that it was outputted to `Modules\ExampleMod\bin\Win64_Shipping_Client`.
 7. Open the Bannerlord launcher and navigate to `Singleplayer` &gt; `Mods` then make sure that your mod is ticked and start the game.
 8. On the title screen, you should now see a button called `Message`, click it and you should see `Hello World` displayed in the bottom-left corner of your screen \(in chat\).
 9. You have now successfully created your first Bannerlord mod!

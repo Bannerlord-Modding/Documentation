@@ -2,7 +2,8 @@
 
 ## Folder Descriptions
 
-* `bin` - For any DLL\(s\) associated with your Mod.
+* `bin`
+  * `Win64_Shipping_Client` - For any DLL\(s\) associated with your Mod.
 * `GUI` - For most things related to Gauntlet.
   * `Brushes` - For Gauntlet Brushes.
   * `Prefabs` - For Gauntlet Movies.
@@ -12,6 +13,7 @@
 ```text
 - MyModule
     - bin
+        - Win64_Shipping_Client
     - GUI
         - Brushes
         - Prefabs
