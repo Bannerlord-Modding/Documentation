@@ -17,7 +17,7 @@
 ## Creating a module
 
 1. Create a folder in the `Modules` directory in your game files and name it whatever you want the name of your module to be.
-2. Create a `SubModule.xml` file in your new directory. You can [see an example here](https://pastebin.com/x8NU4FLN).
+2. Create a `SubModule.xml` file in your new directory. You can [see an example here](../_xmldocs/submodule.md).
 3. Add a `ModuleData` , `GUI` and `bin` Folder to your new Directory. ModuleData will contain things such as modded items and characters, while GUI will contain Gauntlet UI elements for your mod.
 4. Inside your new `bin` directory, create a folder named `Win64_Shipping_Client`. This is where any DLLs related to your mod will go.
 5. Inside your new `GUI` directory, create 2 more folders, once named `Brushes` and the other named `Prefabs`. Brushes will contain your Gauntlet Brushes, while Prefabs will contain your [Movies](../_xmldocs/movie.md) for Gauntlet.

@@ -19,7 +19,7 @@ XMLs with the same id from two separate mods \(or the same mod\) will have their
 
 ## Example
 
-```xml
+```markup
 <Module>
     <Name value="My Module"/>
     <Id value="MyModule"/>
@@ -32,8 +32,8 @@ XMLs with the same id from two separate mods \(or the same mod\) will have their
         <SubModule>
             <Name value="MySubModule"/>
             <!-- Path to the DLL File, if your Mod is called MyModule then it should be   -->
-            <DLLName value="../../Modules/MyModule/bin/ExampleMod.dll"/>
-            <SubModuleClassType value="ExampleModNameSpace.MySubModule"/>
+            <DLLName value="ExampleMod.dll"/>
+            <SubModuleClassType value="ExampleMod.MySubModule"/>
             <Tags>
                 <Tag key="DedicatedServerType" value="none" />
                 <Tag key="IsNoRenderModeElement" value="false" />
