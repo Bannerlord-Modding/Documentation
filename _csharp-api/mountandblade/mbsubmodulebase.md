@@ -4,5 +4,5 @@ You can inherit from the MBSubModuleBase class to handle the loading of your mod
 
 **It is important to note that you must reference the class' fully qualified name in the module's `SubModule.xml` for this to work properly.**
 
-Example `SubModule.xml` where `ExampleMod.MySubModule` is the fully qualified name for the class inheriting MBSubModuleBase: [SubModule.xml](https://github.com/Bannerlord-Modding/Documentation/tree/e1750735f93f2bf8930a82342deb76c028938da5/_csharp-api/_xmldocs/submodule.md)
+Example `SubModule.xml` where `ExampleMod.MySubModule` is the fully qualified name for the class inheriting MBSubModuleBase: [SubModule.xml](../_xmldocs/submodule.md)
 
