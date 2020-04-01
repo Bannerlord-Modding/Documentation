@@ -1,3 +1,3 @@
-# Brushes
+# Brush
 
 **Work in progress**

@@ -13,8 +13,8 @@ Before setting up a project, it is important to know that **this is not required
 1. Start Microsoft Visual Studio and select `Create New Project`.
 2. Choose `Class Library (.NET Framework)`.
 3. Name your project whatever you want and choose `.NET Framework 4.7.2` as the `Framework`.  If this option is not available for you, [Download it here](https://dotnet.microsoft.com/download/dotnet-framework/net472) \(Developer Pack\).
-4. Now that your project is setup, set your build path to the `Modules/MyModule/bin/Win64_Shipping_Client` directory in your game files.
-5. Reference the `TaleWorlds.*` DLLs in the `bin\Win64_Shipping_Client` directory in your game files \(not your module directory\).
+4. Now that your project is setup, [set your build path]((https://docs.microsoft.com/en-us/visualstudio/ide/how-to-change-the-build-output-directory?view=vs-2019)) to the `Modules/MyModule/bin/Win64_Shipping_Client` directory in your game files. A guide on setting your build output directory can be found.
+5. [Reference](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2019) the `TaleWorlds.*` DLLs in the `bin\Win64_Shipping_Client` directory in your game files \(not your module directory\).
 
 ### Debugging a project
 
@@ -46,7 +46,7 @@ Before setting up a project, it is important to know that **this is not required
         <SubModules>
             <SubModule>
                 <Name value="ExampleMod"/>
-                <DLLName value="../../Modules/ExampleMod/bin/ExampleMod.dll"/>
+                <DLLName value="ExampleMod.dll"/>
                 <SubModuleClassType value="ExampleMod.MySubModule"/>
                 <Tags>
                     <Tag key="DedicatedServerType" value="none" />
@@ -86,7 +86,7 @@ For more information on the Module folder structure, [Click Here](../_intro/fold
         false));
    ```
 
-6. Compile your project and confirm that it was outputted to `Modules\ExampleMod\bin`.
+6. Compile your project and confirm that it was outputted to `Modules\ExampleMod\bin\Win64_Shipping_Client`.
 7. Open the Bannerlord launcher and navigate to `Singleplayer` &gt; `Mods` then make sure that your mod is ticked and start the game.
 8. On the title screen, you should now see a button called `Message`, click it and you should see `Hello World` displayed in the bottom-left corner of your screen \(in chat\).
 9. You have now successfully created your first Bannerlord mod!

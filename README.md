@@ -8,7 +8,7 @@
 
 ## Tutorials
 
-* [Basic C\# Mod](_tutorials/basic-csharp-mod.md) \(Requires a fairly advanced understanding of C\#\)
+* [Basic C\# Mod](_tutorials/basic-csharp-mod.md) \(Requires a basic understanding of C\#\)
 
 ## [C# API Documentation](_csharp-api)
 
@@ -34,8 +34,8 @@
 * [ScreenManager](_gauntlet/screenmanager.md)
 * [ViewModel](_gauntlet/viewmodel.md)
 * [Widget](_gauntlet/widget.md)
-* [Movies](_gauntlet/movies.md) \(.xml\)
-* [Brushes](_gauntlet/brushes.md) \(.xml\)
+* [Movies](_gauntlet/movie.md) \(.xml\)
+* [Brushes](_gauntlet/brush.md) \(.xml\)
 
 ## [XML Documentation](_xmldocs)
 
