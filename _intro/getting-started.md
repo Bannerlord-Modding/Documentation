@@ -1,9 +1,5 @@
 # Getting Started
 
-## Notice
-
-### Modding in Bannerlord is currently limited due to the lack of access to the `CampaignSystem` DLLs and official modding tools. This guide will be updated accordingly as soon as access to these things are provided. In the meantime, now is a great opportunity to learn the basics of modding Bannerlord.
-
 ## Tools
 
 ### C\# IDE
