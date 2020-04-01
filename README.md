@@ -10,7 +10,7 @@
 
 * [Basic C\# Mod](_tutorials/basic-csharp-mod.md) \(Requires a basic understanding of C\#\)
 
-## [C# API Documentation](_csharp-api)
+## [C# API Documentation](_csharp-api/README.md)
 
 * [CampaignSystem](_csharp-api/campaignsystem)
 * [Core](_csharp-api/core)
@@ -25,7 +25,7 @@
 * [SaveSystem](_csharp-api/savesystem)
 * [TwoDimension](_csharp-api/twodimension)
 
-## [Gauntlet Documentation](_gauntlet)
+## [Gauntlet Documentation](_gauntlet/README.md)
 
 * [GauntletLayer](_gauntlet/gauntletlayer.md)
 * [GauntletMovie](_gauntlet/gauntletmovie.md)
