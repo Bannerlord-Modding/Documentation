@@ -1,4 +1,3 @@
-# Brush \(XML\)
+# Brush
 
 **Work in progress**
-
