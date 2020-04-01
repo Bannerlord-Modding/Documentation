@@ -1,4 +1,2 @@
 # GauntletView
 
-Work in Progress
-

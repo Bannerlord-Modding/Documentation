@@ -4,13 +4,13 @@ GameEntities are objects \(entities\) in the game. Examples include characters, 
 
 GameEntities contain Meshes, Skeletons, PhysicsBodies, and ScriptComponents along with a variety of other things for each object in the game.
 
-You can add a GameEntity to a scene by editing the [Scene](../_xmldocs/scene.md)'s `scene.xscene` file or spawn \(instantiate\) one directly using the following static method from the GameEntity class:
+You can add a GameEntity to a scene by editing the [Scene](https://github.com/Bannerlord-Modding/Documentation/tree/69fbb4b6e777bdaab5349c04490ba7247e8bdf38/_csharp-api/_xmldocs/scene.md)'s `scene.xscene` file or spawn \(instantiate\) one directly using the following static method from the GameEntity class:
 
 ```csharp
 GameEntity.Instantiate(Scene scene, string prefabName, MatrixFrame frame)
 ```
 
-Example Usage \(spawning at main [Agent](agent.md)\):
+Example Usage \(spawning at main [Agent](https://github.com/Bannerlord-Modding/Documentation/tree/69fbb4b6e777bdaab5349c04490ba7247e8bdf38/_csharp-api/engine/agent.md)\):
 
 ```csharp
 GameEntity.Instantiate(Mission.Current.Scene, "ship_a", Agent.Main.Frame)

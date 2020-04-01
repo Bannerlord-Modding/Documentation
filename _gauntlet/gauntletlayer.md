@@ -1,4 +1,2 @@
 # GauntletLayer
 
-Work in Progress
-
