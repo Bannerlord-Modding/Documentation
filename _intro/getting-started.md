@@ -1,5 +1,9 @@
 # Getting Started
 
+## Important
+
+Before proceeding, it is important to have a good understanding of the [SubModule.xml](../_xmldocs/submodule.md) file, as this file tells the game what it should be loading when your mod is selected.
+
 ## Tools
 
 ### C\# IDE
@@ -8,31 +12,31 @@
 
 ### Text Editor
 
-* I recommend [Visual Studio Code](https://code.visualstudio.com/download) and/or [Notepad++](https://notepad-plus-plus.org/downloads/)
+Any text editor will suffice, but one of these is recommended...
 
-## Creating a module
+* [Visual Studio Code](https://code.visualstudio.com/download)
+* [Sublime Text](https://www.sublimetext.com/)  
+* [Notepad++](https://notepad-plus-plus.org/downloads/)
 
-1. Create a folder in the `Modules` directory in your game files and name it whatever you want the name of your module to be.
-2. Create a `SubModule.xml` file in your new directory. You can [see an example here](../_xmldocs/submodule.md).
-3. Add a `ModuleData` , `GUI` and `bin` Folder to your new Directory. ModuleData will contain things such as modded items and characters, while GUI will contain Gauntlet UI elements for your mod.
-4. Inside your new `bin` directory, create a folder named `Win64_Shipping_Client`. This is where any DLLs related to your mod will go.
-5. Inside your new `GUI` directory, create 2 more folders, once named `Brushes` and the other named `Prefabs`. Brushes will contain your Gauntlet Brushes, while Prefabs will contain your [Movies](../_xmldocs/movie.md) for Gauntlet.
+## Modding without C\#
 
-## Setting up a project
+There are several aspects of the game you can mod without C\#. This includes scenes, items, cultures, characters, Gauntlet UIs, and many more.
 
-Before setting up a project, it is important to know that **this is not required for basic mods** \(e.g. changing or adding items/characters/scenes\).
+## Modding with C\#
 
-1. Start Microsoft Visual Studio and select `Create New Project`.
-2. Choose `Class Library (.NET Framework)`.
-3. Name your project whatever you want and choose `.NET Framework 4.7.2` as the `Framework`.  If this option is not available for you, [Download it here](https://dotnet.microsoft.com/download/dotnet-framework/net472) \(Developer Pack\).
-4. Now that your project is setup, set your build path to the `Modules/MyModule/bin/Win64_Shipping_Client` directory in your game files. A guide on setting your build output directory can be found [here](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-change-the-build-output-directory?view=vs-2019).
-5. [Reference](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2019) the `TaleWorlds.*` DLLs in the `bin\Win64_Shipping_Client` directory in your game files \(not your module directory\).
+The module-based modding system makes modding in Bannerlord much easier than past games in the series and allows for much more complexity in your mods.
 
-## Debugging a project
+## Creating a SubModule
 
-1. Open your project properties and go to the `Debug` tab.
-2. Select the `Start external program` option and then browse for `Bannerlord.exe` located in the `bin\Win64_Shipping_Client` directory in your game files \(not your module directory\).
-3. Set your working directory to the `bin\Win64_Shipping_Client` directory in your game files \(not your module directory\).
-4. Add the following command line arguments \(be sure to replace MyModule with the name of your module\):
-   * `/singleplayer _MODULES_*Native*SandBox*SandBoxCore*StoryMode*CustomBattle*MyModule*_MODULES_`
+In Bannerlord an individual mod is called a SubModule and the only required part is the SubModule folder itself and a `SubModule.xml` file which informs the launcher of your mod.
+
+1. Create a new folder in the `Modules` directory in your game files, the name of the folder must be the name of your SubModule.
+2. Create a `SubModule.xml` file in your new folder. You can [see an example here](../_xmldocs/submodule.md) or find the [full documentation here](../_xmldocs/submodule.md)
+
+## Next Steps
+
+- Refer to the [Folder Structure](../_intro/folder-structure.md) page for additional information on what additional directories to add depending on the intended content of your mod.
+- Refer to the [Basic C# Mod](../_tutorials/basic-csharp-mod.md) page for an example of how to set up, build and run code in Bannerlord.
+
+
 
