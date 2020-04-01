@@ -18,7 +18,6 @@
 * [InputSystem](_csharp-api/inputsystem)
 * [Library](_csharp-api/library)
 * [Localization](_csharp-api/localization)
-* [MissionBehaviour](_csharp-api/missionbehaviour)
 * [MountAndBlade](_csharp-api/mountandblade)
 * [Network](_csharp-api/network)
 * [PlatformService](_csharp-api/platformservice)
@@ -41,5 +40,5 @@
 
 * [Atmosphere](_xmldocs/atmosphere.md) \(.xml\)
 * [Scene](_xmldocs/scene.md) \(.xscene\)
-* [SubModule](_xmldocs/submodule) \(.xml\)
+* [SubModule](_xmldocs/submodule.md) \(.xml\)
 

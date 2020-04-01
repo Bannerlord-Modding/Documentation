@@ -1,6 +1,6 @@
 # ScreenBase
 
-You can organize and instantiate your [ViewModels](viewmodel.md) and [Movies](../_xmldocs/movie.md) by using screens.
+You can organize and instantiate your [ViewModels](viewmodel.md) and [Movies](movie.md) by using screens.
 
 In order to prevent any issues, it is recommended that you use the template below when creating your screens.
 
