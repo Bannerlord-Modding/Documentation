@@ -6,7 +6,7 @@ The MBObjectManager can be used to get any object in the game that is currently 
 
 These include:
 
-* [BasicCharacterObjects](basiccharacterobject.md)
+* [BasicCharacterObjects]()
 * CharacterAttributes
 * CraftingPieces
 * CraftingTemplates
@@ -18,7 +18,7 @@ These include:
 * SkillObjects
 * SiegeEngineTypes
 
-Example of getting a [BasicCharacterObject](basiccharacterobject.md):
+Example of getting a [BasicCharacterObject]():
 
 ```csharp
 MBObjectManager.Instance.GetObject<BasicCharacterObject>("example_troop_id");

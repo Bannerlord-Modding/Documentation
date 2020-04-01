@@ -34,5 +34,5 @@ There many more widgets; the above are just the most commonly used widgets. You 
 
 ## Creating a Custom Widget
 
-You can create a custom widget by simply creating a class that inherits from `Widget`. After doing so, you can use your Widget inside any [Movie](../_xmldocs/movie.md). The tag name for your widget will be the same as the class name you used for it.
+You can create a custom widget by simply creating a class that inherits from `Widget`. After doing so, you can use your Widget inside any [Movie](https://github.com/Bannerlord-Modding/Documentation/tree/e1750735f93f2bf8930a82342deb76c028938da5/_xmldocs/movie.md). The tag name for your widget will be the same as the class name you used for it.
 

@@ -28,5 +28,5 @@ public class MyInitialScreen : MBInitialScreenBase
 }
 ```
 
-Replace the string `InitialScreen` with the name of your [Movie](../_xmldocs/movie.md)'s XML file.
+Replace the string `InitialScreen` with the name of your [Movie](https://github.com/Bannerlord-Modding/Documentation/tree/e1750735f93f2bf8930a82342deb76c028938da5/_csharp-api/_xmldocs/movie.md)'s XML file.
 
