@@ -48,7 +48,7 @@
   * [Movie \(XML\)](_gauntlet/movie.md)
 * [XML Documentation](_xmldocs/README.md)
   * [Atmosphere \(XML\)](_xmldocs/atmosphere.md)
-  * [Items \(XML\)](_xmldocs/Items/README.md)
+  * [Items \(XML\)](_xmldocs/items.md)
   * [Scene \(xScene\)](_xmldocs/scene.md)
   * [SubModule \(XML\)](_xmldocs/submodule.md)
 
