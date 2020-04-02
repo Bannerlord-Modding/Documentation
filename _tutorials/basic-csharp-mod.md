@@ -15,6 +15,7 @@ Before setting up a project, it is important to know that **this is not required
 3. Name your project whatever you want and choose `.NET Framework 4.7.2` as the `Framework`.  If this option is not available for you, [Download it here](https://dotnet.microsoft.com/download/dotnet-framework/net472) \(Developer Pack\).
 4. Now that your project is setup, [set your build path]((https://docs.microsoft.com/en-us/visualstudio/ide/how-to-change-the-build-output-directory?view=vs-2019)) to the `Modules/MyModule/bin/Win64_Shipping_Client` directory in your game files. A guide on setting your build output directory can be found.
 5. [Reference](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2019) the `TaleWorlds.*` DLLs in the `bin\Win64_Shipping_Client` directory in your game files \(not your module directory\).
+6. Reference the `TaleWorlds.*` DLLs in the `Module\Native\bin\Win64_Shipping_Client` directory for the GauntletUI & View namespaces.
 
 ### Debugging a project
 
