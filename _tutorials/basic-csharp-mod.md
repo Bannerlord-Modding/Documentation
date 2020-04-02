@@ -35,14 +35,20 @@ Before setting up a project, it is important to know that **this is not required
 5. Create a new class in your VS Project and name it `MySubModule` \(_can be anything_\).
 6. Create a new `SubModule.xml` file and then paste the following into it:
 
-   ```markup
+   ```xml
     <Module>
         <Name value="Example Mod"/>
         <Id value="ExampleMod"/>
         <Version value="v1.0.0"/>
         <SingleplayerModule value="true"/>
         <MultiplayerModule value="false"/>
-        <DependedModules/>
+        <DependedModules>
+            <DependedModule Id="Native"/>
+            <DependedModule Id="SandBoxCore"/>
+            <DependedModule Id="Sandbox"/>
+            <DependedModule Id="CustomBattle"/>
+            <DependedModule Id="StoryMode" />
+        </DependedModules>
         <SubModules>
             <SubModule>
                 <Name value="ExampleMod"/>

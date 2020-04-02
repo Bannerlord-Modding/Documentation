@@ -26,7 +26,13 @@ XMLs with the same id from two separate mods \(or the same mod\) will have their
     <Version value="v1.0.0"/>
     <SingleplayerModule value="true"/>
     <MultiplayerModule value="false"/>
-    <DependedModules/>
+    <DependedModules>
+        <DependedModule Id="Native"/>
+        <DependedModule Id="SandBoxCore"/>
+        <DependedModule Id="Sandbox"/>
+        <DependedModule Id="CustomBattle"/>
+        <DependedModule Id="StoryMode" />
+    </DependedModules>
     <SubModules>
         <!-- The following SubModule element is optional. You can remove this portion if your mod does not have a DLL associated with it. -->
         <SubModule>
