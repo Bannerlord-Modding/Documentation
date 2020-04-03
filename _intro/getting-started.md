@@ -37,4 +37,5 @@ In Bannerlord an individual mod is called a Module and the only required part is
 
 - Refer to the [Folder Structure](folder-structure.md) page for additional information on what additional directories to add depending on the intended content of your mod.
 - Refer to the [Basic C# Mod](../_tutorials/basic-csharp-mod.md) page for an example of how to set up, build and run code in Bannerlord.
+- Refer to the [Modding Gauntlet UIs Without C#](_tutorials/modding-gauntlet-without-csharp.md) page for information on how to mod Gauntlet UIs without using any C#.
 

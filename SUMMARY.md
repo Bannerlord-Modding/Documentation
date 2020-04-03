@@ -7,6 +7,7 @@
   * [Advanced](_intro/advanced.md)
 * [Tutorials](_tutorials/README.md)
   * [Basic C\# Mod](_tutorials/basic-csharp-mod.md)
+  * [Modding Gauntlet UIs Without C#](_tutorials/modding-gauntlet-without-csharp.md)
 * [C# API Documentation](_csharp_api/README.md)
   * [CampaignSystem](_csharp-api/campaignsystem/README.md)
   * [Core](_csharp-api/core/README.md)

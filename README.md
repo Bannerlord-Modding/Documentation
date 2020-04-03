@@ -9,6 +9,7 @@
 ## Tutorials
 
 * [Basic C\# Mod](_tutorials/basic-csharp-mod.md) \(Requires a basic understanding of C\#\)
+* [Modding Gauntlet UIs Without C#](_tutorials/modding-gauntlet-without-csharp.md) \(Easy\)
 
 ## [C# API Documentation](_csharp-api/README.md)
 
@@ -39,7 +40,7 @@
 ## [XML Documentation](_xmldocs)
 
 * [Atmosphere](_xmldocs/atmosphere.md) \(.xml\)
-* [Items \(XML\)](_xmldocs/Items/README.md) (.xml)
+* [Items \(XML\)](_xmldocs/Items) (.xml)
 * [Scene](_xmldocs/scene.md) \(.xscene\)
 * [SubModule](_xmldocs/submodule.md) \(.xml\)
 
