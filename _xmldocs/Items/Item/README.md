@@ -56,23 +56,23 @@ Source: Modules/SandBoxCore/ModuleData/spitems.xml
   
 - #### appearance
   **type:**  `double`  
-  **example:** `0.5` 
+  **example:** `0.5`  
   *TODO: Figure out what this is for*  
 
 - #### Type
   **type:**  `ArmourType`  
-  **possible values:** `'HeadArmor', 'headArmor', 'Cape', 'BodyArmor', 'HandArmor', 'LegArmor', 'OneHandedWeapon', 'Bow', 'Polearm', 'Crossbow', 'Thrown', 'Arrows', 'Bolts', 'Shield', 'Horse', 'HorseHarness', 'Goods', 'Banner', 'Animal'`
+  **possible values:** `'HeadArmor', 'headArmor', 'Cape', 'BodyArmor', 'HandArmor', 'LegArmor', 'OneHandedWeapon', 'Bow', 'Polearm', 'Crossbow', 'Thrown', 'Arrows', 'Bolts', 'Shield', 'Horse', 'HorseHarness', 'Goods', 'Banner', 'Animal'`  
   **example:** `HeadArmor`  
   
 - #### multiplayer_item
   **type:**  `boolean`  
-  **possible values:** `'true', 'false'`  
+  **possible values:** `'true', 'false'`   
   **example:** `false`  
   
 - #### subtype
   **type:**  `string`  
   **possible values:** `'head_armor', 'body_armor', 'bow', 'two_handed_wpn', 'arrows', 'horse'`  
-  **example:** `head_armor` 
+  **example:** `head_armor`  
   *TODO: Figure out what this is for*  
   
 - #### difficulty
@@ -98,68 +98,68 @@ Source: Modules/SandBoxCore/ModuleData/spitems.xml
 - #### recalculate_body
   **type:**  `boolean`  
   **possible values:** `'true', 'false'`  
-  **example:** `false` 
+  **example:** `false`  
   *TODO: Figure out what this is for*  
   
 - #### prefab
   **type:**  `id`  
-  **example:** `torch_a_wm_only_flame` 
+  **example:** `torch_a_wm_only_flame`  
   *TODO: Figure out what this is for. Possibly particle effects?* 
   
 - #### value
   **type:**  `int`  
-  **example:** `150` 
+  **example:** `150`  
   *The average market value* 
   
 - #### item_holsters
   **type:**  `string`  
   **possible values:** `'abdomen_left', 'bow_back_2:bow_hip:bow_hip_2:bow_back', 'bow_back:bow_back_2:bow_hip:bow_hip_2', 'sword_left_hip', 'polearm_back:polearm_back_2', 'bow_hip:bow_hip_2:bow_back:bow_back_2', 'crossbow_back:bow_hip:mace_right_hip:bow_hip_2', 'throwing_stone:throwing_stone_2', '', 'quiver_back_top:quiver_back_top_2', 'quiver_back_middle:quiver_bolts_2:quiver_bolts', 'quiver_back_lower:quiver_back_lower_2', 'quiver_back_middle:quiver_bolts:quiver_bolts_2', 'quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top', 'quiver_back_middle:quiver_back_top:quiver_bolts:quiver_bolts_2', 'shield_round:shield_4', 'shield_oval:shield_4:shield_3:shield_2', 'shield:shield_2:shield_3:shield_4', 'shield_kite:shield_2:shield_3:shield_4'`  
-  **example:** `abdomen_left` 
+  **example:** `abdomen_left`  
   *The carry position of a weapon*  
   
 - #### AmmoOffset
   **type:**  `vector3d`  
-  **example:** `0.0, 0.02131, 0.24675` 
+  **example:** `0.0, 0.02131, 0.24675`  
   *The position the projectile is shot from?* 
   
 - #### holster_position_shift
   **type:**  `vector3d`   
-  **example:** `0.0,0.0,-0.0` 
+  **example:** `0.0,0.0,-0.0`  
   *TODO: Figure out what this is for*  
   
 - #### holster_body_name
   **type:**  `string`   
-  **example:** `bo_axe_short` 
+  **example:** `bo_axe_short`  
   *TODO: Figure out what this is for*  
   
 - #### holster_mesh
   **type:**  `string`   
-  **example:** `stone_holster` 
+  **example:** `stone_holster`  
   *The mesh id of the quivers etc*   
   
 - #### holster_mesh_with_weapon
   **type:**  `string`   
-  **example:** `stone_holster` 
+  **example:** `stone_holster`  
   *The mesh id of the quivers etc with the weapon*  
   
 - #### flying_mesh
   **type:**  `string`   
-  **example:** `  ` 
+  **example:** `arrow_bl_flying`  
   *The mesh id of the projectile* 
   
 - #### shield_body_name
   **type:**  `string`   
-  **example:** `bo_sturgia_shield_a` 
+  **example:** `bo_sturgia_shield_a`  
   *The hitbox id of a shield*  
   
 - #### using_tableau
   **type:**  `boolean`   
-  **example:** `true` 
+  **example:** `true`  
   *Whether the item has a tableau*  
   
 - #### has_lower_holster_priority
   **type:**  `boolean`   
-  **example:** `true` 
+  **example:** `true`  
   *TODO: Figure out what this exactly does.*  
   
 - #### item_category
@@ -170,5 +170,5 @@ Source: Modules/SandBoxCore/ModuleData/spitems.xml
 
 - #### IsFood
   **type:**  `boolean`   
-  **example:** `true` 
+  **example:** `true`  
   *If the item is consumable*  
