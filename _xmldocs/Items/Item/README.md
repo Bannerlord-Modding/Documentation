@@ -165,7 +165,7 @@ Source: Modules/SandBoxCore/ModuleData/spitems.xml
 - #### item_category
   **type:**  `id`   
   **possible values:** `'horse', 'sumpter_horse', 'war_horse', 'wool', 'silver', 'jewelry', 'salt', 'cotton', 'flax', 'clay', 'pottery', 'linen', 'leather', 'velvet', 'cheese', 'butter', 'fish', 'grape', 'date_fruit', 'olives', 'beer', 'wine', 'oil', 'fur', 'animal', 'sheep', 'cow', 'hog'`  
-  **example:** `true` 
+  **example:** `horse`  
   *Marketable item category*  
 
 - #### IsFood
