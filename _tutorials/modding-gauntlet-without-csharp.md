@@ -19,18 +19,18 @@ The following guide will walk you through step-by-step on how to create a mod th
 4. Now create a new folder in your `GUI` directory called `Prefabs`. We will come back to this folder later in the tutorial.
 5. Go back to the module folder you created in Step #2 and create a new `SubModule.xml` file and then paste the following into it:
 
-```xml
-<Module>
-    <Name value="Example UI Mod"/>
-    <Id value="ExampleUIMod"/>
-    <Version value="v1.0.0"/>
-    <SingleplayerModule value="true"/>
-    <MultiplayerModule value="false"/>
-    <DependedModules/>
-    <SubModules/>
-    <Xmls/>
-</Module>
-```
+    ```xml
+    <Module>
+        <Name value="Example UI Mod"/>
+        <Id value="ExampleUIMod"/>
+        <Version value="v1.0.0"/>
+        <SingleplayerModule value="true"/>
+        <MultiplayerModule value="false"/>
+        <DependedModules/>
+        <SubModules/>
+        <Xmls/>
+    </Module>
+    ```
 
 6. Start the launcher and make sure your mod appears under `Singleplayer` &gt; `Mods`.
 
