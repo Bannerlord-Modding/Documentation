@@ -64,4 +64,4 @@ Once you have downloaded & installed the Developer Console Mod, follow the steps
 1. Open the game launcher and then make sure `Developer Console` is ticked in `Singleplayer` &gt; `Mods` along with your Gauntlet UI mod.
 2. The Developer Console mod uses the shortcut `CTRL` + `~` (tilde) to enable the console. If this shortcut doesn't work for you, try pressing CTRL and then the key on your keyboard above Tab and below Esc.
 3. Now that you can see the console, you will want to type the command `ui.toggle_debug_mode` to enable the live UI editing feature.
-4.Any changes you make to your UIs should now update automatically in-game.
+4. Any changes you make to your UIs should now update automatically in-game.
