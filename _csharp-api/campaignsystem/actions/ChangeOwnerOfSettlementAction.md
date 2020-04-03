@@ -11,13 +11,13 @@ Here is a list of functions that detail different ways a settlement can change o
 - `ApplyByKingDecision(Hero hero, Settlement settlement)` - Gives a hero the settlement by the king of a faction's decision at the end of voting.
   - `Hero hero` - The vassal of the king that will receive the settlement
   - `Settlement settlement` - The settlement which the king bestowed upon the hero
-- `ApplyBySiege(Hero newOwner, Hero capturerHero, Settlement)` - Gives the faction leader a settlement after a successful siege.
+- `ApplyBySiege(Hero newOwner, Hero capturerHero, Settlement settlement)` - Gives the faction leader a settlement after a successful siege.
   - `Hero newOwner` - The character that will receive the settlement (Faction leader until they decide who to give it to)
   - `Hero capturerHero` - The character that led the siege of the settlement and succeeded
-  - `Settlement` - The settlement which was just conquered
+  - `Settlement settlement` - The settlement which was just conquered
 - `ApplyByRevolt(Hero hero, Settlement settlement)` - Gives revolter a settlement following their declaration of independence from liege.
-  - `Hero hero' - The character revolting from liege
-  - 'Settlement settlement' - The settlement that the revolter will get
+  - `Hero hero` - The character revolting from liege
+  - `Settlement settlement` - The settlement that the revolter will get
 - `ApplyByLeaveFaction(Hero hero, Settlement settlement)` - Changes owner of settlement when they leave faction (verification needed)
   - `Hero hero' - The character leaving the faction
   - `Settlement settlement` - The settlement that the character will get
