@@ -22,18 +22,18 @@ Here is a list of functions that detail different ways a settlement can change o
   - `Hero hero' - The character leaving the faction
   - `Settlement settlement` - The settlement that the character will get
 - `ApplyByBarter(Hero hero, Settlement settlement)` - Changes owner of settlement when a hero trades a settlement to another hero in a faction
-  - `Hero hero' - The character receiving the settlement in a trade
+  - `Hero hero` - The character receiving the settlement in a trade
   - `Settlement settlement` - The settlement that is being traded
 - `ApplyByRemoveFaction(Settlement settlement)` - Functionality unknown as there is no usage of it.
 - `ApplyByDestroyClan(Settlement settlement, Hero newOwner)` - Changes owner of settlement when the previous owner dies. When this is called, the settlement is given to a random child of the previous owner.
   - `Settlement settlement` - Settlement that is being inherited
   - `Hero newOwner` - The person that is inheriting the settlement
 
-##Enums
+## Enums
 
 `ChangeOwnerOfSettlementDetail` - The reason why the settlement is changing hands, see functions for explanation of these.
   - `Default`
-  - `BySiege'
+  - `BySiege`
   - `ByBarter`
   - `ByRevolt`
   - `ByLeaveFaction`
