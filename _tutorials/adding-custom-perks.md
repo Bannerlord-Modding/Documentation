@@ -28,6 +28,8 @@ GameplaySubModule.GetPerkSystem().UpdatePerks();
 public override void OnGameInitializationFinished(Game game)
 {
 	base.OnGameInitializationFinished(game);
+	moneyPerk = GameplaySubModule.GetPerkSystem().CreateCustomPerk(game, "MyMod_MoneyPerk");
+        moneyPerk.Initialize("Free Money", "+100 gold per day.", DefaultSkills.Steward, 50, null, SkillEffect.PerkRole.None, 100, SkillEffect.PerkRole.None, 0, SkillEffect.EffectIncrementType.Add);
 	GameplaySubModule.GetPerkSystem().UpdatePerks();
 	//Other code
 }
