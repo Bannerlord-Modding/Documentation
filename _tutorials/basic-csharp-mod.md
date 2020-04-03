@@ -29,7 +29,7 @@ Before setting up a project, it is important to know that **this is not required
 ### Setting up your Module \(SubModule.xml\)
 
 1. Go to your game files and locate the `Modules` directory.
-2. Create a new folder and name it whatever you want, then open it.
+2. Create a new folder and name it `ExampleMod` (Must be the same as the Id you use for Step #6).
 3. Create a new folder named `bin` \(don't navigate to it\).
 4. Set the build output for your DLL \(in Visual Studio\) to the previously created `bin` folder.
 5. Create a new class in your VS Project and name it `MySubModule` \(_can be anything_\).

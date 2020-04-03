@@ -1,7 +1,5 @@
 # Modding Gauntlet Without C#
 
-## WARNING: There is an issue with Module loading right now. This tutorial *may* not work for you. This message will be removed once TaleWorlds resolves this issue or a fix has been found.
-
 ## Introduction
 
 The following guide will walk you through step-by-step on how to create a mod that can overwrite any Gauntlet UI without using any C#. For this example, we will be overriding the Quests UI with some custom title text.
@@ -13,7 +11,7 @@ The following guide will walk you through step-by-step on how to create a mod th
 ### Setting up your Module \(SubModule.xml\)
 
 1. Go to your game files and locate the `Modules` directory.
-2. Create a new folder and name it whatever you want, then open it.
+2. Create a new folder and name it `ExampleUIMod` (Must be the same as the Id you use for Step #5).
 3. Create a new folder named `GUI` and open it.
 4. Now create a new folder in your `GUI` directory called `Prefabs`. We will come back to this folder later in the tutorial.
 5. Go back to the module folder you created in Step #2 and create a new `SubModule.xml` file and then paste the following into it:
