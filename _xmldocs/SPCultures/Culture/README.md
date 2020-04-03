@@ -1,4 +1,4 @@
-# CraftedItem
+# Culture
 
 ## Parent node
 - [SPCultures](../../SPCultures)
