@@ -1,5 +1,7 @@
 # Modding Gauntlet Without C#
 
+## WARNING: There is an issue with Module loading right now. This tutorial *may* not work for you. This message will be removed once TaleWorlds resolves this issue or a fix has been found.
+
 ## Introduction
 
 The following guide will walk you through step-by-step on how to create a mod that can overwrite any Gauntlet UI without using any C#. For this example, we will be overriding the Quests UI with some custom title text.
