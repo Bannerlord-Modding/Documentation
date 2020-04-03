@@ -1,5 +1,5 @@
 # Adding custom perks the the game
-Looking at TaleWorlds code, adding a custom perk seems easy. However, you would soon run into issues such as the perk disappearing or being deselected. I, vladim0105, spent a whole day coding and experimenting to fix those issues and is the reason why I am writing this tutorial. This guide will show you how to add a 100% working custom perk with only a few lines of code.
+Looking at TaleWorlds code, adding a custom perk seems easy. However, you would soon run into issues such as the perk disappearing or being deselected. I, [vladim0105]https://github.com/vladim0105, spent a whole day coding and experimenting to fix those issues and is the reason why I am writing this tutorial. This guide will show you how to add a 100% working custom perk with only a few lines of code.
 # How
 There are two ways you could go about this, first one (the recommended one) would be to download the latest release of [BannerLib](https://github.com/sirdoombox/BannerLib/releases), adding it to your modules folder and then referencing it in your code. The second way would be to look at [BannerLib's code](https://github.com/sirdoombox/BannerLib) and copying it to make custom perks work. 
 In this tutorial I will show how to use BannerLib to add custom perks.
