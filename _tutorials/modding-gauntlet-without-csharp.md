@@ -14,7 +14,7 @@ The following guide will walk you through step-by-step on how to create a mod th
 2. Create a new folder and name it whatever you want, then open it.
 3. Create a new folder named `GUI` and open it.
 4. Now create a new folder in your `GUI` directory called `Prefabs`. We will come back to this folder later in the tutorial.
-5. Create a new `SubModule.xml` file and then paste the following into it:
+5. Go back to the module folder you created in Step #2 and create a new `SubModule.xml` file and then paste the following into it:
 
    ```xml
     <Module>
