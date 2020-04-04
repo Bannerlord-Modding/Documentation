@@ -13,17 +13,17 @@
 
 ## [C\# API Documentation](https://github.com/Bannerlord-Modding/Documentation/tree/e191c136b94563df1b6b2de3ef69c5adf5958fd2/_csharp-api/README.md)
 
-* [CampaignSystem](_csharp-api/campaignsystem.md)
-* [Core](_csharp-api/core/)
-* [Engine](_csharp-api/engine/)
-* [InputSystem](_csharp-api/inputsystem/)
-* [Library](_csharp-api/library/)
-* [Localization](_csharp-api/localization.md)
-* [MountAndBlade](_csharp-api/mountandblade/)
-* [Network](_csharp-api/network.md)
-* [PlatformService](_csharp-api/platformservice.md)
-* [SaveSystem](_csharp-api/savesystem.md)
-* [TwoDimension](_csharp-api/twodimension.md)
+* [CampaignSystem](c-api-documentation/campaignsystem.md)
+* [Core](c-api-documentation/core/)
+* [Engine](c-api-documentation/engine/)
+* [InputSystem](c-api-documentation/inputsystem/)
+* [Library](c-api-documentation/library/)
+* [Localization](c-api-documentation/localization.md)
+* [MountAndBlade](c-api-documentation/mountandblade/)
+* [Network](c-api-documentation/network.md)
+* [PlatformService](c-api-documentation/platformservice.md)
+* [SaveSystem](c-api-documentation/savesystem.md)
+* [TwoDimension](c-api-documentation/twodimension.md)
 
 ## [Gauntlet Documentation](_gauntlet/)
 
