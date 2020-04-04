@@ -30,10 +30,8 @@ Before setting up a project, it is important to know that **this is not required
 
 1. Go to your game files and locate the `Modules` directory.
 2. Create a new folder and name it `ExampleMod` \(Must be the same as the Id you use for Step \#6\).
-3. Create a new folder named `bin` and inside this directory, create a new folder called `Win64_Shipping_Client`.
-4. Set the build output for your DLL \(in Visual Studio\) to the previously created `bin` folder.
-5. Create a new class in your VS Project and name it `MySubModule` \(_can be anything_\).
-6. Create a new `SubModule.xml` file inside the folder you created in Step \#2 and then paste the following into it:
+3. Create a new class in your VS Project and name it `MySubModule` \(_can be anything_\).
+4. Create a new `SubModule.xml` file inside the folder you created in Step \#2 and then paste the following into it:
 
    ```markup
     <Module>
@@ -65,9 +63,38 @@ Before setting up a project, it is important to know that **this is not required
    ```
 
 7. If you are using different names, change the above values to match that of your Module/SubModule.
-8. Start the launcher and make sure your mod appears under `Singleplayer` &gt; `Mods`.
+8. Make sure that your `SubModule.xml` is copied to your module root path and that your assembly is copied
+   to `bin/Win64_Shipping_Client`. See csproj example below.
+9. Start the launcher and make sure your mod appears under `Singleplayer` &gt; `Mods`.
 
 For more information on the Module folder structure, [Click Here](../_intro/folder-structure.md).
+
+#### Final project file example (MyModule.csproj)
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <MbPath>XXX\steamapps\common\Mount &amp; Blade II Bannerlord</MbPath> <!-- replace with your game path -->
+    <ModuleName>MyModule</ModuleName> <!-- replace with your module name -->
+    <LangVersion>8.0</LangVersion> <!-- optionally use latest version of C# -->
+  </PropertyGroup>
+
+  <Target Name="CopySubModule" AfterTargets="AfterBuild">
+    <Copy SourceFiles="SubModule.xml" DestinationFolder="$(MbPath)\Modules\$(ModuleName)" />
+    <Copy SourceFiles="$(OutputPath)\$(AssemblyName).dll" DestinationFolder="$(MbPath)\Modules\$(ModuleName)\bin\Win64_Shipping_Client" />
+  </Target>
+
+  <ItemGroup>
+    <Reference Include="TaleWorlds.Core">
+      <HintPath>$(MbPath)\bin\Win64_Shipping_Client\TaleWorlds.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.MountAndBlade">
+      <HintPath>$(MbPath)\bin\Win64_Shipping_Client\TaleWorlds.MountAndBlade.dll</HintPath>
+    </Reference>
+    <!-- ... -->
+  </ItemGroup>
+</Project>
+```
 
 ## Programming
 
