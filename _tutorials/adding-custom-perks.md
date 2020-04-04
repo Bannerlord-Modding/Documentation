@@ -16,7 +16,7 @@ Creating a perk:
    ```
    - Full Example:
    ```c#
-        moneyPerk = GameplaySubModule.GetPerkSystem().CreateCustomPerk(game, "MyMod_MoneyPerk");
+        PerkObject moneyPerk = GameplaySubModule.GetPerkSystem().CreateCustomPerk(game, "MyMod_MoneyPerk");
         moneyPerk.Initialize("Free Money", "+100 gold per day.", DefaultSkills.Steward, 50, null, SkillEffect.PerkRole.None, 100, SkillEffect.PerkRole.None, 0, SkillEffect.EffectIncrementType.Add);
    ```
 - Then finally we need to update the perks, in your SubModule class, in the Game Initialization, add the following:
@@ -28,7 +28,7 @@ GameplaySubModule.GetPerkSystem().UpdatePerks();
 public override void OnGameInitializationFinished(Game game)
 {
 	base.OnGameInitializationFinished(game);
-	moneyPerk = GameplaySubModule.GetPerkSystem().CreateCustomPerk(game, "MyMod_MoneyPerk");
+	PerkObject moneyPerk = GameplaySubModule.GetPerkSystem().CreateCustomPerk(game, "MyMod_MoneyPerk");
         moneyPerk.Initialize("Free Money", "+100 gold per day.", DefaultSkills.Steward, 50, null, SkillEffect.PerkRole.None, 100, SkillEffect.PerkRole.None, 0, SkillEffect.EffectIncrementType.Add);
 	GameplaySubModule.GetPerkSystem().UpdatePerks();
 	//Other code
@@ -43,7 +43,7 @@ using BannerLib.Gameplay;
 public override void OnGameInitializationFinished(Game game)
 {
 	base.OnGameInitializationFinished(game);
-	moneyPerk = GameplaySubModule.GetPerkSystem().CreateCustomPerk(game, "MyMod_MoneyPerk");
+	PerkObject moneyPerk = GameplaySubModule.GetPerkSystem().CreateCustomPerk(game, "MyMod_MoneyPerk");
         moneyPerk.Initialize("Free Money", "+100 gold per day.", DefaultSkills.Steward, 50, null, SkillEffect.PerkRole.None, 100, SkillEffect.PerkRole.None, 0, SkillEffect.EffectIncrementType.Add);
 	GameplaySubModule.GetPerkSystem().UpdatePerks();
 	//To make it add 100 gold per day:
