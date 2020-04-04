@@ -1,4 +1,4 @@
-# BannerlordDocs
+# Items \(XML\)
 
 ## Items documentation
 - [Items](Items)

@@ -13,17 +13,17 @@
 
 ## [C# API Documentation](_csharp-api/README.md)
 
-* [CampaignSystem](_csharp-api/campaignsystem)
-* [Core](_csharp-api/core)
-* [Engine](_csharp-api/engine)
-* [InputSystem](_csharp-api/inputsystem)
-* [Library](_csharp-api/library)
-* [Localization](_csharp-api/localization)
-* [MountAndBlade](_csharp-api/mountandblade)
-* [Network](_csharp-api/network)
-* [PlatformService](_csharp-api/platformservice)
-* [SaveSystem](_csharp-api/savesystem)
-* [TwoDimension](_csharp-api/twodimension)
+* [CampaignSystem](_csharp-api/campaignsystem/README.md)
+* [Core](_csharp-api/core/README.md)
+* [Engine](_csharp-api/engine/README.md)
+* [InputSystem](_csharp-api/inputsystem/README.md)
+* [Library](_csharp-api/library/README.md)
+* [Localization](_csharp-api/localization/README.md)
+* [MountAndBlade](_csharp-api/mountandblade/README.md)
+* [Network](_csharp-api/network/README.md)
+* [PlatformService](_csharp-api/platformservice/README.md)
+* [SaveSystem](_csharp-api/savesystem/README.md)
+* [TwoDimension](_csharp-api/twodimension/README.md)
 
 ## [Gauntlet Documentation](_gauntlet/README.md)
 
@@ -42,5 +42,8 @@
 * [Atmosphere](_xmldocs/atmosphere.md) \(.xml\)
 * [Items](_xmldocs/Items) (.xml)
 * [Scenes](_xmldocs/scene.md) \(.xml\)
+* [Cultures](_xmldocs/cultures.md) \(.xml\)
+* [Items](_xmldocs/Items) (.xml)
+* [Scene](_xmldocs/scene.md) \(.xscene\)
 * [SubModule](_xmldocs/submodule.md) \(.xml\)
 
