@@ -56,6 +56,7 @@ public override void OnGameInitializationFinished(Game game)
 	});
 }
 ```
-
+Here is how it looks in game:
+![Image description](custom_perk.png)
 
 
