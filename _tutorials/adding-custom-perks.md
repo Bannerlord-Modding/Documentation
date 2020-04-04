@@ -50,7 +50,7 @@ public override void OnGameInitializationFinished(Game game)
 	CampaignEvents.DailyTickEvent.AddNonSerializedListener(this, () => { 
 		foreach(Hero hero in Hero.All){
 			if(hero.GetPerkValue(moneyPerk)){
-				hero.ChangeHeroGold(moneyPerk.PimaryBonus())
+				hero.ChangeHeroGold(moneyPerk.PrimaryBonus())
 			}
 		}
 	});
