@@ -40,7 +40,7 @@
 ## [XML Documentation](_xmldocs)
 
 * [Atmosphere](_xmldocs/atmosphere.md) \(.xml\)
-* [Items \(XML\)](_xmldocs/Items) (.xml)
+* [Items](_xmldocs/Items) (.xml)
 * [Scenes](_xmldocs/scene.md) \(.xml\)
 * [SubModule](_xmldocs/submodule.md) \(.xml\)
 
