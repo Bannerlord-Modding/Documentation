@@ -4,7 +4,7 @@ The function of this class is to set or change the owner of a settlement.
 
 ## Functions
 
-Here is a list of functions that detail different ways a settlement can change ownership. All these functions take a :
+Here is a list of functions that detail different ways a settlement can change ownership:
 - `ApplyByDefault(`[Hero](../hero.md)`hero, `[Settlement](../settlement.md)`settlement)` - Gives a hero the settlement by default. This is called at the start of a new campaign or when a player cheats and changes the ownership of a settlement manually
 - `ApplyByKingDecision(`[Hero](../hero.md)`hero, `[Settlement](../settlement.md)`settlement)` - Gives a hero the settlement by the king of a faction's decision at the end of voting.
 - `ApplyBySiege(`[Hero](../hero.md)`newOwner, `[Hero](../hero.md)`capturerHero, `[Settlement](../settlement.md)`settlement)` - Gives the faction leader a settlement after a successful siege.
