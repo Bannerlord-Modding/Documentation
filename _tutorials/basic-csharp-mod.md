@@ -59,7 +59,8 @@ Before setting up a project, it is important to know that **this is not required
 2. Choose `Class Library (.NET Framework)`.
 3. Name your project whatever you want and choose `.NET Framework 4.7.2` as the `Framework`.  If this option is not available for you, [Download it here](https://dotnet.microsoft.com/download/dotnet-framework/net472) \(Developer Pack\).
 4. Now that your project is setup, [set your build path](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-change-the-build-output-directory?view=vs-2019) to the `Modules/ExampleMod/bin/Win64_Shipping_Client` directory in your game files.
-5. [Reference](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2019) the `TaleWorlds.*` DLLs in the `bin\Win64_Shipping_Client` directory of your game files \(not your module directory\). Also reference the `TaleWorlds.*` DLLs for each official module in `Modules\ModuleName\bin\Win64_Shipping_Client`.
+5. Make sure that under Applicaton the Assembly name is `ExampleMod` so you don't have to rename the dll file after build.
+6. [Reference](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2019) the `TaleWorlds.*` DLLs in the `bin\Win64_Shipping_Client` directory of your game files \(not your module directory\). Also reference the `TaleWorlds.*` DLLs for each official module in `Modules\ModuleName\bin\Win64_Shipping_Client`.
 
 ### Debugging your Project (Optional)
 
