@@ -41,6 +41,6 @@
 
 * [Atmosphere](_xmldocs/atmosphere.md) \(.xml\)
 * [Items \(XML\)](_xmldocs/Items) (.xml)
-* [Scene](_xmldocs/scene.md) \(.xscene\)
+* [Scenes](_xmldocs/scene.md) \(.xml\)
 * [SubModule](_xmldocs/submodule.md) \(.xml\)
 
