@@ -6,7 +6,7 @@ In this tutorial I will show how to use BannerLib to add custom perks.
 
 Creating a perk:
 
- - We first need to create the ```PerkObject```. Note that ```perkId``` should be something unique, one suggestion would be to prepend your mod name to it:
+ - We first need to create the ```PerkObject```. Note that ```perkId``` must be something unique, one suggestion would be to prepend your mod name to it:
 ```c#
 	 PerkObject myPerk = GameplaySubModule.GetPerkSystem().CreateCustomPerk(game, myModName_myPerkId);
    ```
