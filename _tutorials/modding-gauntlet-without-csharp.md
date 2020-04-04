@@ -1,7 +1,7 @@
 # Modding Gauntlet Without C#
 
 ## Important
-### You Can **NOT** Use Dependended Modules For This Tutorial. It Shouldn't Cause Any Issues Though.
+### You Can **NOT** Use Depended Modules For This Tutorial. It Shouldn't Cause Any Issues Though.
 
 ## Introduction
 
