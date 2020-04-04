@@ -44,7 +44,7 @@ The following guide will walk you through step-by-step on how to create a basic 
     </Module>
    ```
 
-    **Note**: `MySubModule` is the name of the class we will be using in the [Programming](#Programming) section of the tutorial.
+    **Note**: `MySubModule` is the name of the class we will be using in the [Programming](#programming) section of the tutorial.
 
 5. If you are using different names, change the above values to match that of your Module/SubModule.
 6. Start the launcher and make sure your mod appears under `Singleplayer` &gt; `Mods`.
