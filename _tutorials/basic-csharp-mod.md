@@ -40,7 +40,6 @@ The following guide will walk you through step-by-step on how to create a basic 
                 </Tags>
             </SubModule>
         </SubModules>
-        <Xmls/>
     </Module>
    ```
 
