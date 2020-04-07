@@ -13,7 +13,7 @@ The following guide will walk you through step-by-step on how to create a basic 
 1. Go to your game files and locate the `Modules` directory.
 2. Create a new folder and name it `ExampleMod` (Must be the same as the Id you use for Step #4).
 3. Create a new folder named `bin` and inside this directory, create a new folder called `Win64_Shipping_Client`.
-4. Create a new `SubModule.xml` file inside the folder you created in Step #2 and then paste the following into it:
+4. Create a new `SubModule.xml` file (must be named this) inside the folder you created in Step #2 and then paste the following into it:
 
    ```xml
     <Module>
@@ -67,7 +67,7 @@ Before setting up a project, it is important to know that **this is not required
 2. Select the `Start external program` option and then browse for `Bannerlord.exe` located in the `bin\Win64_Shipping_Client` directory in your game files \(not your module directory\).
 3. Set your working directory to the `bin\Win64_Shipping_Client` directory in your game files \(not your module directory\).
 4. Add the following command line arguments \(be sure to replace ExampleMod with the name of your module\):
-   * `/singleplayer _MODULES_*Native*SandBox*SandBoxCore*StoryMode*CustomBattle*ExampleMod*_MODULES_`
+   * `/singleplayer _MODULES_*Native*SandBoxCore*CustomBattle*SandBox*StoryMode*ExampleMod*_MODULES_`
 
 ## Programming
 
