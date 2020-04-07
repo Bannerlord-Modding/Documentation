@@ -13,7 +13,7 @@ The following guide will walk you through step-by-step on how to create a basic 
 1. Go to your game files and locate the `Modules` directory.
 2. Create a new folder and name it `ExampleMod` (Must be the same as the Id you use for Step #4).
 3. Create a new folder named `bin` and inside this directory, create a new folder called `Win64_Shipping_Client`.
-4. Create a new `SubModule.xml` file inside the folder you created in Step #2 and then paste the following into it:
+4. Create a new `SubModule.xml` file (must be named this) inside the folder you created in Step #2 and then paste the following into it:
 
    ```xml
     <Module>
