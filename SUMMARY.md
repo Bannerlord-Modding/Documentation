@@ -8,6 +8,7 @@
 * [Tutorials](_tutorials/README.md)
   * [Basic C\# Mod](_tutorials/basic-csharp-mod.md)
   * [Modding Gauntlet UIs Without C#](_tutorials/modding-gauntlet-without-csharp.md)
+  * [Packing your mods for Vortex](_tutorials/packing_mods_for_vortex)
 * [C# API Documentation](_csharp-api/README.md)
   * [CampaignSystem](_csharp-api/campaignsystem/README.md)
   * [Core](_csharp-api/core/README.md)
