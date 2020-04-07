@@ -10,6 +10,7 @@
   * [Modding Gauntlet UIs Without C#](_tutorials/modding-gauntlet-without-csharp.md)
 * [C# API Documentation](_csharp-api/README.md)
   * [CampaignSystem](_csharp-api/campaignsystem/README.md)
+    * [GameMenu](_csharp-api/campaignsystem/gamemenu.md)
   * [Core](_csharp-api/core/README.md)
     * [BasicCharacterObject](_csharp-api/core/basiccharacterobject.md)
     * [InformationManager](_csharp-api/core/informationmanager.md)
