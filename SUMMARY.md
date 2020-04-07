@@ -51,6 +51,7 @@
   * [Atmosphere \(XML\)](_xmldocs/atmosphere.md)
   * [Cultures/Factions \(XML\)](_xmldocs/cultures.md)
   * [Items \(XML\)](_xmldocs/items.md)
+  * [NPCCharacters \(XML\)](_xmldocs/npccharacters.md)
   * [Scene \(xScene\)](_xmldocs/scene.md)
   * [SubModule \(XML\)](_xmldocs/submodule.md)
 
