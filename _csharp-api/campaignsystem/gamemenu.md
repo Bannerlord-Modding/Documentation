@@ -25,7 +25,7 @@ The provided condition method does double-duty as it:
 * enables / disables the option (via it's return value)
 * sets the icon (via the provided args)
 
-The icon can be changed by setting `optionLeaveType` to something appropriate. The used images are found under `Mount & Blade II Bannerlord\GUI\GauntletUI\SpriteParts\ui_group1\GameMenu` and the correspondence can be viewed / changed in `Mount & Blade II Bannerlord\Modules\Native\GUI\Brushes\GameMenu.xml`.
+The icon can be changed by setting `optionLeaveType` to something appropriate. The used images are found under `Mount & Blade II Bannerlord\GUI\GauntletUI\SpriteParts\ui_group1\GameMenu` and the correspondence can be viewed in `Mount & Blade II Bannerlord\Modules\Native\GUI\Brushes\GameMenu.xml`. This can of course be overrides in your own module, but additional `LeaveTypes` are not possible.
 
 | Type                | Image |
 | ------------------- | ----- |
@@ -51,4 +51,4 @@ The icon can be changed by setting `optionLeaveType` to something appropriate. T
 | WaitQuest           |       |
 | Surrender           |       |
 | Conversation        |       |
-| DefendAction        |
+| DefendAction        |       |
