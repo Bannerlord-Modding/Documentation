@@ -20,7 +20,7 @@ Second line in the file contains the name of this particular Scene.
 
 And then check the Current Scene in code by it's name.
 
-```
+```csharp
 if(Mission.Current.SceneName.Equals("arena_aserai_a")) 
 {
 	...
