@@ -33,7 +33,7 @@ public class MyExampleScreen : ScreenBase
 
     protected override void OnDeactivate()
     {
-        base.OnDeactivate()
+        base.OnDeactivate();
         _gauntletLayer.IsFocusLayer = false;
         ScreenManager.TryLoseFocus(_gauntletLayer);
     }
