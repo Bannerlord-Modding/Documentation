@@ -18,6 +18,7 @@
   * [GameMenu](_csharp-api/campaignsystem/gamemenu.md)
 * [Core](_csharp-api/core/)
 * [Engine](_csharp-api/engine/)
+  * [Scene](_csharp-api/engine/scene.md)
 * [InputSystem](_csharp-api/inputsystem/)
 * [Library](_csharp-api/library/)
 * [Localization](_csharp-api/localization/)
