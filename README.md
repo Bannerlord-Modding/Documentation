@@ -10,7 +10,7 @@
 
 * [Basic C\# Mod](_tutorials/basic-csharp-mod.md) \(Requires a basic understanding of C\#\)
 * [Modding Gauntlet UIs Without C#](_tutorials/modding-gauntlet-without-csharp.md) \(Easy\)
-* [Packing your mods for Vortex](_tutorials/packing_mods_for_vortex) \(Easy\)
+* [Packing your mods for Vortex](_tutorials/packing_mods_for_vortex.md) \(Easy\)
 
 ## [C# API Documentation](_csharp-api/)
 
