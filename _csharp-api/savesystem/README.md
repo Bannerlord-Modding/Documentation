@@ -21,6 +21,8 @@ You don't need to register it somewhere, the game will find it itself via reflec
             // The Id's here are local and will be related to the Id passed to the constructor
             AddClassDefinition(typeof(CustomMapNotification), 1);
             AddStructDefinition(typeof(ExampleStruct), 2);
+            AddClassDefinition(typeof(ExampleNested), 3);
+            AddStructDefinition(typeof(NestedStruct), 4);
         }
 
         protected override void DefineContainerDefinitions()
@@ -51,6 +53,17 @@ It seems that there is noreal difference between ``SaveableField`` and ``Saveabl
 
         [SaveableProperty(7)]
         public bool IsHandled { get; set; }
+    }
+    
+    public struct NestedStruct
+    {
+        [SaveableField(1)]
+        public bool Flag;
+    }
+    public class ExampleNested
+    {
+        [SaveableField(1)]
+        public NestedStruct Data;
     }
 ```
   
