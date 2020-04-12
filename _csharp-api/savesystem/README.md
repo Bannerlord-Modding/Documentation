@@ -32,7 +32,7 @@ You don't need to register it somewhere, the game will find it itself via reflec
   
 ## SaveableField and SaveableProperty
 To mark data in your custom class/struct as savable, use ``TaleWorlds.SaveSystem.SaveableFieldAttribute`` and ``TaleWorlds.SaveSystem.SaveablePropertyAttribute``.  
-It seems that there is no difference between ``SaveableField`` and ``SaveableProperty``, ut if you used one of them, stick to the type. They are not interchangeable and the data won't be loaded if types awe swicthed.  
+It seems that there is noreal difference between ``SaveableField`` and ``SaveableProperty``, but if you used one of them, stick to the type. They are not interchangeable and the data won't be loaded if types awe swicthed.  
 
 ```csharp
     public struct ExampleStruct
