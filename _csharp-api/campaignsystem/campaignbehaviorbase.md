@@ -26,7 +26,7 @@ public override void SyncData(IDataStore dataStore)
 ```
 
 ## Registering Campaign Behaviors:
-Within your [MBSubModuleBase](mbsubmodulebase.md) class, you can utilise the onGameStartMethod to add the behavoir to a campaign. An example is given below:
+Within your [MBSubModuleBase](../mountandblade/mbsubmodulebase.md) class, you can utilise the onGameStartMethod to add the behavoir to a campaign. An example is given below:
 ```
 protected override void OnGameStart(Game game, IGameStarter gameStarter) 
 {
