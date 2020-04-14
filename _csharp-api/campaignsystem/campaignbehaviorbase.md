@@ -1,5 +1,5 @@
 # Campaign Behavior Base
-This is an abstract class within TaleWorlds.CampaignSystem, and can be used to code for behaviours within the game by creating a subclass that inherits it.
+This is an abstract class within [TaleWorlds.CampaignSystem](./README.md), and can be inherited to code for unique behaviours within the game's campaign.
 
 ## Abstract Methods:
 #### ```public abstract void RegisterEvents()```
@@ -14,12 +14,12 @@ public override void RegisterEvents()
     }));
 }
 ```
-The above example registers an event, were when a clan is destroyed, a message is broadcasted to the chat. The AddNonSerializedListener method called here requires the second argument to be an action, which is described here: https://docs.microsoft.com/en-us/dotnet/api/system.action-1?view=netframework-4.8.
+The above example registers an event, such that when a clan is destroyed, a message is broadcasted to the chat. The AddNonSerializedListener method called here requires the second argument to be an action, which is described [here](https://docs.microsoft.com/en-us/dotnet/api/system.action-1?view=netframework-4.8).
 
 #### ```public abstract void SyncData(IDataStore dataStore)```
 (Work in Progress)
 
-Note: We are currently not sure what this method does, but at the moment it is reccomended to be implemented as an empty method, like so:*
+Note: We are currently not sure what this method does, but at the moment we recommended you implement it as an empty method, like so:
 ```csharp
 public override void SyncData(IDataStore dataStore)
 {
