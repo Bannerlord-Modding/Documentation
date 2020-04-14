@@ -4,7 +4,7 @@ This is an abstract class within TaleWorlds.CampaignSystem, and can be used to c
 ## Abstract Methods:
 ###### ```public abstract void RegisterEvents()```
 When defining this method, you can introduce consequences to certain events, by use of the *"CampaignEvents.onBlahBlah"* methods. A simple example would be:
-```
+```csharp
 public override void RegisterEvents()
 {   
     CampaignEvents.OnClanDestroyedEvent.AddNonSerializedListener(this, new Action<Clan>(
@@ -19,7 +19,7 @@ The above example registers an event, were when a clan is destroyed, a message i
 ###### ```public abstract void SyncData(IDataStore dataStore)```
 **WIP**
 Note: *We are currently not sure what this method does, but at the moment it is reccomended to be implemented as an empty method, like so:*
-```
+```csharp
 public override void SyncData(IDataStore dataStore)
 {
 }
@@ -27,7 +27,7 @@ public override void SyncData(IDataStore dataStore)
 
 ## Registering Campaign Behaviors:
 Within your [MBSubModuleBase](../mountandblade/mbsubmodulebase.md) class, you can utilise the onGameStartMethod to add the behavoir to a campaign. An example is given below:
-```
+```csharp
 protected override void OnGameStart(Game game, IGameStarter gameStarter) 
 {
     if(game.GameType is Campaign) 
