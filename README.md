@@ -16,7 +16,7 @@
 
 * [CampaignSystem](_csharp-api/campaignsystem/)
   * [GameMenu](_csharp-api/campaignsystem/gamemenu.md)
-  * [CampaignBehaviorBase] (_csharp-api/campaignsystem/campaignbehaviorbase.md)
+  * [CampaignBehaviorBase](_csharp-api/campaignsystem/campaignbehaviorbase.md)
 * [Core](_csharp-api/core/)
 * [Engine](_csharp-api/engine/)
   * [Scene](_csharp-api/engine/scene.md)
