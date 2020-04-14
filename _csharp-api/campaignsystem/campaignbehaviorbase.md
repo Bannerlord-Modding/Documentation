@@ -3,7 +3,7 @@ This is an abstract class within [TaleWorlds.CampaignSystem](./README.md), and c
 
 ## Abstract Methods:
 #### ```public abstract void RegisterEvents()```
-When defining this method, you can introduce consequences to certain events, by use of the *"CampaignEvents.onBlahBlah"* methods. A simple example would be:
+When defining this method, you can introduce consequences to certain events, by use of the `CampaignEvents.On...` methods. A simple example would be:
 ```csharp
 public override void RegisterEvents()
 {   
@@ -14,7 +14,7 @@ public override void RegisterEvents()
     }));
 }
 ```
-The above example registers an event, such that when a clan is destroyed, a message is broadcasted to the chat. The AddNonSerializedListener method called here requires the second argument to be an action, which is described [here](https://docs.microsoft.com/en-us/dotnet/api/system.action-1?view=netframework-4.8).
+The above example registers an event, such that when a clan is destroyed, a message is broadcasted to the chat. The `AddNonSerializedListener` method called here requires the second argument to be an action, which is described [here](https://docs.microsoft.com/en-us/dotnet/api/system.action-1?view=netframework-4.8).
 
 #### ```public abstract void SyncData(IDataStore dataStore)```
 (Work in Progress)
@@ -27,7 +27,7 @@ public override void SyncData(IDataStore dataStore)
 ```
 
 ## Registering Campaign Behaviors:
-Within your [MBSubModuleBase](../mountandblade/mbsubmodulebase.md) class, you can utilise the onGameStartMethod to add the behavoir to a campaign. An example is given below:
+Within your [MBSubModuleBase](../mountandblade/mbsubmodulebase.md) class, you can utilise the `OnGameStart` Method to add the behavoir to a campaign. An example is given below:
 ```csharp
 protected override void OnGameStart(Game game, IGameStarter gameStarter) 
 {
