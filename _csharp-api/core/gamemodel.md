@@ -1,2 +1,2 @@
-# Game Model
+# GameModel
 **NOTE**: Work in progress.
