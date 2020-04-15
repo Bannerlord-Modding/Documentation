@@ -1,4 +1,4 @@
-# Campaign Behavior Base
+# CampaignBehaviorBase
 This is an abstract class within [TaleWorlds.CampaignSystem](./README.md), and can be inherited to code for unique behaviours within the game's campaign.
 
 ## Abstract Methods:
