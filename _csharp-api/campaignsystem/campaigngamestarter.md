@@ -1,4 +1,4 @@
-# Campaign Game Starter
+# CampaignGameStarter
 This class can be used to introduce behaviours, dialog, menus and models for campaigns, and implements the IGameStarter interface. This is useful in the `OnGameStart` method in [MBSubModuleBase](mbsubmodulebase.md), which is shown in the example.
 
 **NOTE**: *This page is incomplete, so if you find anymore information on the subject, please create a pull request and add to this growing Modding Documentation!*
