@@ -9,7 +9,7 @@ This class can be used to introduce behaviours, dialog, menus and models for cam
 #### `public void AddBehavior(CampaignBehaviorBase campaignBehavior)`
 Adds the [Campaign Behavior](campaignbehaviorbase.md) to the current campaign.
 #### `public void AddModel(GameModel model)`
-Adds the [Game Model](_csharp-api/core/gamemodel.md) to the current campaign.
+Adds the [Game Model](../core/gamemodel.md) to the current campaign.
 #### `public void LoadGameTexts(string xmlPath)`
 (Work in progress) Loads XML file at the inputted path, introducing more texts to the game. These texts are in the same format as the *comment_strings.xml* file, with their purpose currently not determined.
 #### `public void LoadGameMenus(Type typeOfGameMenusCallbacks, string xmlPath)`
@@ -27,7 +27,7 @@ Whether or not the campaign starts with a tutorial.
 #### `public ICollection<CampaignBehaviourBase> CampaignBehaviors`
 Collection of all registered [Campaign Behaviours](campaignbehaviorbase.md).
 #### `public IEnumerable<GameModel> Models`
-Enumerable Set of all registered [Game Models](gamemodel.md)
+Enumerable Set of all registered [Game Models](../core/gamemodel.md)
 
 ## Example Use:
 This is used within our [MBSubModuleBase]() class: 
