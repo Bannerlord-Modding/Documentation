@@ -19,7 +19,7 @@ The above example registers an event, such that when a clan is destroyed, a mess
 #### ```public abstract void SyncData(IDataStore dataStore)```
 (Work in Progress)
 
-Note: We are currently not sure what this method does, but at the moment we recommended you implement it as an empty method, like so:
+**NOTE**: We are currently not sure what this method does, but at the moment we recommended you implement it as an empty method, like so:
 ```csharp
 public override void SyncData(IDataStore dataStore)
 {
