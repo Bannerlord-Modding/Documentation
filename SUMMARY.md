@@ -21,6 +21,7 @@
     * [InformationManager](_csharp-api/core/informationmanager.md)
     * [ItemObject](_csharp-api/core/itemobject.md)
     * [MBObjectManager](_csharp-api/core/mbobjectmanager.md)
+    * [GameModel](_csharp-api/core/gamemodel.md)
   * [Engine](_csharp-api/engine/README.md)
     * [GameEntity](_csharp-api/engine/gameentity.md)
     * [GlobalLayer](_csharp-api/engine/globallayer.md)
