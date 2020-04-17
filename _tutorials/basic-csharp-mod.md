@@ -63,11 +63,17 @@ Before setting up a project, it is important to know that **this is not required
 
 ### Debugging your Project (Optional)
 
+#### Way 1 (Preferred)
 1. Open your project properties and go to the `Debug` tab.
 2. Select the `Start external program` option and then browse for `Bannerlord.exe` located in the `bin\Win64_Shipping_Client` directory in your game files \(not your module directory\).
 3. Set your working directory to the `bin\Win64_Shipping_Client` directory in your game files \(not your module directory\).
 4. Add the following command line arguments \(be sure to replace ExampleMod with the name of your module\):
    * `/singleplayer _MODULES_*Native*SandBoxCore*CustomBattle*SandBox*StoryMode*ExampleMod*_MODULES_`
+
+#### Way 2 (If you want to start your debugging from launcher window)
+1. Open your project properties and go to the `Debug` tab.
+2. Select the `Start external program` option and then browse for `TaleWorlds.MountAndBlade.Launcher.exe` located in the `bin\Win64_Shipping_Client` directory in your game files \(not your module directory\).
+3. Set your working directory to the `bin\Win64_Shipping_Client` directory in your game files \(not your module directory\).
 
 ## Programming
 
