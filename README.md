@@ -15,11 +15,8 @@
 ## [C# API Documentation](_csharp-api/)
 
 * [CampaignSystem](_csharp-api/campaignsystem/)
-  * [GameMenu](_csharp-api/campaignsystem/gamemenu.md)
-  * [CampaignBehaviorBase](_csharp-api/campaignsystem/campaignbehaviorbase.md)
 * [Core](_csharp-api/core/)
 * [Engine](_csharp-api/engine/)
-  * [Scene](_csharp-api/engine/scene.md)
 * [InputSystem](_csharp-api/inputsystem/)
 * [Library](_csharp-api/library/)
 * [Localization](_csharp-api/localization/)
