@@ -10,27 +10,27 @@ Mission Behaviours are used to control the [Mission](../mission.md). This can be
 - `Mission` - [Mission](../mission.md) of this mission behaviour. If you add same mission behaviour instance to multiple missions, this property will hold the last one. Note that using same mission behaviour instance with multiple missions is not recommended unless you know what you are doing.
 
 ## Mission Callbacks
-- `OnAfterMissionCreated` - Called right after the mission is created on C# side. Call of this callback will be the first method call of the mission beaviour. However, mission behaviours added after the mission is created won't have this callback called.
-- `OnBehaviourInitialize` - Called right after the mission is fully created. This is the recommended callback for initialization. If a mission behaviour (including official ones) is added after the mission creation, this callback should be called manually.
-- `OnCreated` - Called whenever a mission behaviour is added to a mission.
-- `EarlyStart` - Called at the mission start, right before `AfterStart` callback.
-- `AfterStart` - Called at the mission start.
-- `OnRenderingStarted` - Called when rendering of the scene is started.
+- `OnAfterMissionCreated()` - Called right after the mission is created on C# side. Call of this callback will be the first method call of the mission beaviour. However, mission behaviours added after the mission is created won't have this callback called.
+- `OnBehaviourInitialize()` - Called right after the mission is fully created. This is the recommended callback for initialization. If a mission behaviour (including official ones) is added after the mission creation, this callback should be called manually.
+- `OnCreated()` - Called whenever a mission behaviour is added to a mission.
+- `EarlyStart()` - Called at the mission start, right before `AfterStart` callback.
+- `AfterStart()` - Called at the mission start.
+- `OnRenderingStarted()` - Called when rendering of the scene is started.
 - `OnPreMissionTick(float)` - Called at the start of tick on the engine side.
   - `float` - Time passed since last tick.
 - `OnPreDisplayMissionTick(float)` - Called at the start of tick mission tick. Note that this is called before agents and teams are ticked and also before `OnMissionTick`.
   - `float` - Time passed since last tick.
 - `OnMissionTick(float)` - Called once every frame.
   - `float` - Time passed since last tick.
-- `OnMissionActivate` - Called when a deactivated mission is activated.
-- `OnMissionDeactivate` - Callend when a mission is deactivated.
+- `OnMissionActivate()` - Called when a deactivated mission is activated.
+- `OnMissionDeactivate()` - Callend when a mission is deactivated.
 - `OnMissionModeChange(MissionMode, bool)` - Called when mode of a mission is changed.
   - `MissionMode` - Old mode.
   - `bool` - True if it is the start of mission.
-- `OnClearScene` - Called when the scene is being cleared. Note that this is called after after `OnRemove` and `OnDelete` called for all agents in the scene. This is the recommend callback for resetting mission behaviour when mission is reset.
-- `HandleOnCloseMission` - Called when a mission is about to end. It is not recommend to override and use this callback. Prefer other callbacks like `OnEndMission` for end of the mission tasks.
-- `OnEndMission` - Called when mission is ending. This is the recommend callback for end of the mission tasks. It is also recommended to unregister events in this callback if any registered.
-- `OnRemoveBehaviour` - Called when a mission behaviour is removed from a mission. Note that mission behaviours are removed at the end of a mission, after resources are cleared and after `OnEndMission` callback.
+- `OnClearScene()` - Called when the scene is being cleared. Note that this is called after after `OnRemove` and `OnDelete` called for all agents in the scene. This is the recommend callback for resetting mission behaviour when mission is reset.
+- `HandleOnCloseMission()` - Called when a mission is about to end. It is not recommend to override and use this callback. Prefer other callbacks like `OnEndMission` for end of the mission tasks.
+- `OnEndMission()` - Called when mission is ending. This is the recommend callback for end of the mission tasks. It is also recommended to unregister events in this callback if any registered.
+- `OnRemoveBehaviour()` - Called when a mission behaviour is removed from a mission. Note that mission behaviours are removed at the end of a mission, after resources are cleared and after `OnEndMission` callback.
 
 ## Agent Callbacks
 - `OnAgentCreated(Agent)` - Called after an agent created on the engine side. Called before OnAgentBuild. This is the recommended callback to add components to an agent.
@@ -102,7 +102,7 @@ Mission Behaviours are used to control the [Mission](../mission.md). This can be
 - `OnObjectStoppedBeingUsed(Agent, UsableMissionObject)` - Called when an agent stops using an object.
   - `Agent` - User agent.
   - `UsableMissionObject` - Used object.
-- `IsThereAgentAction(Agent, Agent)` - Called to determine if an agent is interactable by another agent. Note that any of the behaviours returning True will result in a True for final calculation.
+- `bool IsThereAgentAction(Agent, Agent)` - Called to determine if an agent is interactable by another agent. Note that any of the behaviours returning True will result in a True for final calculation.
 - `OnAgentInteraction(Agent, Agent)` - Called when agent interacts with another agent. Currently seems to be called only when the target agent is human.
   - `Agent` - Interactor agent.
   - `Agent` - Target agent.
