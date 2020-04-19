@@ -11,7 +11,7 @@ The following guide will walk you through step-by-step on how to create a mod th
 
 #### For this tutorial, we will be naming our project `ExampleUIMod`.
 
-### Setting up your Module \(SubModule.xml\)
+### Setting up your Module (SubModule.xml)
 
 1. Go to your game files and locate the `Modules` directory.
 2. Create a new folder and name it `ExampleUIMod` (Must be the same as the Id you use for Step #5).
