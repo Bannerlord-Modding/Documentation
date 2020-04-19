@@ -18,7 +18,7 @@ For a full example of the folder structure and contents refer to `Drive:\\Instal
 * `GUI` - For most things related to Gauntlet.
   * `Brushes` - For Gauntlet Brushes.
   * `Prefabs` - For Gauntlet Movies.
-* `ModuleData` - For any general data related to your mod that is in XML format \(e.g. items/cultures/gametexts\).
+* `ModuleData` - For any general data related to your mod that is in XML format (e.g. items/cultures/gametexts).
 * `SceneObj` - For your scenes.
 
 ```text

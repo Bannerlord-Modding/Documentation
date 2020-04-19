@@ -1,6 +1,7 @@
-# SPCultures \(XML\)
+# SPCultures (XML)
 
 ## SPCultures documentation
+
 - [SPCultures](SPCultures)
   - [Culture](SPCultures/Culture)
     - [clan_names](SPCultures/Culture/clan_names)

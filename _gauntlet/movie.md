@@ -1,4 +1,4 @@
-# Movie \(XML\)
+# Movie (XML)
 
 Movies are used when you open any new [GauntletView](gauntletview.md) or [ScreenBase](screenbase.md). They are loaded through the [GauntletMovie](gauntletmovie.md) class.
 
@@ -21,5 +21,5 @@ The template for a movie is as follows:
 </Prefab>
 ```
 
-You will spend most of your time adding child elements \([Widgets](widget.md)\) to the `Window` element.
+You will spend most of your time adding child elements ([Widgets](widget.md)) to the `Window` element.
 

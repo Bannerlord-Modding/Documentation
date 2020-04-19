@@ -6,9 +6,9 @@ Before proceeding, it is important to have a good understanding of the [SubModul
 
 ## Tools
 
-### C\# IDE
+### C# IDE
 
-* [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) \(not required for basic mods\)
+* [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) (not required for basic mods)
 
 ### Text Editor
 
@@ -18,11 +18,11 @@ Any text editor will suffice, but one of these is recommended...
 * [Sublime Text](https://www.sublimetext.com/)  
 * [Notepad++](https://notepad-plus-plus.org/downloads/)
 
-## Modding without C\#
+## Modding without C#
 
-There are several aspects of the game you can mod without C\#. This includes scenes, items, cultures, characters, Gauntlet UIs, and many more.
+There are several aspects of the game you can mod without C#. This includes scenes, items, cultures, characters, Gauntlet UIs, and many more.
 
-## Modding with C\#
+## Modding with C#
 
 The module-based modding system makes modding in Bannerlord much easier than past games in the series and allows for much more complexity in your mods.
 

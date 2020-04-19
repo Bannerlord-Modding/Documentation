@@ -1,4 +1,4 @@
-# Atmosphere \(XML\)
+# Atmosphere (XML)
 
 Work in Progress
 

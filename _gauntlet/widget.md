@@ -21,15 +21,15 @@ There many more widgets; the above are just the most commonly used widgets. You 
 ## Common Predefined Attributes for Widgets Include
 
 * Brush
-* Command.Click _\(Command.YourKeyHere\)_
-* DataSource _\(Properties with DataSourceProperty Attribute in C\#\)_
+* Command.Click _(Command.YourKeyHere)_
+* DataSource _(Properties with DataSourceProperty Attribute in C#)_
 * DoNotAcceptEvents
 * HorizontalAlignment / VerticalAlignment
 * Id
 * MarginLeft / MarginRight / MarginTop / MarginBottom
 * Sprite
 * SuggestedWidth / SuggestedHeight
-* Text _\(Text Widgets only\)_
+* Text _(Text Widgets only)_
 * WidthSizePolicy / HeightSizePolicy
 
 ## Creating a Custom Widget
