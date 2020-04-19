@@ -1,4 +1,4 @@
-# Bannerlord Documentation
+# Home
 
 ## Introduction to Modding
 
