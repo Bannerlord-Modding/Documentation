@@ -24,12 +24,15 @@
   **accepted values:** `'all', 'type1', 'type2', 'type3'`  
   **example:** `all`  
   *TODO: figure out what type1, type2, type3 stands for*  
+  *type1 - cover only top of head*
+  *type2 - cover top of head with ears and have strap*
+  *type3 - in common with arrow*
   
 - #### modifier_group
   **type:**  `string`   
   **accepted values:** `'cloth_unarmoured', 'leather', 'plate', 'chain', 'cloth'`  
   **example:** `leather`  
-  *Modifier for damage soak?*  
+  *Modifier for hit sound*  
   
 - #### material_type
   **type:**  `string`   
@@ -66,9 +69,9 @@
   
 - #### body_mesh_type
   **type:**  `string`  
-  **accepted values:** `'shoulders'`  
+  **accepted values:** `'shoulders', 'upperbody'`  
   **example:** `shoulders`  
-  *TODO: figure out what this does*  
+  *Uses for tunics and dresses*  
   
 - #### covers_legs
   **type:**  `boolean`  
@@ -86,28 +89,30 @@
   **type:**  `string`  
   **accepted values:** `'none', 'all'`  
   **example:** `none`  
-  *TODO: What exactly does this cover?*  
+  *none - don't cover horse's head and neck*  
+  *all - cover whole horse*  
   
 - #### family_type
   **type:**  `int`  
   **accepted values:** `'1', '2'`  
-  **example:** `1`  
-  *TODO: What does this value do?*  
+  **example:** `1` 
+  *1 - horse saddle* 
+  *2 - camel saddle*  
   
 - #### maneuver_bonus
   **type:**  `int`   
   **example:** `12`  
-  *Gives a bonus to the maneuverablity TODO: for the player or horse?*  
+  *Gives a bonus to the maneuverablity for horse*  
   
 - #### speed_bonus
   **type:**  `int`   
   **example:** `11`  
-  *Gives a bonus to the speed TODO: for the player or horse?*  
+  *Gives a bonus to the speed for horse?*  
   
 - #### charge_bonus
   **type:**  `int`   
   **example:** `11`   
-  *Gives a charging bonus TODO: for the player or horse?*  
+  *Gives a charging bonus for horse*  
   
 - #### reins_mesh
   **type:**  `string`   

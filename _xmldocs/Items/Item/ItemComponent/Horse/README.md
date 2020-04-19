@@ -48,31 +48,33 @@
   
 - #### skeleton_scale
   **type:**  `string`   
-  **accepted values:** `'aserai_horse', 'battania_horse', 'empire_horse', 'khuzait_horse', 'sturgia_horse', 'vlandia_horse'`  
+  **accepted values:** `'aserai_horse', 'battania_horse', 'battania_horse' 'empire_horse', 'khuzait_horse', 'sturgia_horse', 'vlandia_horse'`  
   **example:** `aserai_horse`  
-  *Predefined scales of a skeleton. TODO: figure out if this works with ints/doubles as well. Where are the accepted values defined?*  
+  *Predefined scales of a skeleton.*
+  *Accepted values defined in Native\ModulesData\sceleton_scales.xml*  
   
 - #### modifier_group
   **type:**  `string`   
-  **accepted values:** `'horse'`  
+  **accepted values:** `'cloth_unarmoured', 'leather', 'plate', 'horse',  
+  'chain', 'cloth'`  
   **example:** `horse`  
-  *TODO: Figure out what this does*  
+  *Uses as loot casualities modifier*  
   
 - #### is_pack_animal
   **type:**  `boolean`   
   **accepted values:** `'true', 'false'`  
   **example:** `false`  
-  *TODO: Figure out what this does*  
+  *Is the animal increase weight capacity*  
   
 - #### decorator_key_min
   **type:**  `hex`    
   **example:** `0F`  
-  *TODO: Figure out what this does*  
+  *It seems like unused*  
   
 - #### decorator_key_max
   **type:**  `hex`    
   **example:** `0F`  
-  *TODO: Figure out what this does*  
+  *It seems like unused*  
   
 - #### mane_mesh
   **type:**  `id`    

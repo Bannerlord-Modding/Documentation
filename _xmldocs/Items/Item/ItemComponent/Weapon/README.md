@@ -72,7 +72,8 @@
 - #### ammo_limit
   **type:**  `int`   
   **example:** `1`  
-  *Amount of ammo stored in the weapon. TODO: if set to 2 will it shoot 2 arrows? Or with crossbows will it become a repeating crossbow?*   
+  *Amount of ammo stored in the weapon. If set to 2 game will be closed*
+  *When enter the battle*   
 - #### accuracy
   **type:**  `int`   
   **example:** `21`  
@@ -92,7 +93,7 @@
 - #### center_of_mass
   **type:**  `vector3d`  
   **example:** `0.15,0,0`  
-  *Center of mass of the weapon. TODO: what is this used for?*  
+  *Center of mass of the weapon. Used for calculating damage*  
   
 - #### stack_amount
   **type:**  `int`  

@@ -43,7 +43,7 @@
   **type:**  `boolean`  
   **accepted values:** `'true', 'false'`   
   **example:** `true`  
-  *This is set to true with most bows and crossbows. TODO: figure out what this exactly does.*  
+  *This is set to true with most bows and crossbows. And it's seems like it's unused except TRACE*  
   
 - #### AutoReload
   **type:**  `boolean`  
@@ -67,7 +67,7 @@
   **type:**  `boolean`  
   **accepted values:** `'true', 'false'`   
   **example:** `true`  
-  *TODO: figure out what this does*  
+  *It used to calculate if the non-craft weapon is polearm*  
   
 - #### CantReloadOnHorseback
   **type:**  `boolean`  
@@ -91,7 +91,7 @@
   **type:**  `boolean`  
   **accepted values:** `'true', 'false'`   
   **example:** `true`  
-  *TODO: figure out what this exactly does*  
+  *Used in MnB.Mission.CalculateAttachedLocalFrame* 
   
 - #### MultiplePenetration
   **type:**  `boolean`  
@@ -103,13 +103,13 @@
   **type:**  `boolean`  
   **accepted values:** `'true', 'false'`   
   **example:** `true`  
-  *If the projectile is on fire. TODO: figure out if this also inflicts fire damage, or sets fire to stuff*  
+  *If the projectile is on fire. Used when drop item and when siege towe destroyed*  
   
 - #### LeavesTrail
   **type:**  `boolean`  
   **accepted values:** `'true', 'false'`   
   **example:** `true`  
-  *If the weapon leaves a trail. TODO: figure out what this exactly does*  
+  *If the weapon leaves a trail. It seems like it's unused*  
   
 - #### CanPenetrateShield
   **type:**  `boolean`  
@@ -121,25 +121,25 @@
   **type:**  `boolean`  
   **accepted values:** `'true', 'false'`   
   **example:** `true`  
-  *If physics are attached to a projectile. TODO: figure out if this is used to damage props as well.*  
+  *If physics are attached to a projectile. It seems like it's unused*  
   
 - #### AmmoCanBreakOnBounceBack
   **type:**  `boolean`  
   **accepted values:** `'true', 'false'`   
   **example:** `true`  
-  *TODO: figure out what this exactly does*  
+  *Used in MnB.Mession.MissileHitCallback*  
   
 - #### AffectsArea
   **type:**  `boolean`  
   **accepted values:** `'true', 'false'`   
   **example:** `true`  
-  *TODO: figure out if this is AOE damage?*  
+  *Used when drop item and siege tower is destroyed*  
   
 - #### AmmoBreaksOnBounceBack
   **type:**  `boolean`  
   **accepted values:** `'true', 'false'`   
   **example:** `true`  
-  *TODO: figure out what this exactly does*  
+  *Used in MnB.Mession.MissileHitCallback*  
   
 - #### AttachAmmoToVisual
   **type:**  `boolean`  

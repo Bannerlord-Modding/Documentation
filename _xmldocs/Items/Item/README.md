@@ -57,7 +57,7 @@ Source: Modules/SandBoxCore/ModuleData/spitems.xml
 - #### appearance
   **type:**  `double`  
   **example:** `0.5`  
-  *TODO: Figure out what this is for*  
+  *Used for calculate values*  
 
 - #### Type
   **type:**  `ArmourType`  
@@ -73,7 +73,7 @@ Source: Modules/SandBoxCore/ModuleData/spitems.xml
   **type:**  `string`  
   **possible values:** `'head_armor', 'body_armor', 'bow', 'two_handed_wpn', 'arrows', 'horse'`  
   **example:** `head_armor`  
-  *TODO: Figure out what this is for*  
+  *It seems like it's unused*  
   
 - #### difficulty
   **type:**  `int`  
@@ -83,7 +83,7 @@ Source: Modules/SandBoxCore/ModuleData/spitems.xml
 - #### lod_atlas_index
   **type:**  `int`  
   **example:** `2`  
-  *TODO: Figure out what this is for*  
+  *It seems like it's unused*  
   
 - #### is_merchandise
   **type:**  `boolean`  
@@ -93,18 +93,18 @@ Source: Modules/SandBoxCore/ModuleData/spitems.xml
 - #### body_name
   **type:**  `id`  
   **example:** `bo_mace_a`  
-  *Possibly the collision mesh of an weapon? TODO: figure out*
+  *Used for shape calculating*
   
 - #### recalculate_body
   **type:**  `boolean`  
   **possible values:** `'true', 'false'`  
   **example:** `false`  
-  *TODO: Figure out what this is for*  
+  *Used for shape calculating*
   
 - #### prefab
   **type:**  `id`  
   **example:** `torch_a_wm_only_flame`  
-  *TODO: Figure out what this is for. Possibly particle effects?* 
+  *It seems like it's unused*
   
 - #### value
   **type:**  `int`  
