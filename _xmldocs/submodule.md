@@ -48,13 +48,13 @@ XMLs with the same id from two separate mods (or the same mod) will have their a
     </SubModules>
     <Xmls>
         <XmlNode>
-            <XmlName type="1" id="Items" path="customitems"/>
+            <XmlName id="Items" path="customitems"/>
         </XmlNode>  
         <XmlNode>
-            <XmlName type="1" id="SPCultures" path="customcultures"/>
+            <XmlName id="SPCultures" path="customcultures"/>
         </XmlNode>
         <XmlNode>
-            <XmlName type="1" id="NPCCharacters" path="customcharacters"/>
+            <XmlName id="NPCCharacters" path="customcharacters"/>
         </XmlNode>
     </Xmls>
 </Module>
