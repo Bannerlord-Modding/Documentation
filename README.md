@@ -10,8 +10,8 @@
 
 * [Basic C# Mod](_tutorials/basic-csharp-mod.md) (Requires a basic understanding of C#)
 * [Modding Gauntlet UIs Without C#](_tutorials/modding-gauntlet-without-csharp.md) (Easy)
-* [Packing your mods for Vortex](_tutorials/packing_mods_for_vortex.md) (Easy)
-* [Overriding or adding to the settlements existing in the game](https://github.com/Bannerlord-Modding/Documentation/blob/master/_tutorials/new_settlements.md) (Easy)
+* [Packing your Mods for Vortex](_tutorials/packing_mods_for_vortex.md) (Easy)
+* [Modifying/Adding Settlements](_tutorials/new_settlements.md) (Easy)
 
 ## [C# API Documentation](_csharp-api/)
 
