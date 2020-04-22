@@ -90,11 +90,11 @@ This is a description of the class and what it does.
 
 <div style= "font-size:12px">
 
-Using / Namespaces | | <div style='color:yellow'>Taleworlds.Core</div>| | | | <div style='color:green'>Saveable</div> |
-:---|---|---|---|---|---|---:|
-[System](EXAMPLE) | | | | | | 10000 |
-[System.Xml](EXAMPLE)|
-[TaleWorlds.SaveSystem](EXAMPLE) |
+| Using / Namespaces | <div style='color:yellow'>Taleworlds.Core</div> | <div style='color:green'>Saveable</div> |
+|:---|---|---:|
+| [System](EXAMPLE) | | 10000 |
+| [System.Xml](EXAMPLE)| | |
+| [TaleWorlds.SaveSystem](EXAMPLE) | | |
 </div>
 
 > For the non-savable classes, use ```'color:red'``` and change to text to "Not Savable".
@@ -132,7 +132,7 @@ Methods should follow parameters, seperated by a H1 header.
 <div style= "font-size:12px">
 
 | Type | Method Name | Number of Params |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | void | [SetItem](EXAMPLE) | 2 |
 | [Equipment](EXAMPLE) | [Clone](EXAMPLE) | 1 | 
 | void | [FillFrom](EXAMPLE) | 2 |
@@ -153,7 +153,7 @@ Methods should be like a miniature version of a class page, with a small table a
 |---|---|---|---|
 | Param Name | string | 'Hello World' | ✖ |
 | Param Name | [XmlNode](EXAMPLE) | N/A | ☑ |
-| ... | ... |
+| ... | ... | ... | ... |
 </div>
 
 > Parameters should be in the same order as they appear in the method. Types should also link to their class. Copy paste symbols as needed. You don't need to link to base types (like int or string).
