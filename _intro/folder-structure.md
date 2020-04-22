@@ -1,25 +1,32 @@
-# Folder Structure
+# 文件夹结构
 
-All folders are entirely optional, the only requirement for a SubModule to be detected by the Launcher is the SubModule base directory itself and a valid [SubModule.xml](../_xmldocs/submodule.md)
+所有文件夹都不是必须的，对于SubModule来说，唯一的要求就是启动器必须能够监测到SubModule文件夹自身，以及有效的 [SubModule.xml](../_xmldocs/submodule.md) 文件。
 
-For a full example of the folder structure and contents refer to `Drive:\\InstallLocation\Mount & Blade II Bannerlord\Modules\Native\` 
+完整的Mod文件结构与内容可以参考
+ `盘符:\\安装目录\Mount & Blade II Bannerlord\Modules\Native\`
 
-## Folder Descriptions & File Examples
 
-* `AssetPackages` - Unknown at this time, likely requires the release of the editor to create/modify these files.
-  *  `someasset.tpac`
-* `Atmospheres` -  [Refer to [Atmosphere]](../_xmldocs/atmosphere.md)
+## 文件夹描述 & 文件样例
+
+* `AssetPackages` - 暂时还不知道作用，可能需要等到官方编辑器放出才能创建/修改这些文件。
+  * `someasset.tpac`
+  
+* `Atmospheres` -  [参见\[Atmosphere\]](../_xmldocs/atmosphere.md)
   * `Interpolated` 
     * `interpolatedatmosphere.xml`
   * `atmosphere.xml`
-* `bin` - Where compiled binaries should go - [Refer to [Basic C# Mod]](../_tutorials/basic-csharp-mod.md)
+  
+* `bin` - 编译好的二进制文件放在这里 - [参见 \[基础的 C\# Mod制作\]](../_tutorials/basic-csharp-mod.md)
   * `Win64_Shipping_Client`
     * `MyModule.dll`
-* `GUI` - For most things related to Gauntlet.
-  * `Brushes` - For Gauntlet Brushes.
-  * `Prefabs` - For Gauntlet Movies.
-* `ModuleData` - For any general data related to your mod that is in XML format (e.g. items/cultures/gametexts).
-* `SceneObj` - For your scenes.
+	
+* `GUI` - 大多数与Gauntlet有关的内容放在这里。
+  * `Brushes` - 存放Gauntlet Brushes。
+  * `Prefabs` - 存放Gauntlet Movies。
+  
+* `ModuleData` - 任何与你的Mod有关的XML格式数据存放在这里。 \(例如：items/cultures/gametexts\)
+
+* `SceneObj` - 存放场景。
 
 ```text
 - MyModule
@@ -39,4 +46,3 @@ For a full example of the folder structure and contents refer to `Drive:\\Instal
     - SceneObj
     - SubModule.xml
 ```
-

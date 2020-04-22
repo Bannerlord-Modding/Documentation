@@ -10,10 +10,10 @@
 [mesh_multiplier](#mesh_multiplier) | [percentage](#percentage)  
 
 - #### mesh_multiplier  
-  **type:**  `hex`    
-  **example:** `FF303030`  
+  **类型:**  `hex`    
+  **例子:** `FF303030`  
   *TODO: figure out what this does*  
 - #### percentage  
-  **type:**  `float`    
-  **example:** `0.75`  
+  **类型:**  `float`    
+  **例子:** `0.75`  
   *TODO: figure out what this does* 

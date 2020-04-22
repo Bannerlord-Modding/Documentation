@@ -1,88 +1,88 @@
-# Flags
+# 旗帜 Flags
 
-## Parent node
-- [Item](../../Item)
+## 父节点 Parent node
+- [物品 Item](../../Item)
 
-## Child nodes
-- *None*
+## 子节点 Child nodes
+- *无 None*
 
-## Attributes
+## 属性 Attributes
 [Civilian](#civilian) | [UseTeamColor](#useteamcolor) | [DoesNotHideChest](#doesnothidechest) | [DropOnWeaponChange](#droponweaponchange) | [ForceAttachOffHandPrimaryItemBone](#forceattachoffhandprimaryitembone) | [HeldInOffHand](#heldinoffhand) | [HasToBeHeldUp](#hastobeheldup) | [WoodenParry](#woodenparry) | [DoNotScaleBodyAccordingToWeaponLength](#donotscalebodyaccordingtoweaponlength) | [QuickFadeOut](#quickfadeout) | [CannotBePickedUp](#cannotbepickedup) | [DropOnAnyAction](#droponanyaction) | [ForceAttachOffHandSecondaryItemBone](#forceattachoffhandsecondaryitembone)
 
 - #### Civilian
-  **type:**  `boolean`
-  **accepted values:** `'true', 'false'`
-  **example:** `true`
-  *If the item can be used in civilian*
+  **类型:**  `boolean`
+  **接受的值:** `'true', 'false'`
+  **范例:** `true`
+  *待查明作用*
 
 - #### UseTeamColor
-  **type:**  `boolean`
-  **accepted values:** `'true', 'false'`
-  **example:** `true`
-  *If the item use color of team*
+  **类型:**  `boolean`
+  **接受的值:** `'true', 'false'`
+  **范例:** `true`
+  *待查明作用*
 
 - #### DoesNotHideChest
-  **type:**  `boolean`
-  **accepted values:** `'true', 'false'`
-  **example:** `true`
-  *If the item hides chest*
+  **类型:**  `boolean`
+  **接受的值:** `'true', 'false'`
+  **范例:** `true`
+  *待查明作用*
 
 - #### DropOnWeaponChange
-  **type:**  `boolean`
-  **accepted values:** `'true', 'false'`
-  **example:** `true`
-  *If the item drops on weapon change*
+  **类型:**  `boolean`
+  **接受的值:** `'true', 'false'`
+  **范例:** `true`
+  *待查明作用*
 
 - #### ForceAttachOffHandPrimaryItemBone
-  **type:**  `boolean`
-  **accepted values:** `'true', 'false'`
-  **example:** `true`
-  *TODO: what exactly does this do? Something with shield*
+  **类型:**  `boolean`
+  **接受的值:** `'true', 'false'`
+  **范例:** `true`
+  *待查明作用*
 
 - #### HeldInOffHand
-  **type:**  `boolean`
-  **accepted values:** `'true', 'false'`
-  **example:** `true`
-  *If the item used as offhand*
+  **类型:**  `boolean`
+  **接受的值:** `'true', 'false'`
+  **范例:** `true`
+  *待查明作用*
 
 - #### HasToBeHeldUp
-  **type:**  `boolean`
-  **accepted values:** `'true', 'false'`
-  **example:** `true`
-  *If the item has to be held up for use*
+  **类型:**  `boolean`
+  **接受的值:** `'true', 'false'`
+  **范例:** `true`
+  *待查明作用*
 
 - #### WoodenParry
-  **type:**  `boolean`
-  **accepted values:** `'true', 'false'`
-  **example:** `true`
-  *TODO: what exactly does this do? Something with shield*
+  **类型:**  `boolean`
+  **接受的值:** `'true', 'false'`
+  **范例:** `true`
+  *待查明作用*
 
 - #### DoNotScaleBodyAccordingToWeaponLength
-  **type:**  `boolean`
-  **accepted values:** `'true', 'false'`
-  **example:** `true`
-  *TODO: what exactly does this do? Something with long polearms*
+  **类型:**  `boolean`
+  **接受的值:** `'true', 'false'`
+  **范例:** `true`
+  *待查明作用*
 
 - #### QuickFadeOut
-  **type:**  `boolean`
-  **accepted values:** `'true', 'false'`
-  **example:** `true`
-  *TODO: what exactly does this do? Somthing rare*
+  **类型:**  `boolean`
+  **接受的值:** `'true', 'false'`
+  **范例:** `true`
+  *待查明作用*
 
 - #### CannotBePickedUp
-  **type:**  `boolean`
-  **accepted values:** `'true', 'false'`
-  **example:** `true`
-  *If the weapon cannot be picked off the ground*
+  **类型:**  `boolean`
+  **接受的值:** `'true', 'false'`
+  **范例:** `true`
+  *能不能捡起来*
 
 - #### DropOnAnyAction
-  **type:**  `boolean`
-  **accepted values:** `'true', 'false'`
-  **example:** `true`
-  *If the weapon drops on any action*
+  **类型:**  `boolean`
+  **接受的值:** `'true', 'false'`
+  **范例:** `true`
+  *待查明作用*
 
 - #### ForceAttachOffHandSecondaryItemBone
-  **type:**  `boolean`
-  **accepted values:** `'true', 'false'`
-  **example:** `true`
-  *TODO: what exactly does this do? Something with shield*
+  **类型:**  `boolean`
+  **接受的值:** `'true', 'false'`
+  **范例:** `true`
+  *待查明作用*

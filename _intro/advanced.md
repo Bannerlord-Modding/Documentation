@@ -1,10 +1,13 @@
-# Advanced
+# 高级用法
 
 ## [Harmony](https://github.com/pardeike/Harmony)
 
-Harmony is a popular library used in modding for several other games. It can be used to alter functionality of applications and DLLs during runtime (these changes are not permanent and are only valid for the current session).
 
-_Note that this may cause incompatibilities between mods if they try to patch the same method(s), so it should only be used when absolutely needed._
 
-A common use of this library might be to execute code before/after a particular method (prefix/postfix). However, it can also be used to replace an entire method with your own method or to patch individual IL instructions (be careful with this).
+Harmony 是在多个其它游戏中得到应用的，广受欢迎的库。它可以针对运行中的程序与DLL进行功能性的修改（这些改动并非永久性的，它们只在这次运行中生效）
 
+_注意，如果多个Mod尝试修改相同的方法，这可能导致冲突。因此，它应该只在必需时使用。_
+
+关于这个库，典型的用法是在特定的方法被执行[之前/之后]再执行。
+
+但是，它也可以使你自己编写的方法完全取代内置方法，或者追加独立IL instructions \(谨慎使用)

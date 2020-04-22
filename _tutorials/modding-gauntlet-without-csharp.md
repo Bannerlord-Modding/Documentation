@@ -1,31 +1,28 @@
-# Modding Gauntlet Without C#
+# 不需要C#的UI系统Mod入门 #
 
-## Important
+## 重要提示
+### 本教程中，你 **不能** 使用任何依赖性的模组 *（译者注：即其它模组运行需要的前置模组，如Native）*
+### 尽管这方面应该不会有什么问题。
 
-### Mods which plan to "overwrite" Gauntlet UIs from Official Modules, **MUST** be loaded **BEFORE** that Official Module. For this reason, it is highly recommended that you do not use `DependedModules` for these types of mods. Hopefully this will be addressed by TaleWorlds in the future.
+## 说明
 
-## Introduction
+接下来的指南将在不使用任何C#的情况下，一步一步地教你创建可以重写任何Gauntlet UI的Mod。在这个例子中，我们将使用一些自定义的文本重写任务UI。
 
-The following guide will walk you through step-by-step on how to create a mod that can overwrite any Gauntlet UI without using any C#. For this example, we will be overriding the Quests UI with some custom title text.
+## 准备
 
-## Preparation
+#### 在本教程中, 我们将要做的Mod命名为 `ExampleUIMod`.
 
-#### For this tutorial, we will be naming our project `_ExampleUIMod`.
+### 设置好你的模组 \(SubModule.xml\)
 
-**Note:** The underscore in the name is used to ensure that our mod is loaded first ([see issue above](#important)).
-
-### Setting up your Module (SubModule.xml)
-
-1. Go to your game files and locate the `Modules` directory.
-2. Create a new folder and name it `_ExampleUIMod` (Must be the same as the Id you use for Step #5).
-3. Create a new folder named `GUI` and open it.
-4. Now create a new folder in your `GUI` directory called `Prefabs`. We will come back to this folder later in the tutorial.
-5. Go back to the module folder you created in Step #2 and create a new `SubModule.xml` file and then paste the following into it:
-
+1. 到游戏目录下，找到 `Modules` 文件夹。
+2. 创建新文件夹，命名为 `ExampleUIMod` (必须和你在步骤#5中使用同样的 Id)
+3. 创建新文件夹，命名为 `GUI` 并打开。
+4. 在GUI文件夹中，创建文件夹并命名为`Prefabs`。我们等会儿会用到它。
+5. 回到步骤#2中你所创建的模组文件夹 *（即ExampleUIMod，译者注）*，并且创建文件`SubModule.xml`，然后把如下代码粘贴到文件里：
     ```xml
     <Module>
         <Name value="Example UI Mod"/>
-        <Id value="_ExampleUIMod"/>
+        <Id value="ExampleUIMod"/>
         <Version value="v1.0.0"/>
         <SingleplayerModule value="true"/>
         <MultiplayerModule value="false"/>
@@ -34,34 +31,33 @@ The following guide will walk you through step-by-step on how to create a mod th
         <Xmls/>
     </Module>
     ```
+6. 运行启动器，保证你的Mod能够在`Singleplayer` &gt; `Mods`下出现。
 
-6. Start the launcher and make sure your mod appears under `Singleplayer` &gt; `Mods`.
+要获取更多模组文件结构的信息, [点击这里](../_intro/folder-structure.md)
 
-For more information on the Module folder structure, [Click Here](../_intro/folder-structure.md).
+## 重写一个Gauntlet UI
 
-## Overriding a Gauntlet UI
+注意: 你可以重写任何 Gauntlet UI. 然而，在本教程中, 我们只重写任务UI。
 
-Note: You can override any Gauntlet UI. However, for this tutorial, we will only be overriding the Quests UI.
+1. 到目录`Modules\SandBox\GUI\Prefabs\QuestsScreen` 并且复制 `QuestsScreen.xml` 文件到剪贴板。
+2. 到“设置好你的模组”步骤#4中，你所创建的`Prefabs`文件夹下，粘贴`QuestsScreen.xml` 文件。
+3. 在文本编辑器中打开粘贴的文件。
+4. 搜索定位 (Ctrl+F) `Text="@QuestTitleText"`。
+5. 替换 `@QuestTitleText` (包括 @ 符号) 为你想要的标题。
+6. 保存文件。
+7. 打开霸主启动器并且切换至 `Singleplayer` &gt; `Mods` 界面，确保你的Mod打了勾，然后启动游戏，随便选个存档开始游戏。
+8. 打开任务UI，你应该能够在屏幕的中上方看到你添加的的文本。
+9. 你已经成功创建了你第一个霸主Gauntlet Mod！
 
-1. Go to `Modules\SandBox\GUI\Prefabs\QuestsScreen` and copy the `QuestsScreen.xml` file to your clipboard
-2. Go to the `Prefabs` folder you created in Step 4 of `Setting up your Module` and paste the `QuestsScreen.xml` from your clipboard.
-3. Open the pasted file in a text editor.
-4. Search (Ctrl+F) for a `Text="@QuestTitleText"` and go to this section of the file.
-5. Replace `@QuestTitleText` (including @ symbol) with the text you want the title to be.
-6. Save the file.
-7. Open the Bannerlord launcher and navigate to `Singleplayer` &gt; `Mods` then make sure that your mod is ticked and start the game and load any save.
-8. Open the Quests UI and you should see the text you added in the top middle of the screen.
-9. You have now successfully created your first Bannerlord Gauntlet mod!
+## 如何启用&使用动态UI编辑
 
-## How To Enable & Use Live UI Editing
+动态UI编辑，是使你生活**大大**轻松的游戏特性。不幸的是，它不是你在基础版本的游戏内部就能启用的。
 
-Live UI editting is a feature in the game that will make your life **a lot** easier. Unfortunately though, it isn't something you can enable with just the base game.
+要启用它, 你必须 [下载 DeveloperConsole Mod](https://www.nexusmods.com/mountandblade2bannerlord/mods/4).
 
-To enable it, you will need to [download the DeveloperConsole Mod](https://www.nexusmods.com/mountandblade2bannerlord/mods/4).
+只要你下载 & 安装好了 Developer Console Mod, 按以下步骤操作，就能在游戏中启用动态编辑。
 
-Once you have downloaded & installed the Developer Console Mod, follow the steps below to enable live editing for your game session.
-
-1. Open the game launcher and then make sure `Developer Console` is ticked in `Singleplayer` &gt; `Mods` along with your Gauntlet UI mod.
-2. The Developer Console mod uses the shortcut `CTRL` + `~` (tilde) to enable the console. If this shortcut doesn't work for you, try pressing CTRL and then the key on your keyboard above Tab and below Esc.
-3. Now that you can see the console, you will want to type the command `ui.toggle_debug_mode` to enable the live UI editing feature.
-4. Any changes you make to your UIs should now update automatically in-game.
+1. 打开游戏启动器，确保 `Singleplayer` &gt; `Mods`界面的 `Developer Console`和你的Gauntlet UI Mod打上勾。
+2. Developer Console Mod 使用 `CTRL` + `~`(波浪符) 快捷键开启控制台。如果你发现快捷键不起作用, 尝试按下CTRL，然后按下 你键盘上Tab和Esc之间的那个键。
+3. 现在你已经看见了控制台，你会想键入`ui.toggle_debug_mode`命令来启用动态UI编辑特性。
+4. 任何你对UI的改动，都应该会自动更新到游戏中。

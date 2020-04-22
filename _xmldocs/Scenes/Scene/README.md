@@ -10,40 +10,34 @@
 [name](#name) | [terrain](#terrain) | [forest_density](#forest_density) | [is_siege_map](#is_siege_map) | [is_village_map](#is_village_map)
 
 - #### name
-  **type:**  `string`  
-  **example:**  `{=!}battle_terrain_a (Plain)`  
+  **类型:**  `string`  
+  **例子:**  `{=!}battle_terrain_a (Plain)`  
   *The name of the scene*  
 
 - #### terrain
-  **type:**  `string`  
+  **类型:**  `string`  
   **possible values:** `Plain` | `Desert` | `Steppe` |  `Swamp` |  `Forest`
-  **example:**  `Plain`  
+  **例子:**  `Plain`  
   *The terrain of the scene*  
   
 - #### forest_density
-  **type:**  `string`  
+  **类型:**  `string`  
   **possible values:** `Low` | `High`
-  **example:**  `Low`  
+  **例子:**  `Low`  
   *The forest density on the scene*  
   *Note: the value seems to be case insensitive*  
   
 - #### is_siege_map
-  **type:**  `boolean`  
-  **accepted values:** `true` | `false`  
+  **类型:**  `boolean`  
+  **接受值:** `true` | `false`  
   **default value:** `false`  
-  **example:**  `true`  
+  **例子:**  `true`  
   *If the scene is a Siege scene*  
   
 - #### is_village_map
-  **type:**  `boolean`  
-  **accepted values:** `true` | `false`  
+  **类型:**  `boolean`  
+  **接受值:** `true` | `false`  
   **default value:** `false`  
-  **example:**  `true`  
+  **例子:**  `true`  
   *If the scene is a Village scene*  
-  
-  
-  
-
-
-
   

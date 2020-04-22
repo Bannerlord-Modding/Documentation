@@ -1,8 +1,8 @@
 # ScreenBase
 
-You can organize and instantiate your [ViewModels](viewmodel.md) and [Movies](movie.md) by using screens.
+你可以通过screen组织并生成你的 [ViewModels](viewmodel.md) 和 [Movies](movie.md)。
 
-In order to prevent any issues, it is recommended that you use the template below when creating your screens.
+为了防止出现问题，推荐使用以下模板创建screen：
 
 ```csharp
 public class MyExampleScreen : ScreenBase
@@ -33,7 +33,7 @@ public class MyExampleScreen : ScreenBase
 
     protected override void OnDeactivate()
     {
-        base.OnDeactivate();
+        base.OnDeactivate()
         _gauntletLayer.IsFocusLayer = false;
         ScreenManager.TryLoseFocus(_gauntletLayer);
     }
@@ -48,11 +48,10 @@ public class MyExampleScreen : ScreenBase
 }
 ```
 
-## Pushing your Screen
+## Screen入栈
 
-To push your screen onto the screen stack, you can do following:
+要将你的screen加入screen栈，你可以这样做：
 
 ```csharp
 ScreenManager.PushScreen(ViewCreatorManager.CreateScreenView<MyExampleScreen>());
 ```
-

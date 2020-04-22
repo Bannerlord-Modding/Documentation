@@ -1,10 +1,9 @@
 # Agent
 
-You can think of an agent as any **living** entity in the game.
+你可以把媒介(`agent`)想象成游戏里任何**能走动**的实体。
 
-This might be the player, an NPC character, or even a horse.
+比方说可以是玩家，NPC，甚至是一匹马。
 
-## Tips
+## 小贴士
 
-* You can get the player agent through the `Agent.Main` property (assuming they are alive).
-
+* 你可以通过`Agent`下的`Agent.Main` 属性调用玩家媒介\(前提是玩家还活着\)。

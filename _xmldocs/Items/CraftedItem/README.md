@@ -27,27 +27,27 @@ Source: Modules/SandBoxCore/ModuleData/spitems.xml
 [id](#id) | [name](#name) | [crafting_template](#crafting_template) | [culture](#culture) | [is_merchandise](#is_merchandise)
 
 - #### id
-  **type:** `string`  
-  **example:**  `sturgia_axe_3_t3`  
+  **类型:** `string`  
+  **例子:**  `sturgia_axe_3_t3`  
   *The ID of the item*  
   
 - #### name
-  **type:**  `string`  
-  **example:**  `{=wW3iouiU}Hijab`  
+  **类型:**  `string`  
+  **例子:**  `{=wW3iouiU}Hijab`  
   *Note: The prefix in the `{=}` format is the translation id found in strings.txt*  
   *TODO: Find out if this is auto generated.*  
 
 - #### crafting_template
-  **type:**  `string`  
+  **类型:**  `string`  
   **possible values:** `'TwoHandedPolearm', 'OneHandedAxe', 'Mace', 'TwoHandedAxe', 'OneHandedSword', 'TwoHandedSword', 'Pike', 'Dagger', 'Javelin', 'ThrowingAxe', 'ThrowingKnife'`  
-  **example:** `TwoHandedPolearm`
+  **例子:** `TwoHandedPolearm`
   
 - #### culture
-  **type:**  `string`  
+  **类型:**  `string`  
   **possible values:** `'Culture.aserai', 'Culture.sturgia', 'Culture.battania', 'Culture.looters', 'Culture.khuzait', 'Culture.vlandia', 'Culture.empire', 'Culture.neutral_culture'`  
-  **example:** `Culture.aserai`  
+  **例子:** `Culture.aserai`  
 
 - #### is_merchandise
-  **type:**  `boolean`  
-  **example:** `false`  
+  **类型:**  `boolean`  
+  **例子:** `false`  
   *If the item is marketable*

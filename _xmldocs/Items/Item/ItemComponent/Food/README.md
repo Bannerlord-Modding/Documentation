@@ -1,15 +1,15 @@
-# Food
+# 食物 Food
 
-## Parent Node
+## 父节点 Parent Node
 - [ItemComponent](../../ItemComponent)
 
-## Child Node
-- *None*
+## 子节点 Child Node
+- *无 None*
 
 ## attributes
-[morale_bonus](#morale_bonus)
+[士气加成 morale_bonus](#morale_bonus)
 
 - #### morale_bonus  
-  **type:**  `int`    
-  **example:** `2`  
-  *Morale bonus the food gives to the party*  
+  **类型:**  `int`    
+  **例子:** `2`  
+  *对部队士气的加成*  

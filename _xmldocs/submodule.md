@@ -1,23 +1,23 @@
-# SubModule (XML)
+# SubModule \(XML\)
 
-## Element Descriptions
+## 字段描述
 
-* `Name` - The name of your Module.
-* `Id` - The id of your Module (do not use spaces).
-* `Version` - The current version of your Module.
-* `SinglePlayerModule` - Whether or not your module is meant for Single Player mode.
-* `MultiPlayerModule` - Whether or not your module is meant for Mutli Player mode.
-* `DependedModules` - Modules that your module requires in order to function properly.
-* `SubModules` - The SubModules (DLLs) that your modules consists of.
-* `Xmls` - Contains Paths to XML files in the ModuleData Folder(s).
+* `Name` - 模组的名称。
+* `Id` - 模组的ID \(不要使用空格\)。
+* `Version` - 模组的当前版本。
+* `SinglePlayerModule` - 单人游戏中模组是否可用。
+* `MultiPlayerModule` - 多人游戏中模组是否可用。
+* `DependedModules` - 此模组正常工作需要的依赖模组。
+* `SubModules` - 该模组由哪些子模组 \(DLLs\)组成。 
+* `Xmls` - 包含ModuleData文件夹中的XML文件路径。
 
-## Important
+## 重要提示
 
-XMLs with the same id from two separate mods (or the same mod) will have their assets combined and **NOT** overwritten. However, if two objects within an XML have the same id (e.g. two items), they will Overwrite each other in ModLoading Order as seen in the Launcher. Knowing this can be useful for overwritting native assets.
+对于两个独立的mod，如果XML中的id相同，它们的内容将会合并 **而不是** 互相覆盖。然而，假如两个物体在XML文件中具有相同的id（例如：两个item），它们会按照启动器中Mod的排列顺序覆盖。了解这一点对于重写native中的内容非常有用。
 
-`MPClassDivisions` Is currently broken.
+`MPClassDivisions` 当前存在问题。
 
-## Example
+## 例子
 
 ```xml
 <Module>
@@ -34,10 +34,10 @@ XMLs with the same id from two separate mods (or the same mod) will have their a
         <DependedModule Id="StoryMode" />
     </DependedModules>
     <SubModules>
-        <!-- The following SubModule element is optional. You can remove this portion if your mod does not have a DLL associated with it. -->
+        <!-- 以下的SubModule标签是可选的。如果你的模组不需要DLL外链，可用移除这部分内容。-->
         <SubModule>
             <Name value="MySubModule"/>
-            <!-- Path to the DLL File, if your Mod is called MyModule then it should be   -->
+            <!-- DLL文件的路径, 假如你的模组叫MyModule，写法会像下面这样   -->
             <DLLName value="ExampleMod.dll"/>
             <SubModuleClassType value="ExampleMod.MySubModule"/>
             <Tags>
@@ -48,15 +48,14 @@ XMLs with the same id from two separate mods (or the same mod) will have their a
     </SubModules>
     <Xmls>
         <XmlNode>
-            <XmlName id="Items" path="customitems"/>
+            <XmlName type="1" id="Items" path="customitems"/>
         </XmlNode>  
         <XmlNode>
-            <XmlName id="SPCultures" path="customcultures"/>
+            <XmlName type="1" id="SPCultures" path="customcultures"/>
         </XmlNode>
         <XmlNode>
-            <XmlName id="NPCCharacters" path="customcharacters"/>
+            <XmlName type="1" id="NPCCharacters" path="customcharacters"/>
         </XmlNode>
     </Xmls>
 </Module>
 ```
-

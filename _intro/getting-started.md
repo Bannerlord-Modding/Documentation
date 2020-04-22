@@ -1,41 +1,40 @@
-# Getting Started
+# 开始第一步
 
-## Important
+## 重要提示
 
-Before proceeding, it is important to have a good understanding of the [SubModule.xml](../_xmldocs/submodule.md) file, as this file tells the game what it should be loading when your mod is selected.
+在进一步工作之前, 理解文件[SubModule.xml](../_xmldocs/submodule.md) 是非常重要的，因为这个文件指定了你Mod中的哪一部分会被加载。
 
-## Tools
+## 工具
 
-### C# IDE
+### C\# IDE
 
-* [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) (not required for basic mods)
+* [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) \(基础的Mod不需要用到它\)
 
-### Text Editor
+### 文本编辑器
 
-Any text editor will suffice, but one of these is recommended...
+任何文本编辑器都足以满足要求, 但是以下是推荐使用的：
 
 * [Visual Studio Code](https://code.visualstudio.com/download)
 * [Sublime Text](https://www.sublimetext.com/)  
 * [Notepad++](https://notepad-plus-plus.org/downloads/)
 
-## Modding without C#
+## 不使用 C\# 制作Mod
 
-There are several aspects of the game you can mod without C#. This includes scenes, items, cultures, characters, Gauntlet UIs, and many more.
+游戏中部分内容不需要C#即可定制，包括场景、物品、文化、角色、Gauntlet UI等等。
 
-## Modding with C#
+## 使用 C\# 制作Mod
 
-The module-based modding system makes modding in Bannerlord much easier than past games in the series and allows for much more complexity in your mods.
+“基于模组”的Mod制作系统，使霸主的Mod制作工作比前作更加容易，并且它支持实现更复杂的Mod功能。
 
-## Creating a Module
+## 制作一个模组
 
-In Bannerlord an individual mod is called a Module and the only required part is the SubModule folder itself and a `SubModule.xml` file which informs the launcher of your mod.
+在霸主，一个独立运行的Mod被叫做“模组”。模组唯一必要的部分就是SubModule文件夹，和负责启动Mod的`SubModule.xml`文件。
 
-1. Create a new folder in the `Modules` directory in your game files, the name of the folder must be the name of your SubModule.
-2. Create a `SubModule.xml` file in your new folder. You can [see an example here](../_xmldocs/submodule.md) or find the [full documentation here](../_xmldocs/submodule.md)
+1.在游戏目录的`Modules`文件夹中新建文件夹，文件夹名称必须与你的SubModule保持一致。
+2. 在你的新文件夹中创建文件`SubModule.xml`，你可以 [看看这个例子](../_xmldocs/submodule.md) 或者  [获取完整参考文档](../_xmldocs/submodule.md)
 
-## Next Steps
+## 下一步
 
-- Refer to the [Folder Structure](folder-structure.md) page for additional information on what additional directories to add depending on the intended content of your mod.
-- Refer to the [Basic C# Mod](../_tutorials/basic-csharp-mod.md) page for an example of how to set up, build and run code in Bannerlord.
-- Refer to the [Modding Gauntlet UIs Without C#](../_tutorials/modding-gauntlet-without-csharp.md) page for information on how to mod Gauntlet UIs without using any C#.
-
+* 参考[文件结构](folder-structure.md) 页面，以获取其它文件夹路径的参考信息，帮助拓展你的Mod。
+* 参考[基础 C\# Mod](../_tutorials/basic-csharp-mod.md) 页面，它提供了一份在霸主中设置，编译，运行代码的简单例子。
+* 参考[不使用C#的Gauntlet UI定制](../_tutorials/modding-gauntlet-without-csharp.md) 页面，它提供了无需C#的Gauntlet UI定制方法。

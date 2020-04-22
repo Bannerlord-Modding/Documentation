@@ -10,6 +10,6 @@
 [name](#name)
 
 - #### name  
-  **type:**  `string`    
-  **example:** `horse_brown_mat`  
+  **类型:**  `string`    
+  **例子:** `horse_brown_mat`  
   *TODO: figure out what name references*  

@@ -7,145 +7,145 @@
 - [WeaponFlags](WeaponFlags)
 
 ## Attributes
-[weapon_class](#weapon_class) | [weapon_balance](#weapon_balance) | [thrust_speed](#thrust_speed) | [speed_rating](#speed_rating) | [missile_speed](#missile_speed) | [weapon_length](#weapon_length) | [swing_damage](#swing_damage) | [swing_damage_type](#swing_damage_type) | [item_usage](#item_usage) | [physics_material](#physics_material) | [ammo_class](#ammo_class) | [ammo_limit](#ammo_limit) | [accuracy](#accuracy) | [thrust_damage](#thrust_damage) | [thrust_damage_type](#thrust_damage_type) | [center_of_mass](#center_of_mass) | [stack_amount](#stack_amount) | [rotation](#rotation) | [passby_sound_code](#passby_sound_code) | [rotation_speed](#rotation_speed) | [flying_sound_code](#flying_sound_code) | [sticking_rotation](#sticking_rotation) | [sticking_position](#sticking_position) | [trail_particle_name](#trail_particle_name) | [position](#position) | [body_armor](#body_armor) | [hit_points](#hit_points)
+[武器类别 weapon_class](#weapon_class) | [平衡 weapon_balance](#weapon_balance) | [thrust_speed](#thrust_speed) | [速度 speed_rating](#speed_rating) | [投射物速度 missile_speed](#missile_speed) | [长度 weapon_length](#weapon_length) | [挥砍伤害 swing_damage](#swing_damage) | [挥砍伤害的类型 swing_damage_type](#swing_damage_type) | [武器使用 item_usage](#item_usage) | [材质 physics_material](#physics_material) | [弹药类型 ammo_class](#ammo_class) | [弹药限制 ammo_limit](#ammo_limit) | [准确度 accuracy](#accuracy) | [戳刺伤害 thrust_damage](#thrust_damage) | [戳刺伤害类型 thrust_damage_type](#thrust_damage_type) | [重心 center_of_mass](#center_of_mass) | [弹药量 stack_amount](#stack_amount) | [旋转角度 rotation](#rotation) | [掠过的声音 passby_sound_code](#passby_sound_code) | [旋转速度 rotation_speed](#rotation_speed) | [飞行的声音 flying_sound_code](#flying_sound_code) | [击中后的角度 sticking_rotation](#sticking_rotation) | [击中后的位置 sticking_position](#sticking_position) | [轨迹粒子效果 trail_particle_name](#trail_particle_name) | [位置 position](#position) | [躯干护甲 body_armor](#body_armor) | [耐久度 hit_points](#hit_points)
 
 - #### weapon_class
-  **type:**  `string`  
-  **accepted values:** `'OneHandedAxe', 'Bow', 'OneHandedSword', 'TwoHandedPolearm', 'Crossbow', 'Stone', 'Arrow', 'Boulder', 'Bolt', 'LargeShield', 'Banner'`  
-  **example:** `OneHandedAxe`  
-  *Type of weapon*  
+  **类型:**  `string`  
+  **接受值:** `'OneHandedAxe', 'Bow', 'OneHandedSword', 'TwoHandedPolearm', 'Crossbow', 'Stone', 'Arrow', 'Boulder', 'Bolt', 'LargeShield', 'Banner'`  
+  **例子:** `OneHandedAxe`  
+  *武器的类别*  
   
 - #### weapon_balance
-  **type:**  `int`  
-  **example:** `100`  
-  *Balance of the weapon*  
+  **类型:**  `int`  
+  **例子:** `100`  
+  *武器的平衡*  
   
 - #### thrust_speed
-  **type:**  `int`  
-  **example:** `12`  
+  **类型:**  `int`  
+  **例子:** `12`  
   *Thrust speed of the weapon*  
   
 - #### speed_rating
-  **type:**  `int`  
-  **example:** `60`  
-  *Speed rating of the weapon*  
+  **类型:**  `int`  
+  **例子:** `60`  
+  *武器速度*  
   
 - #### missile_speed
-  **type:**  `int`  
-  **example:** `60`  
-  *Speed of the projectile being fired from the weapon*  
+  **类型:**  `int`  
+  **例子:** `60`  
+  *射出的投射物速度*  
   
 - #### weapon_length
-  **type:**  `int`  
-  **example:** `60`  
-  *Length of the weapon*  
+  **类型:**  `int`  
+  **例子:** `60`  
+  *武器长度*  
   
 - #### swing_damage
-  **type:**  `int`  
-  **example:** `60`  
-  *Swing damage of the weapon*  
+  **类型:**  `int`  
+  **例子:** `60`  
+  *挥砍伤害值*  
   
 - #### swing_damage_type
-  **type:**  `string`  
-  **accepted values:** `'Pierce', 'Blunt', 'Cut'`   
-  **example:** `Pierce`  
-  *Swing damage type of the weapon*  
+  **类型:**  `string`  
+  **接受值:** `'Pierce', 'Blunt', 'Cut'`   
+  **例子:** `Pierce`  
+  *挥砍伤害的类型*  
   
 - #### item_usage
-  **type:**  `string`  
-  **accepted values:** `'torch', 'bow', 'long_bow', 'onehanded_block_shield_swing', 'polearm_block_thrust', 'crossbow_fast', 'crossbow', 'stone', '', 'heavy_stone', 'arrow_top', 'arrow_right', 'hand_shield', 'shield', 'banner'`   
-  **example:** `heavy_stone`  
-  *How the item is used*  
+  **类型:**  `string`  
+  **接受值:** `'torch', 'bow', 'long_bow', 'onehanded_block_shield_swing', 'polearm_block_thrust', 'crossbow_fast', 'crossbow', 'stone', '', 'heavy_stone', 'arrow_top', 'arrow_right', 'hand_shield', 'shield', 'banner'`   
+  **例子:** `heavy_stone`  
+  *武器是咋用的*  
   
 - #### physics_material
-  **type:**  `string`  
-  **accepted values:** `'metal_weapon', 'wood_weapon', 'missile', 'ballista_missile', 'burning_ballista', 'boulder_stone', 'burning_jar', 'wood_shield', 'metal_shield'`   
-  **example:** `metal_shield`  
-  *What the weapon consists of*  
+  **类型:**  `string`  
+  **接受值:** `'metal_weapon', 'wood_weapon', 'missile', 'ballista_missile', 'burning_ballista', 'boulder_stone', 'burning_jar', 'wood_shield', 'metal_shield'`   
+  **例子:** `metal_shield`  
+  *武器的材质（诸如铁制盾，铁制武器，木制武器）*  
   
 - #### ammo_class
-  **type:**  `string`  
-  **accepted values:** `'Arrow', 'Bolt', 'Stone', 'Boulder'`   
-  **example:** `Arrow`  
-  *Ammo type*  
+  **类型:**  `string`  
+  **接受值:** `'Arrow', 'Bolt', 'Stone', 'Boulder'`   
+  **例子:** `Arrow`  
+  *弹药类型（箭矢、弩矢等）*  
   
 - #### ammo_limit
-  **type:**  `int`   
-  **example:** `1`  
-  *Amount of ammo stored in the weapon. If set to 2 game will be closed*
-  *When enter the battle*   
+  **类型:**  `int`   
+  **例子:** `1`  
+  *弹药限制，不知道是'一个弹匣'还是'一次射出'。*
+
 - #### accuracy
-  **type:**  `int`   
-  **example:** `21`  
-  *Accuracy of a ranged weapon*   
+  **类型:**  `int`   
+  **例子:** `21`  
+  *远程武器的准确度*   
   
 - #### thrust_damage
-  **type:**  `int`   
-  **example:** `21`  
-  *Thrust damage of a weapon*   
+  **类型:**  `int`   
+  **例子:** `21`  
+  *戳刺伤害*   
   
 - #### thrust_damage_type
-  **type:**  `string`  
-  **accepted values:** `'Pierce', 'Blunt', 'Cut'`   
-  **example:** `Pierce`  
-  *Thrust damage type of the weapon*  
+  **类型:**  `string`  
+  **接受值:** `'Pierce', 'Blunt', 'Cut'`   
+  **例子:** `Pierce`  
+  *戳刺伤害类型*  
   
 - #### center_of_mass
-  **type:**  `vector3d`  
-  **example:** `0.15,0,0`  
-  *Center of mass of the weapon. Used for calculating damage*  
+  **类型:**  `vector3d`  
+  **例子:** `0.15,0,0`  
+  *武器中心位置，不知道干嘛用的*  
   
 - #### stack_amount
-  **type:**  `int`  
-  **example:** `23`  
-  *Amount of projectiles the weapon (arrows, bolts, stones) has*  
+  **类型:**  `int`  
+  **例子:** `23`  
+  *应该是一袋箭有多少支这种*  
   
 - #### rotation
-  **type:**  `vector3d`  
-  **example:** `100,30,20`  
-  *TODO: figure out what this does*  
+  **类型:**  `vector3d`  
+  **例子:** `100,30,20`  
+  *不知道干嘛用的（译者按：可能是飞斧之类扔出后模型的旋转角度向量）*  
   
 - #### passby_sound_code
-  **type:**  `string`  
-  **example:** `event:/mission/combat/missile/passby`  
-  *What sound a projectile should make if passing by an agent*  
+  **类型:**  `string`  
+  **例子:** `event:/mission/combat/missile/passby`  
+  *投射物掠过人物发出的声音*  
   
 - #### rotation_speed
-  **type:**  `double`  
-  **example:** `0.5`  
-  *TODO: figure out what this does*  
+  **类型:**  `double`  
+  **例子:** `0.5`  
+  *不知道干嘛用的（译者按：可能是飞斧之类扔出后模型的旋转速度）*  
   
 - #### flying_sound_code
-  **type:**  `string`  
-  **example:** `event:/mission/combat/missile/foley/passby`  
-  *What sound a projectile should make when flying in midair*  
+  **类型:**  `string`  
+  **例子:** `event:/mission/combat/missile/foley/passby`  
+  *投射物飞行发出的声音*  
   
 - #### sticking_rotation
-  **type:**  `vector3d`  
-  **example:** `90,0,0`  
-  *TODO: figure out what this does*  
+  **类型:**  `vector3d`  
+  **例子:** `90,0,0`  
+  *不知道干嘛用的（译者按：与之前的旋转角度类似，结合下一个属性，可能是击中后模型的旋转角度，飞斧击中盾牌后全都是同一个角度）*  
   
 - #### sticking_position
-  **type:**  `vector3d`  
-  **example:** `90,0,0`  
-  *TODO: figure out what this does*  
+  **类型:**  `vector3d`  
+  **例子:** `90,0,0`  
+  *不知道干嘛用的（译者按：似乎是旋转中心？结合上一个属性，可能是击中后模型的相对位置）*  
   
 - #### trail_particle_name
-  **type:**  `string`  
-  **example:** `psys_game_missile_flame`  
-  *Particles that are emitted on a flying projectile*  
+  **类型:**  `string`  
+  **例子:** `psys_game_missile_flame`  
+  *弹药飞行轨迹的粒子效果*  
   
 - #### position
-  **type:**  `vector3d`  
-  **example:** `-0.04, -0.05, 0.01`  
-  *TODO: figure out what this does*  
+  **类型:**  `vector3d`  
+  **例子:** `-0.04, -0.05, 0.01`  
+  *位置，暂时不知道是啥位置*  
   
 - #### body_armor
-  **type:**  `int`  
-  **example:** `82`  
-  *The amount of body armour a weapon gives. TODO: figure out if this is possible with head, leg, and hand armour as well.*  
+  **类型:**  `int`  
+  **例子:** `82`  
+  *武器提供的躯干护甲值，不知道对于其他部位是否有效*  
   
 - #### hit_points
-  **type:**  `int`  
-  **example:** `820`  
-  *Hit points of a shield*  
+  **类型:**  `int`  
+  **例子:** `820`  
+  *盾的耐久度*  

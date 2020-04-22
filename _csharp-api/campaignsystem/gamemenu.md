@@ -1,17 +1,19 @@
 # GameMenu
 
-All the menus in the campaign are handled by the `GameMenuManager`. To add new menus however you must use the provided methods by the `Campaign` class.
 
-To add a new menu use:
+战役中所有的菜单选项都由`GameMenuManager`管理。你必须通过提供`Campaign`类中的方法，来加入新菜单。
+
+加入新的菜单:
 ```csharp
 CampaignGameStarter.AddGameMenu(string menuId, string menuText, OnInitDelegate initDelegate, MenuOverlayType overlay = MenuOverlayType.None, MenuFlags menuFlags = GameMenu.MenuFlags.none, object relatedObject = null)
 
 delegate void OnInitDelegate(MenuCallbackArgs args);
 ```
 
-The overlay defines if for example the upper right characters list is visible or not.
+覆盖层（overlay）定义了例子中右上角字符列表是否可见。
 
-To add a new option to a menu use:
+
+为菜单加入新的选项:
 ```csharp
 CampaignGameStarter.AddGameMenuOption(string menuId, string optionId, string optionText, OnConditionDelegate condition, OnConsequenceDelegate consequence, bool isLeave = false, int index = -1)
 
@@ -19,14 +21,13 @@ bool OnConditionDelegate(MenuCallbackArgs args);
 void OnConsequenceDelegate(MenuCallbackArgs args);
 ```
 
-You can add options to existing menus and for this the index comes in handy to insert it before other options (by default it insert at the end).
+您可以在现有菜单中添加选项。使用这个index参数时，可以方便地插入在其它选项之前（默认情况下，它会在末尾插入）。
 
-The provided condition method does double-duty as it:
-* enables / disables the option (via it's return value)
-* sets the icon (via the provided args)
+提供的条件方法（condition method）具有双重职责：
+* 启用/禁用选项（通过返回值）
+* 设置图标（通过提供的参数）
 
-The icon can be changed by setting `optionLeaveType` to something appropriate. The used images are found under `Mount & Blade II Bannerlord\GUI\GauntletUI\SpriteParts\ui_group1\GameMenu` and the correspondence can be viewed in `Mount & Blade II Bannerlord\Modules\Native\GUI\Brushes\GameMenu.xml`. This can of course be overrides in your own module, but additional `LeaveTypes` are not possible.
-
+图标可以通过将 `optionLeaveType` 设置为恰当的值来改变。 可使用的图标在 `Mount & Blade II Bannerlord\GUI\GauntletUI\SpriteParts\ui_group1\GameMenu`目录下，相关的信息可在 `Mount & Blade II Bannerlord\Modules\Native\GUI\Brushes\GameMenu.xml`查看。 当然，你自己的模组可以重写这些东西，但是不能额外添加更多的`LeaveTypes`。
 | Type                | Image |
 | ------------------- | ----- |
 | Default             |       |
