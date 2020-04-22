@@ -26,7 +26,6 @@ The following guide will walk you through step-by-step on how to create a mod th
         <Version value="v1.0.0"/>
         <SingleplayerModule value="true"/>
         <MultiplayerModule value="false"/>
-        <Official value="false" />
         <DependedModules/>
         <SubModules/>
         <Xmls/>
