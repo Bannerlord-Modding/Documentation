@@ -133,7 +133,7 @@ Methods should follow parameters, seperated by a H1 header.
 
 | Type | Method Name | # of Params |
 | --- | --- | --- | --- | --- |
-| void | [SetItem] | 2 |
+| void | [SetItem](EXAMPLE) | 2 |
 | [Equipment](EXAMPLE) | [Clone](EXAMPLE) | 1 | 
 | void | [FillFrom](EXAMPLE) | 2 |
 | ... | ... | ... |
