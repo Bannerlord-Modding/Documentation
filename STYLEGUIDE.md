@@ -116,13 +116,13 @@ Directly after this intro snippet, we have a section outlining the variables of 
 
 <div style= "font-size:12px">
 
-| Name | Type | Notes |
-| --- | --- | --- |
-| HeadArmor | int |
-| MeshesMask | [SkinMask](EXAMPLE) |
-| BeardCoverType | [ArmorComponent](EXAMPLE).[BeardCoverTypes](EXAMPLE)
-| ReinsRopeMesh | string | returns ```this.ReinsMesh + "_rope";```|
-|...|...|...|
+| Mod | Name | Type | Notes |
+| --- | --- | --- | --- |
+| Const | HeadArmor | int |
+| Instance |MeshesMask | [SkinMask](EXAMPLE) | |
+| ReadOnly |BeardCoverType | [ArmorComponent](EXAMPLE).[BeardCoverTypes](EXAMPLE)
+| Static |ReinsRopeMesh | string | returns ```this.ReinsMesh + "_rope";```|
+|...|...|...|...|
 </div>
 
 Methods should follow parameters, seperated by a H1 header.
