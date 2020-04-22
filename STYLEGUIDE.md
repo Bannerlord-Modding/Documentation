@@ -88,17 +88,14 @@ Unlike the root and package level READMEs, the class README will contain more th
 
 This is a description of the class and what it does.
 
-<span style= "font-size:12px">
+<div style= "font-size:12px">
 
-Using / Namespaces | | <span style='color:yellow'>Taleworlds.Core</span>| | | | <span style='color:green'>Saveable</span> |
+Using / Namespaces | | <div style='color:yellow'>Taleworlds.Core</div>| | | | <div style='color:green'>Saveable</div> |
 :---|---|---|---|---|---|---:|
 [System](EXAMPLE) | | | | | | 10000 |
 [System.Xml](EXAMPLE)|
 [TaleWorlds.SaveSystem](EXAMPLE) |
-|
-</span>
-
-> Omit elements entirely if not relavent to that class (eg: parent class)
+</div>
 
 > For the non-savable classes, use ```'color:red'``` and change to text to "Not Savable".
 
@@ -117,7 +114,7 @@ Directly after this intro snippet, we have a section outlining the variables of 
 
 ## Variables
 
-<span style= "font-size:12px">
+<div style= "font-size:12px">
 
 | Name | Type | Notes |
 | --- | --- | --- |
@@ -126,16 +123,13 @@ Directly after this intro snippet, we have a section outlining the variables of 
 | BeardCoverType | [ArmorComponent](EXAMPLE).[BeardCoverTypes](EXAMPLE)
 | ReinsRopeMesh | string | returns ```this.ReinsMesh + "_rope";```|
 |...|...|...|
-|
-</span>
-
-> Always add a blank row ( | ) at the bottom of tables to square them off. Note that this table follows the same font size rules as as the class table.
+</div>
 
 Methods should follow parameters, seperated by a H1 header.
 
 ## Methods
 
-<span style= "font-size:12px">
+<div style= "font-size:12px">
 
 | Type | Method Name | # of Params |
 | --- | --- | --- | --- | --- |
@@ -143,15 +137,14 @@ Methods should follow parameters, seperated by a H1 header.
 | [Equipment](EXAMPLE) | [Clone](EXAMPLE) | 1 | 
 | void | [FillFrom](EXAMPLE) | 2 |
 | ... | ... | ... |
-|
-</span>
+</div>
 
 
 > The class page should only list out the methods like a table of contents, the detail should be saved for the methods own README page.
 
 Methods should be like a miniature version of a class page, with a small table at the top for parameters (if any), return type, description, etc. as shown below:
 
-<span style= "font-size:12px">
+<div style= "font-size:12px">
 
 ### [Parent Object Name](EXAMPLE)
 ## Method Name
@@ -161,8 +154,7 @@ Methods should be like a miniature version of a class page, with a small table a
 | Param Name | string | 'Hello World' | ✖ |
 | Param Name | [XmlNode](EXAMPLE) | N/A | ☑ |
 | ... | ... |
-|
-</span>
+</div>
 
 > Parameters should be in the same order as they appear in the method. Types should also link to their class. Copy paste symbols as needed. You don't need to link to base types (like int or string).
 
@@ -185,13 +177,13 @@ Enums should be placed in their own file at the Class level (on their own page u
 ### [Parent Object Name](EXAMPLE)
 # Enum Name
 
-<span style= "font-size:12px">
+<div style= "font-size:12px">
 
-Using / Namespaces | | <span style='color:yellow'>Taleworlds.Core</span>| | | | <span style='color:Cyan'>Flags</span> |
+Using / Namespaces | | <div style='color:yellow'>Taleworlds.Core</div>| | | | <div style='color:Cyan'>Flags</div> |
 :---|---|---|---|---|---|---:|
 [System](EXAMPLE) | | | | | | Flag Name |
-|
-</span>
+| | | | | | | Another Flag Name |
+</div>
 
 ### Values
 * None
@@ -206,18 +198,17 @@ ___
 
 Structs should be placed in their own file at the same level as classes and structs within their respective package (eg: TaleWorlds.Core). Due to the nature of structs, they have identical layout to classes with the only change being instead of savable, they get flags.
 
-## [Parent Object Name](EXAMPLE)
+### [Parent Object Name](EXAMPLE)
 # Struct Name
 
 This is a description of the class and what it does.
 
-<span style= "font-size:12px">
+<div style= "font-size:12px">
 
-Using / Namespaces | | <span style='color:yellow'>Taleworlds.Core</span>| | | | <span style='color:green'>Serializable</span> |
+Using / Namespaces | | <div style='color:yellow'>Taleworlds.Core</div>| | | | <div style='color:green'>Serializable</div> |
 :---|---|---|---|---|---|---:|
 [System](EXAMPLE) | | | | | | |
-|
-</span>
+</div>
 
 > For the non-serializable classes, use ```'color:red'``` and change to text to "Not Serializable".
 
