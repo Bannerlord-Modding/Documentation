@@ -131,7 +131,7 @@ Methods should follow parameters, seperated by a H1 header.
 
 <div style= "font-size:12px">
 
-| Type | Method Name | # of Params |
+| Type | Method Name | Number of Params |
 | --- | --- | --- | --- | --- |
 | void | [SetItem](EXAMPLE) | 2 |
 | [Equipment](EXAMPLE) | [Clone](EXAMPLE) | 1 | 
