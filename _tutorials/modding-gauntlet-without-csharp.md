@@ -1,7 +1,8 @@
 # Modding Gauntlet Without C#
 
 ## Important
-### You Can **NOT** Use Depended Modules For This Tutorial. It Shouldn't Cause Any Issues Though.
+
+### Mods which plan to "overwrite" Gauntlet UIs from Official Modules, **MUST** be loaded **BEFORE** that Official Module. For this reason, it is highly recommended that you do not use `DependedModules` for these types of mods. Hopefully this will be addressed by TaleWorlds in the future.
 
 ## Introduction
 
@@ -9,12 +10,14 @@ The following guide will walk you through step-by-step on how to create a mod th
 
 ## Preparation
 
-#### For this tutorial, we will be naming our project `ExampleUIMod`.
+#### For this tutorial, we will be naming our project `_ExampleUIMod`.
+
+**Note:** The underscore in the name is used to ensure that our mod is loaded first ([see issue above](#important)).
 
 ### Setting up your Module (SubModule.xml)
 
 1. Go to your game files and locate the `Modules` directory.
-2. Create a new folder and name it `ExampleUIMod` (Must be the same as the Id you use for Step #5).
+2. Create a new folder and name it `_ExampleUIMod` (Must be the same as the Id you use for Step #5).
 3. Create a new folder named `GUI` and open it.
 4. Now create a new folder in your `GUI` directory called `Prefabs`. We will come back to this folder later in the tutorial.
 5. Go back to the module folder you created in Step #2 and create a new `SubModule.xml` file and then paste the following into it:
@@ -22,7 +25,7 @@ The following guide will walk you through step-by-step on how to create a mod th
     ```xml
     <Module>
         <Name value="Example UI Mod"/>
-        <Id value="ExampleUIMod"/>
+        <Id value="_ExampleUIMod"/>
         <Version value="v1.0.0"/>
         <SingleplayerModule value="true"/>
         <MultiplayerModule value="false"/>
