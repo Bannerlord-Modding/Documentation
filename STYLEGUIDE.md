@@ -125,13 +125,13 @@ Directly after this intro snippet, we have a section outlining the variables of 
 |...|...|...|...|
 </div>
 
-Methods should follow parameters, seperated by a H1 header.
+Methods should follow parameters, seperated by a H2 header.
 
 ## Methods
 
 <div style= "font-size:12px">
 
-| Type | Method Name | Number of Params |
+| Type | Method Name | Params |
 | --- | --- | --- |
 | void | [SetItem](EXAMPLE) | 2 |
 | [Equipment](EXAMPLE) | [Clone](EXAMPLE) | 1 | 
@@ -149,10 +149,10 @@ Methods should be like a miniature version of a class page, with a small table a
 ### [Parent Object Name](EXAMPLE)
 ## Method Name
 
-| Parameters | Type | default | Optional? |
+| Parameters | Type | Default |
 |---|---|---|---|
-| Param Name | string | 'Hello World' | ✖ |
-| Param Name | [XmlNode](EXAMPLE) | N/A | ☑ |
+| Param Name | string | 'Hello World' |
+| Param Name | [XmlNode](EXAMPLE) | N/A |
 | ... | ... | ... | ... |
 </div>
 
@@ -185,7 +185,7 @@ Using / Namespaces | | <div style='color:yellow'>Taleworlds.Core</div>| | | | <d
 | | | | | | | Another Flag Name |
 </div>
 
-### Values
+## Values
 * None
 * Mountable
 * CanJump
