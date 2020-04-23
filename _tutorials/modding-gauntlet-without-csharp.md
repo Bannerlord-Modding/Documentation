@@ -2,7 +2,7 @@
 
 ## Important
 
-### Mods which plan to "overwrite" Gauntlet UIs from Official Modules, **MUST** be loaded **BEFORE** that Official Module. For this reason, it is highly recommended that you do not use `DependedModules` for these types of mods. Hopefully this will be addressed by TaleWorlds in the future.
+### Mods which plan to "overwrite" Gauntlet UIs from Official Modules **MUST** be loaded **BEFORE** that Official Module. For this reason, it is highly recommended that you do not use `DependedModules` for these types of mods. Hopefully this will be addressed by TaleWorlds in the future.
 
 ## Introduction
 
