@@ -12,27 +12,27 @@ Internal method called after AddTournament and CreateTournament to set up the pr
 #### `public const int ParticipantNumber`
 The number of participants, currently hardcoded to 16 but patcheable.
 
-#### GET `public Town Town'
+#### GET `public Town Town`
 The settlement where the TournamentGame is happening. 
-#### GET 'public CampaignTime CreationTime'
+#### GET `public CampaignTime CreationTime`
 The creation time of the TournamentGame.
-#### GET/SET 'public QualificationMode Mode'
+#### GET/SET `public QualificationMode Mode`
 The qualification mode, Either 'TeamScore' or 'IndividualScore', modifiable.
-#### GET 'public virtual int MaxTeamSize'
+#### GET `public virtual int MaxTeamSize`
 The maximum size of a team in every stage of the tournament.
-#### GET 'public virtual int MaxTeamNumberPerMatch'
+#### GET `public virtual int MaxTeamNumberPerMatch`
 The maximum number of teams per match in every stage of the tournament.
-#### GET 'public ItemObject Prize'
+#### GET `public ItemObject Prize`
 The prize of the tournament.
-#### GET 'public virtual float TournamentWinRenown'
+#### GET `public virtual float TournamentWinRenown`
 The renown gained for winning the tournament.
-#### GET 'public static List<CharacterObject> GetParticipantCharacters( Settlement settlement, int maxParticipantCount, bool includePlayer = true, bool includeHeroes = true )'
+#### GET `public static List<CharacterObject> GetParticipantCharacters( Settlement settlement, int maxParticipantCount, bool includePlayer = true, bool includeHeroes = true )`
 This method defines, when a tournament starts, the participants. Called when a player joins a tournament or a tournament is simulated.
-#### 'public abstract TextObject GetMenuText()'
+#### `public abstract TextObject GetMenuText()`
 This method defines the text on the menu when joining a tournament.
-#### 'public abstract void OpenMission( Settlement settlement, bool isPlayerParticipating )'
+#### `public abstract void OpenMission( Settlement settlement, bool isPlayerParticipating )`
 This method is called when starting a tournament, wether simulated or with player participation.
-#### 'public void PrepareForTournamentGame( bool isPlayerParticipating )'
+#### `public void PrepareForTournamentGame( bool isPlayerParticipating )`
 This method is called when starting a tournament, wether simulated or with player participation.
 
 Example usage:
