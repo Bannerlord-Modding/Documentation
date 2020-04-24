@@ -17,14 +17,33 @@ public override void RegisterEvents()
 The above example registers an event, such that when a clan is destroyed, a message is broadcasted to the chat. The `AddNonSerializedListener` method called here requires the second argument to be an action, which is described [here](https://docs.microsoft.com/en-us/dotnet/api/system.action-1?view=netframework-4.8).
 
 #### ```public abstract void SyncData(IDataStore dataStore)```
-(Work in Progress)
 
-**NOTE**: We are currently not sure what this method does, but at the moment we recommended you implement it as an empty method, like so:
+Here you can manipulate data that your `Behavior` requires persist between saves. However, most `Behavior` won't need it and you can leave it empty if you wish.
+
+If you do require it, the general form looks like this:
+
 ```csharp
 public override void SyncData(IDataStore dataStore)
 {
+    dataStore.SyncData(string_id_for_var, ref the_variable_itself);
 }
 ```
+
+For example, here is the storage of a counter of an event:
+
+```csharp
+// inside your class
+private int _numVillagesRaided;
+
+public override void SyncData(IDataStore dataStore)
+{
+    dataStore.SyncData("_numVillagesRaided", ref _numVillagesRaided);
+}
+```
+
+Perhaps you might increase this number every time the player raids a village, which will now persist between saves, and if they do it enough maybe give them something, like some gold or extra Roguery experience, or whatever you want.
+
+The syntax is very simple, the first argument is a string identifier for what you are storing. This probably only needs to be unique within a given `Behavior` class, so you don't have to worry about having the same name as in someone else's `Behavior`. The second argument is a reference to the variable itself to save or load. You don't need to worry about which is happening, the game will handle it. If the player loads a save, it will write it to that variable, and if they save their game, it will read from it and into the save.
 
 ## Registering Campaign Behaviors:
 Within your [MBSubModuleBase](../mountandblade/mbsubmodulebase.md) class, you can utilise the `OnGameStart` Method to add the behavoir to a campaign. An example is given below:
