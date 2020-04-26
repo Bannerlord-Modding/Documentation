@@ -17,7 +17,9 @@ Below, you may find an in-depth documentation of each.
    
 ``
  if(Input.IsKeyDown(InputKey.Y)){
+ 
   //doSomething
+  
    } ``
         
  ### Input.IsKeyDownImmediate(InputKey.[key])
@@ -27,25 +29,33 @@ Below, you may find an in-depth documentation of each.
    
 ``
         if(Input.IsKeyDownImmediate(InputKey.Y)){
+        
         //doSomething
+        
         }``
         
  ### Input.IsKeyPressed(InputKey.[key])
    This checks to see if the specified [key] has been pressed, it returns a bool once. 
    
    Example:
+   
 ``
         if(Input.IsKeyPressed(InputKey.Y)){
+        
         //doSomething
+        
         }``
         
  ### Input.IsKeyReleased(InputKey.[key])
    This checks to see if the specified [key] is not currently being pressed, it returns a bool once. 
    
    Example:
+   
 ``
         if(Input.IsKeyReleased(InputKey.Y)){
+        
         //doSomething
+        
         }  ``
       
  ### Notice that one could document the stages of a key using the above 3, 
