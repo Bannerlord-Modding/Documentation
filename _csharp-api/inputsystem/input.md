@@ -16,8 +16,8 @@ Below, you may find an in-depth documentation of each.
    Example:
    
 ``
+
  if(Input.IsKeyDown(InputKey.Y)){
- 
   //doSomething
   
    } ``
@@ -28,20 +28,18 @@ Below, you may find an in-depth documentation of each.
    Example:
    
 ``
-        if(Input.IsKeyDownImmediate(InputKey.Y)){
+    if(Input.IsKeyDownImmediate(InputKey.Y)){
+    //doSomething
         
-        //doSomething
-        
-        }``
+        }
+        ``
         
  ### Input.IsKeyPressed(InputKey.[key])
-   This checks to see if the specified [key] has been pressed, it returns a bool once. 
+  This checks to see if the specified [key] has been pressed, it returns a bool once. 
+  Example:
    
-   Example:
-   
-``
+    ``
         if(Input.IsKeyPressed(InputKey.Y)){
-        
         //doSomething
         
         }``
@@ -53,10 +51,10 @@ Below, you may find an in-depth documentation of each.
    
 ``
         if(Input.IsKeyReleased(InputKey.Y)){
-        
         //doSomething
         
-        }  ``
+        } 
+        ``
       
  ### Notice that one could document the stages of a key using the above 3, 
   ```CSharp
