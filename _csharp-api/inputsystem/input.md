@@ -56,6 +56,6 @@ Below, you may find an in-depth documentation of each.
   if(Input.IsKeyDown(InputKey.X))
     y++;
   //For each tick that X is untouched, increment z by 1
-  if(Input.IsKeyDown(InputKey.X))
+  if(Input.IsKeyReleased(InputKey.X))
     z++;
     ```
