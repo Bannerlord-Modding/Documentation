@@ -4,7 +4,7 @@ This static type provides you with input functionality, the base input system ha
 
 ## Key Reading
 
-There's a number of usefull methods that detect keys being pressed down in different ways, all seeming to return a 'bool'. Most common are `isKeyDown`, `isKeyPressed` and `isKeyReleased`
+There's a number of usefull methods that detect keys being pressed down in different ways, all seeming to return a 'bool'. Most common are `IsKeyDown`, `IsKeyPressed` and `IsKeyReleased`
 
 You can also use the extension methods `IsDown`/`IsPressed`/`IsReleased` as such `KeyCode.A.IsPressed()`
 
