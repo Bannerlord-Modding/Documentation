@@ -16,9 +16,10 @@ Below, you may find an in-depth documentation of each.
   Example:
    
  ``
- if(Input.IsKeyDown(InputKey.Y)){
  
-  //doSomething
+   if(Input.IsKeyDown(InputKey.Y)){
+ 
+   //doSomething
   
    } 
  ``
@@ -28,22 +29,25 @@ Below, you may find an in-depth documentation of each.
    
    Example:
    
-    ``
+  ``
+  
     if(Input.IsKeyDownImmediate(InputKey.Y)){
     
     //doSomething
         
         }
-    ``
+  ``
         
  ### Input.IsKeyPressed(InputKey.[key])
   This checks to see if the specified [key] has been pressed, it returns a bool once. 
   
   Example:
+  
   ``
-        if(Input.IsKeyPressed(InputKey.Y)){
+  
+    if(Input.IsKeyPressed(InputKey.Y)){
         
-        //doSomething
+    //doSomething
         
         }
   ``
@@ -51,12 +55,15 @@ Below, you may find an in-depth documentation of each.
   This checks to see if the specified [key] is not currently being pressed, it returns a bool once. 
    
   Example:
+  
   ``
-        if(Input.IsKeyReleased(InputKey.Y)){
-        //doSomething
+  
+    if(Input.IsKeyReleased(InputKey.Y)){
+        
+    //doSomething
         
         } 
-   ``
+  ``
  ### Notice that one could document the stages of a key using the above 3, 
   ```CSharp
   protected override void OnApplicationTick(float dt)
