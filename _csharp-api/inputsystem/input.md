@@ -20,7 +20,8 @@ Below, you may find an in-depth documentation of each.
  
   //doSomething
   
-   } ``
+   } 
+ ``
         
  ### Input.IsKeyDownImmediate(InputKey.[key])
    This acts as an intermediary check between `IsKeyDown` and `IsKeyPressed`      
@@ -33,7 +34,7 @@ Below, you may find an in-depth documentation of each.
     //doSomething
         
         }
-     ``
+    ``
         
  ### Input.IsKeyPressed(InputKey.[key])
   This checks to see if the specified [key] has been pressed, it returns a bool once. 
@@ -44,8 +45,8 @@ Below, you may find an in-depth documentation of each.
         
         //doSomething
         
-        }`` 
-        
+        }
+  ``
  ### Input.IsKeyReleased(InputKey.[key])
   This checks to see if the specified [key] is not currently being pressed, it returns a bool once. 
    
@@ -55,8 +56,7 @@ Below, you may find an in-depth documentation of each.
         //doSomething
         
         } 
-        ``
-      
+   ``
  ### Notice that one could document the stages of a key using the above 3, 
   ```CSharp
   protected override void OnApplicationTick(float dt)
