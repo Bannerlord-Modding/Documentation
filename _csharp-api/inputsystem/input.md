@@ -11,6 +11,7 @@ You can also use the extension methods `IsDown`/`IsPressed`/`IsReleased` as such
 Below, you may find an in-depth documentation of each.
 
  ### Input.IsKeyDown(InputKey.[key])
+  *Note that `InputKey[key]` is of char type*
   This checks to see if the specified [key] is currently being pressed, it returns true as long as the [key] is held down. 
    
   Example:
