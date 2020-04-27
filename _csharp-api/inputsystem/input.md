@@ -74,7 +74,49 @@ This page assumes an import like so: `using TaleWorlds.InputSystem;`
         
     } 
   ```
- ### Notice that one could document the stages of a key using the above 3, 
+ #### To see how one could document the stages of a key using the above 3 methods: [example](#monitoring-a-keys-state)
+ 
+ ### public static bool Input.IsControlOrShiftNotDown()
+  I do not believe there is any other method more self-explanatory than this. Returns true while neither Control or Shift are down.
+
+### public static bool Input.IsPressed([InputKey](#key-codes) key)
+  Checks to see if a they specified [key] is currently pressed. Unlike IsDown, it can be used as Input.IsPressed() but not as an extension.
+
+### public static Vector2 Input.GetKeyState([InputKey](#key-codes) key)
+  Checks and returns the current state of the specified [key] as a Vector2.
+  I am not aware how this can be used.
+  
+  Example:
+  ```CSharp
+  using System.Numerics; // WARNING, this assumes the existance of System.Numerics.Vectors.dll,
+                         // which has to be installed manually.
+  using Taleworlds.InputSystem;
+  
+  Vector2 test = new Vector2(Input.GetKeyState(InputKey.A));
+  
+  Vector2 compare = new Vector2(10, 10);
+  
+  if (Equals(test, compare))
+    InformationManager.DisplayMessage(new InformationMessage("Help please I'm forced to write this doc!"));
+    
+  ```
+### public static string Input.GetKeyboardText()
+ Returns the text currently existing in the user's clipboard as a string.
+
+### public static bool Input.IsMouseActive
+ Checks to see if the mouse is currently active, if so returns `true`.
+
+### public static bool Input.IsMouseScrollChanged
+ Checks to see if the mouse scroll wheel is currently rotating, if so returns `true`.
+
+### public static float Input.MouseMoveX
+ Returns the horizontal position of the mouse as a float.
+
+### public static float Input.MouseMoveY
+ Returns the vertical position of the mouse as a float.
+
+## Examples
+### Monitoring a key's state
   ```CSharp
   protected override void OnApplicationTick(float dt)
   {
@@ -92,7 +134,7 @@ This page assumes an import like so: `using TaleWorlds.InputSystem;`
       z++;
   }   
   ```
-
+  
 ## Key Codes
 
 As of Bannerlord 1.2.1 the following key codes are available:
