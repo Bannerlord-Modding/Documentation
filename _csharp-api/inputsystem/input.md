@@ -4,66 +4,75 @@ This static type provides you with input functionality, the base input system ha
 
 ## Key Reading
 
-There's a number of usefull methods that detect keys being pressed down in different ways, all seeming to return a 'bool'. Most common are `IsKeyDown`, `IsKeyPressed` and `IsKeyReleased`
+There's a number of useful methods that detect keys being pressed down in different ways, all seeming to return a 'bool'. Most common are `IsKeyDown`, `IsKeyPressed` and `IsKeyReleased`
+
+You can call them like so: `Input.IsKeyDown(InputKey.TheKeyCode)`. See here for a list of all keycodes: [link](#key-codes)
 
 You can also use the extension methods `IsDown`/`IsPressed`/`IsReleased` as such `KeyCode.A.IsPressed()`
 
 Below, you may find an in-depth documentation of each.
 
- ### Input.IsKeyDown(InputKey.[key])
-  *Note that `InputKey[key]` is of string type*  
+#### Namespace
+
+This page assumes an import like so: `using TaleWorlds.InputSystem;`
+
+ ### public static bool Input.IsKeyDown([InputKey](#key-codes) key)
   This checks to see if the specified [key] is currently being pressed, it returns true as long as the [key] is held down. 
    
   Example:
    
- ```
+ ```CSharp
  
-   if(Input.IsKeyDown(InputKey.Y)){
+   if(Input.IsKeyDown(InputKey.Y))
+   {
  
-   //doSomething
+       //doSomething
   
    } 
  ```
         
- ### Input.IsKeyDownImmediate(InputKey.[key])
+ ### public static bool Input.IsKeyDownImmediate([InputKey](#key-codes) key)
    This acts as an intermediary check between `IsKeyDown` and `IsKeyPressed`      
    
    Example:
    
-  ```
+  ```CSharp
   
-    if(Input.IsKeyDownImmediate(InputKey.Y)){
+    if(Input.IsKeyDownImmediate(InputKey.Y))
+    {
     
-    //doSomething
+        //doSomething
         
-        }
+    }
   ```
         
- ### Input.IsKeyPressed(InputKey.[key])
+ ### public static bool Input.IsKeyPressed([InputKey](#key-codes) key)
   This checks to see if the specified [key] has been pressed, it returns a bool once. 
   
   Example:
   
-  ```
+  ```CSharp
   
-    if(Input.IsKeyPressed(InputKey.Y)){
+    if(Input.IsKeyPressed(InputKey.Y))
+    {
         
-    //doSomething
+        //doSomething
         
-        }
+    }
   ```
- ### Input.IsKeyReleased(InputKey.[key])
+ ### public static bool Input.IsKeyReleased([InputKey](#key-codes) key)
   This checks to see if the specified [key] is not currently being pressed, it returns a bool once. 
    
   Example:
   
-  ```
+  ```CSharp
   
-    if(Input.IsKeyReleased(InputKey.Y)){
+    if(Input.IsKeyReleased(InputKey.Y))
+    {
         
-    //doSomething
+        //doSomething
         
-        } 
+    } 
   ```
  ### Notice that one could document the stages of a key using the above 3, 
   ```CSharp
@@ -71,7 +80,7 @@ Below, you may find an in-depth documentation of each.
   {
     int x = 0;
     int y = 0;
-     int z = 0;
+    int z = 0;
     //If X has been pressed, increment x by 1
     if(Input.IsKeyPressed(InputKey.X))
       x++;
@@ -81,4 +90,148 @@ Below, you may find an in-depth documentation of each.
     //For each tick that X is untouched, increment z by 1
     if(Input.IsKeyReleased(InputKey.X))
       z++;
-    ```
+  }   
+  ```
+
+## Key Codes
+
+As of Bannerlord 1.2.1 the following key codes are available:
+
+```CSharp
+public enum InputKey
+{
+    Invalid,
+    Escape,
+    D1,
+    D2,
+    D3,
+    D4,
+    D5,
+    D6,
+    D7,
+    D8,
+    D9,
+    D0,
+    Minus,
+    Equals,
+    BackSpace,
+    Tab,
+    Q,
+    W,
+    E,
+    R,
+    T,
+    Y,
+    U,
+    I,
+    O,
+    P,
+    OpenBraces,
+    CloseBraces,
+    Enter,
+    LeftControl,
+    A,
+    S,
+    D,
+    F,
+    G,
+    H,
+    J,
+    K,
+    L,
+    SemiColon,
+    Apostrophe,
+    Tilde,
+    LeftShift,
+    BackSlash,
+    Z,
+    X,
+    C,
+    V,
+    B,
+    N,
+    M,
+    Comma,
+    Period,
+    Slash,
+    RightShift,
+    NumpadMultiply,
+    LeftAlt,
+    Space,
+    CapsLock,
+    F1,
+    F2,
+    F3,
+    F4,
+    F5,
+    F6,
+    F7,
+    F8,
+    F9,
+    F10,
+    Numpad7,
+    Numpad8,
+    Numpad9,
+    NumpadMinus,
+    Numpad4,
+    Numpad5,
+    Numpad6,
+    NumpadPlus,
+    Numpad1,
+    Numpad2,
+    Numpad3,
+    Numpad0,
+    NumpadPeriod,
+    Extended,
+    F11,
+    F12,
+    NumpadEnter,
+    RightControl,
+    NumpadSlash,
+    RightAlt,
+    NumLock,
+    Home,
+    Up,
+    PageUp,
+    Left,
+    Right,
+    End,
+    Down,
+    PageDown,
+    Insert,
+    Delete,
+    ControllerLStick,
+    ControllerRStick,
+    LeftMouseButton,
+    RightMouseButton,
+    MiddleMouseButton,
+    X1MouseButton,
+    X2MouseButton,
+    MouseScrollUp,
+    MouseScrollDown,
+    ControllerLStickUp,
+    ControllerLStickDown,
+    ControllerLStickLeft,
+    ControllerLStickRight,
+    ControllerRStickUp,
+    ControllerRStickDown,
+    ControllerRStickLeft,
+    ControllerRStickRight,
+    ControllerLUp,
+    ControllerLDown,
+    ControllerLLeft,
+    ControllerLRight,
+    ControllerRUp,
+    ControllerRDown,
+    ControllerRLeft,
+    ControllerRRight,
+    ControllerLBumper,
+    ControllerRBumper,
+    ControllerLOption,
+    ControllerROption,
+    ControllerLThumb,
+    ControllerRThumb,
+    ControllerLTrigger,
+    ControllerRTrigger,
+}
+```
