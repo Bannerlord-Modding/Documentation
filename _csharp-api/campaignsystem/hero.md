@@ -33,7 +33,7 @@ TODO
  | public            | NumberOfCreatedParties        | `int`                                                          | Number of parties                          |       |
  | private readonly  | _occupiedByAnEvent            | `List<string>`                                                 | TODO                                       |       |
  | private           | _passedTimeAtHomeSettlement;  | `float`                                                        | Time at home settlement                    |       |
- | private           | _characterObject              | [CharacterObject]()                                            | TODO                                       |       |
+ | private           | _characterObject              | [CharacterObject]()                                            | Character object info                      |       |
  | public            | FirstName                     | [TextObject]()                                                 | First name                                 |       |
  | public            | Name                          | [TextObject]()                                                 | Name                                       |       |
  | public            | Detected                      | `bool`                                                         | Have you met with hero                     |       |
@@ -42,7 +42,7 @@ TODO
  | private           | _heroTraits                   | [CharacterTraits]()                                            | Hero's traits                              |       |
  | private           | _heroPerks                    | [CharacterPerks]()                                             | Hero's perks                               |       |
  | private           | _heroSkills                   | [CharacterSkills]()                                            | Hero's skills                              |       |
- | private           | _charAttributeValues          | `int[]`                                                        | TODO                                       |       |
+ | private           | _charAttributeValues          | `int[6]`                                                       | Character attributes points                |       |
  | public            | NeverBecomePrisoner           | `bool`                                                         | Will never be prisoner?                    |       |
  | private           | _alwaysUnconscious;           | `bool`                                                         | TODO                                       |       |
  | public            | AlwaysDie                     | `bool`                                                         | Is hero always dir (for what?)             |       |
@@ -58,7 +58,7 @@ TODO
  | private           | _deathDay                     | [CampaignTime]()                                               | Day of death                               |       |
  | private           | _power                        | `int`                                                          | Power                                      |       |
  | public            | VisitedSettlements            | `Dictionary<`[Settlement]()`, float>`                          | Visited settlements                        |       |
- | private           | _clan                         | [Clan]()                                                       | Hero's clan?                               |       |
+ | private           | _clan                         | [Clan]()                                                       | Hero's clan                                |       |
  | private           | _supporterOf                  | [Clan]()                                                       | TODO                                       |       |
  | private           | _governorOf                   | [Town]()                                                       | Governor of                                |       |
  | private           | _ownedWorkshops               | `List<`[Workshop]()`>`                                         | Owned workshops                            |       |
@@ -67,7 +67,7 @@ TODO
  | public            | Culture                       | [CultureObject]()                                              | Culture                                    |       |
  | public            | _partyBelongedTo              | [MobileParty]()                                                | TODO                                       |       |
  | private           | _stayingInSettlementOfNotable | [Settlement]()                                                 | TODO                                       |       |
- | public            | SpecialItems                  | `List<`(ItemObject)[]`>`                                       | Inventory?                                 |       |
+ | public            | SpecialItems                  | `List<`(ItemObject)[]`>`                                       | TODO                                       |       |
  | private           | _controversy                  | `float`                                                        | TODO                                       |       |
  | private           | _hasMet                       | `bool`                                                         | Has hero met                               |       |
  | private           | _bornSettlement               | [Settlement]()                                                 | Born settlement                            |       |
