@@ -43,7 +43,7 @@ public override void SyncData(IDataStore dataStore)
 
 Perhaps you might increase this number every time the player raids a village, which will now persist between saves, and if they do it enough maybe give them something, like some gold or extra Roguery experience, or whatever you want.
 
-The syntax is very simple, the first argument is a string identifier for what you are storing. This probably only needs to be unique within a given `Behavior` class, so you don't have to worry about having the same name as in someone else's `Behavior`. The second argument is a reference to the variable itself to save or load. You don't need to worry about which is happening, the game will handle it. If the player loads a save, it will write it to that variable, and if they save their game, it will read from it and into the save.
+The syntax is very simple, the first argument is a string identifier for what you are storing. This only needs to be unique within a given `Behavior` class, so you don't have to worry about having the same name as in someone else's `Behavior`. The second argument is a reference to the variable itself to save or load. You don't need to worry about which is happening, the game will handle it. If the player loads a save, it will write it to that variable, and if they save their game, it will read from it and into the save.
 
 ## Registering Campaign Behaviors:
 Within your [MBSubModuleBase](../mountandblade/mbsubmodulebase.md) class, you can utilise the `OnGameStart` Method to add the behavoir to a campaign. An example is given below:
