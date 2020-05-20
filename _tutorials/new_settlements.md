@@ -49,7 +49,7 @@ Note that, the two entries for villages village_M1_1 and village_M1_2 have entri
 trade_bound="Settlement.town_M1" bound="Settlement.town_M1"
 ```
 
-It's not clear how exactly these two differ, but for now best set them to the town you want them to belong to.
+This is useful for villages bound to castles, which cannot be traded with. These villages must have a settlement to trade with outside of the castle that they're bound to, so you may specify which that is here.
 The villages also include definitions for which good you want them to produce:
 
 ```
