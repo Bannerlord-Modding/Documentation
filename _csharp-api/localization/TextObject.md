@@ -24,15 +24,15 @@ Strings used in TextObjects could contain variables, which themselves are TextOb
 ### Defining text variables
 There are two ways to define a text variable for TextObject. You can do it in constructor, or with `SetTextVariable` method:
 ```csharp
-    private const string SOME_STRING = "{=r6NczU68} Some text {TEXT_VARIABLE} more text {OTHER_TEXT_VARIABLE}.";
+private const string SOME_STRING = "{=r6NczU68} Some text {TEXT_VARIABLE} more text {OTHER_TEXT_VARIABLE}.";
 
-    public static TextObject GetSomeStringAsTextObject()
-    {
-      TextObject result = new TextObject(SOME_STRING, new Dictionary<string, TextObject>() { ["TEXT_VARIABLE"] = new TextObject("Variable value") });
-      string s = "Other variable value";
-      result.SetTextVariable("OTHER_TEXT_VARIABLE", s);
-      return result;
-    }
+public static TextObject GetSomeStringAsTextObject()
+{
+    TextObject result = new TextObject(SOME_STRING, new Dictionary<string, TextObject>() { ["TEXT_VARIABLE"] = new TextObject("Variable value") });
+    string s = "Other variable value";
+    result.SetTextVariable("OTHER_TEXT_VARIABLE", s);
+    return result;
+}
 ```
 ### Complex text variables and cases
 As all text variables are TextObjects themselves, they could be quite complex.
@@ -40,27 +40,28 @@ Note that any variables set to the nested TextObject could be used as properties
 It is also worth noting that TextObjects do have basic built-in inline conditional processor.
 Consider following example:
 ```csharp
-    private const string MAIN_STRING =
-      "{=stringIDMain}I spent {NESTED_TEXT_OBJECT} this example! " +
-      "By the way, using of number {VARIABLE_TAG} requires {VARIABLE_TAG.NESTED_PROPERTY} after it! " +
-      "{BIT_FLAG}Conditional text example for when value of bitFlag = 1{?}Another conditional text example for when value of bitFlag = 0{\\?}.";
-    private const string NESTED_STRING = "{=stringIDNested}{MINUTES} minutes to come up with and write";
-    private const string NESTED_PROPERTY_SINGULAR = "{=ie0XDdqR}singular noun";
-    private const string NESTED_PROPERTY_PLURAL = "{=oRPbCfYq}plural noun";
+private const string MAIN_STRING =
+    "{=stringIDMain}I spent {NESTED_TEXT_OBJECT} this example! " +
+    "By the way, using of number {VARIABLE_TAG} requires {VARIABLE_TAG.NESTED_PROPERTY} after it! " +
+    "{BIT_FLAG}Conditional text example for when value of bitFlag = 1{?}Another conditional text example for when value of bitFlag = 0{\\?}.";
 
-    public static TextObject GetMainTextObject(int variable, bool flag)
-    {
-      TextObject mainTextObject = new TextObject(MAIN_STRING);
-      TextObject nestedTextObject = new TextObject(NESTED_STRING,
+private const string NESTED_STRING = "{=stringIDNested}{MINUTES} minutes to come up with and write";
+private const string NESTED_PROPERTY_SINGULAR = "{=ie0XDdqR}singular noun";
+private const string NESTED_PROPERTY_PLURAL = "{=oRPbCfYq}plural noun";
+
+public static TextObject GetMainTextObject(int variable, bool flag)
+{
+    TextObject mainTextObject = new TextObject(MAIN_STRING);
+    TextObject nestedTextObject = new TextObject(NESTED_STRING,
         new Dictionary<string, TextObject>() { ["MINUTES"] = new TextObject(variable) });
-      mainTextObject.SetTextVariable("NESTED_TEXT_OBJECT", nestedTextObject);
+    mainTextObject.SetTextVariable("NESTED_TEXT_OBJECT", nestedTextObject);
       
-      TextObject variableTextObject = new TextObject(variable);
-      variableTextObject.SetTextVariable("NESTED_PROPERTY", variable == 1 ? NESTED_PROPERTY_SINGULAR : NESTED_PROPERTY_PLURAL);
-      mainTextObject.SetTextVariable("VARIABLE_TAG", variableTextObject);
-      mainTextObject.SetTextVariable("BIT_FLAG", flag ? 1 : 0);
-      return mainTextObject;
-    }
+    TextObject variableTextObject = new TextObject(variable);
+    variableTextObject.SetTextVariable("NESTED_PROPERTY", variable == 1 ? NESTED_PROPERTY_SINGULAR : NESTED_PROPERTY_PLURAL);
+    mainTextObject.SetTextVariable("VARIABLE_TAG", variableTextObject);
+    mainTextObject.SetTextVariable("BIT_FLAG", flag ? 1 : 0);
+    return mainTextObject;
+}
 ```
 Then using of ` GetMainTextObject(40, true).ToString();` would return following string:
 ```csharp
@@ -69,8 +70,8 @@ Then using of ` GetMainTextObject(40, true).ToString();` would return following 
 ### Note on nested properties
 Using of nested properties for complex objects could be very helpful to anyone translating your mod. Consider following example from TaleWorlds code:
 ```csharp
-        TextObject textObject = new TextObject("{=jF4Nl8Au}{NPC_LIEGE.NAME}, {LIEGE_RELATIONSHIP}? Long may {?NPC_LIEGE.GENDER}she{?}he{\\?} live.", (Dictionary<string, TextObject>) null);
-        StringHelpers.SetCharacterProperties("NPC_LIEGE", Hero.OneToOneConversationHero.Clan.Leader.CharacterObject, (TextObject) null, textObject, false);
+TextObject textObject = new TextObject("{=jF4Nl8Au}{NPC_LIEGE.NAME}, {LIEGE_RELATIONSHIP}? Long may {?NPC_LIEGE.GENDER}she{?}he{\\?} live.");
+StringHelpers.SetCharacterProperties("NPC_LIEGE", Hero.OneToOneConversationHero.Clan.Leader.CharacterObject, null, textObject, false);
 ```
 Method `StringHelpers.SetCharacterProperties` here is used to set several character-related attributes, that are used in the TextObject string.
 In this example character's Name and Gender are used.
