@@ -23,5 +23,7 @@ persuasionTask2.SpokenLine =
 ```
 In this example method `StringHelpers.SetCharacterProperties` is used to store certain character properties to the MBTextManager variable array, making them global. They are then used to form new TextObject for a persuasion dialog line.
 
+Please note that TextObject instance must not have any defined attributes (its own text variables) in order to have access to global variables.
+
 ## TextContext
 Any variable set to MBTextManager is stored in the private readonly field named TextContext. It serves as an advanced ditionary of text variables and functions (need more info on that matter), and is only cleared on `Campaign.OnDestroy()`. Keep in mind that text variables could be freely rewrited at any time with new values.
