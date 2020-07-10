@@ -13,7 +13,9 @@ Any game text can be implemented in such a way that it could be localized. In or
 ### Notes on using TextObjects
 Please, consider using additional [properties](TextObject.md#complex-text-variables-and-cases) when setting info on complex objects to the TextObject. That could do your life easier and be absolute lifesaver to the people who will translate the mod. For example, if you need to mention a character in some line, you could just store his name in the result TextObject and it would deal the trick, but translating of the line to other languages could become problematic. Alternatively, you could store in the TextObject several character properties, including Name and Gender. Then even if you don't need gender in that particular line in English, it may be used as a conditional factor in the translation.
 
-Here is an example of using properties and the conditionals in the TextObject string:
+<details>
+<summary>Here is an example of using properties and the conditionals in the TextObject string.</summary>
+
 ```csharp
 public const string conditionalString =
   "{=conditionalStringID}This proposal is on cooldown for {NUMBER_OF_DAYS} {?NUMBER_OF_DAYS.PLURAL_FORM}days{?}day{\\?}.";
@@ -49,6 +51,7 @@ SetNumericVariable(conditionalTextObject, "NUMBER_OF_DAYS", 1);
 conditionalTextObject.ToString()
 ```
 would return `"This proposal is on cooldown for 1 day."`.
+</details>
 
 Worth a note that default game processing language is English, so it is advisable to use English lines in development.
 
