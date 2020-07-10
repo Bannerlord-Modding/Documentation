@@ -86,7 +86,7 @@ In that case you can define global text variable, that will be used by text proc
 ```csharp
 MBTextManager.SetTextVariable(StringTag, TextVariable);
 ```
-MBTextManager is a public static class. Any variable set to it will be used by game text processor for any TextObject as if it was defined for that TextObject itself.
+[MBTextManager](MBTextManager.md) is a public static class. Any variable set to it will be used by game text processor for any TextObject as if it was defined for that TextObject itself.
 
 ## Default language
 Default language for the game is English, so any localizable string you use in design time should be defined in English. That way it would never be read from any game files,
