@@ -21,9 +21,7 @@ StringHelpers.SetCharacterProperties("NEW_LIEGE", newLiege.CharacterObject, null
 persuasionTask2.SpokenLine =
       new TextObject("{=CymOFgzv}I gave an oath to {CURRENT_LIEGE.LINK} - but {?LORD.GENDER}her{?}his{\\?} disregard for the common people of this realm does give me pause.");
 ```
-In this example method `StringHelpers.SetCharacterProperties` is used to store certain character properties to the MBTextManager variable array, making them global.
-They are then used to form new TextObject for a persuasion dialog line.
+In this example method `StringHelpers.SetCharacterProperties` is used to store certain character properties to the MBTextManager variable array, making them global. They are then used to form new TextObject for a persuasion dialog line.
 
 ## TextContext
-Any variable set to MBTextManager is stored in private field TextContext. It is only cleared on `Campaign.OnDestroy()`.
-Text variables could be freely rewrited at any time with new values.
+Any variable set to MBTextManager is stored in the private readonly field named TextContext. It serves as an advanced ditionary of text variables and functions (need more info on that matter), and is only cleared on `Campaign.OnDestroy()`. Keep in mind that text variables could be freely rewrited at any time with new values.
