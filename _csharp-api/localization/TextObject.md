@@ -20,7 +20,10 @@ You can use this service to generate random keys: https://www.random.org/strings
 More information about using string IDs in the game’s XML files can be found in [Localization]().
 
 ## Text variables
-Strings used in TextObjects could contain variables, which themselves are TextObjects.
+Strings used in TextObjects could contain variables, which themselves are TextObjects. Variables are stored in the public property named Attributes:
+```csharp
+public Dictionary<string, TextObject> Attributes 
+```
 ### Defining text variables
 There are two ways to define a text variable for TextObject. You can do it in constructor, or with `SetTextVariable` method:
 ```csharp
@@ -86,7 +89,7 @@ In that case you can define global text variable, that will be used by text proc
 ```csharp
 MBTextManager.SetTextVariable(StringTag, TextVariable);
 ```
-[MBTextManager](MBTextManager.md) is a public static class. Any variable set to it will be used by game text processor for any TextObject as if it was defined for that TextObject itself.
+[MBTextManager](MBTextManager.md) is a public static class. Any variable set to it will be used by game text processor for any TextObject as if it was defined for that TextObject itself. If you intend to use global text variables in the TextObject, you should not set any local text variables to it. Game text processor only uses variables stored in the MBTextManager if TextObject instance does not have it's own attributes.
 
 ## Default language
 Default language for the game is English, so any localizable string you use in design time should be defined in English. That way it would never be read from any game files,
