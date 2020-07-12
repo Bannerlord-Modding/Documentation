@@ -17,7 +17,7 @@ Instead, use X-digit alphanumeric string codes for that, which look as follows: 
 As of now, TaleWords and most of the game modders use 8-digit alphanumeric string codes to generate string IDs in most cases.
 You can use this service to generate random keys: https://www.random.org/strings/ . Of course random matches are still possible, but quite unlikely.
 
-More information about using string IDs in the game’s XML files can be found in [Localization]().
+More information about using string IDs in the game’s XML files can be found in [Localization](README.md#notes-on-string-ids).
 
 ## Text variables
 Strings used in TextObjects could contain variables, which themselves are TextObjects. Variables are stored in the public property named Attributes:
@@ -93,4 +93,5 @@ MBTextManager.SetTextVariable(StringTag, TextVariable);
 
 ## Default language
 Default language for the game is English, so any localizable string you use in design time should be defined in English. That way it would never be read from any game files,
-but instead would be built in your assembly. See more information on mantaining your XML files with game strings in [Localization]().
+but instead would be built in your assembly. See more information on mantaining your XML files with game strings in [Localization](README.md#notes-on-std_module_strings_xml
+).
