@@ -6,7 +6,7 @@ For a full example of the folder structure and contents refer to `Drive:\\Instal
 
 ## Folder Descriptions & File Examples
 
-* `AssetPackages` - Unknown at this time, likely requires the release of the editor to create/modify these files.
+* `AssetPackages` - Contains TPAC files (may be Taleworlds Package). The TPAC format was introduced at some time during the multiplayer beta, replacing the outdated BRF format of Warband and CRF format of early beta, and is still used today. Can be explored via an unofficial tool [TpacTool](https://github.com/szszss/TpacTool)
   *  `someasset.tpac`
 * `Atmospheres` -  [Refer to [Atmosphere]](../_xmldocs/atmosphere.md)
   * `Interpolated` 
