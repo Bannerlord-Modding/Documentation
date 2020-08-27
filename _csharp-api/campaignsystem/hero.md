@@ -94,7 +94,24 @@ TODO
 
 ## Functions
 
-Work in progress
+
+ | Mods              | Signature                     | Return Type                                                    | Notes                                      |
+ | ----------------- | ----------------------------- | -------------------------------------------------------------- | ------------------------------------------ |
+| public            | GetHeroSkills()               |     `CharacterSkills`                                           | CharacterSkills is a descendent of 'PropertyOwner' class, should make tutorial for 'PropertyOwner'.| 
+ | public           | ChangeHeroGold(int changeAmount) | `void`                                                      | Has logic to handle reaching 64(?) bit integer's max value |
+  | public           | AddSkillXp(SkillObject skill, float xpAmount) | `void`                                                      | Invokes \_heroDeveloper 's AddSkillXp function, which does the actual skill xp calculations.  |
+  | public           | AddPower(float value)        | `void`                                                                       | Not sure if anything other than the 'Notable' type of Hero will use this function. |
+  | public          | GetHeroTraits()               | `CharacterTraits`                                                | CharacterTraits is also a descendant of 'PropertyOwner'. |
+   | public           | GetPosition()               | `vec3`                                                      |If the hero is attached to a party or a settlement, this function will return the party/settlement's position |
+ | public           | GetRelation(Hero otherHero) | `int`                                                      | Returns an 'effective relation' value that is modified by personality differences between the Heros and overridden by the relation between the heros' clan leaders.|
+  | public           | GetRelationWithPlayer() | `int`                                                      | Gets this Hero's relation with the Main Hero (you) |
+   | public           | GetBaseHeroRelation(Hero otherHero) | `int`                                                      | Returns the 'base relation' value, unmodified by personality or clan leader relationships. |
+   | public           | IsEnemy(Hero otherHero) | `bool`                                                      | Returns true if relation to other hero < -10 . Threshold is hardcoded, unfortunately.|
+   | public           | IsFriend(Hero otherHero) | `bool`                                                      | Returns true if relation to other hero > 10 |
+
+
+
+
 
 
 ## `struct` HeroLastSeenInformation
