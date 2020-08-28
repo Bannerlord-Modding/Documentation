@@ -1,5 +1,5 @@
 # CampaignBehaviorBase
-This is an abstract class within [TaleWorlds.CampaignSystem](./README.md), and can be inherited to code for unique behaviours within the game's campaign.
+这是一个在 [TaleWorlds.CampaignSystem](./README.md) 中抽象的分类， and can be inherited to code for unique behaviours within the game's campaign.
 
 ## Abstract Methods:
 #### ```public abstract void RegisterEvents()```

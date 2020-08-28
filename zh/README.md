@@ -2,7 +2,7 @@
 
 原文档: [Bannerlord Documentation](https://docs.bannerlordmodding.com/)  
 作者: [Bannerlord Modding](https://github.com/Bannerlord-Modding)  
-译者: [衣谷作坊-Oliver](mailto:munoliver007@gmail.com)， [世俗骑士](mailto:843750340@qq.com)，[上官云泽](mailto:1143232792@qq.com).
+译者: [衣谷作坊-Oliver](mailto:munoliver007@gmail.com)， [世俗骑士](mailto:843750340@qq.com)，[上官云泽](mailto:1143232792@qq.com)，[KnowsCount](mailto:knowscount@gmail.com).
 
 ## Mod 制作简介
 
