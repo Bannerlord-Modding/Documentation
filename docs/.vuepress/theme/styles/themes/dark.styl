@@ -1,0 +1,248 @@
+@import '../variables.styl';
+
+.yuu-theme-dark {
+	color: $darkTextColor;
+	background-color: $darkPrimaryBg;
+
+	hr {
+		border-top-color: $darkBorderColor;
+	}
+
+	.theme-default-content {
+		code {
+			color: $codeTextColor;
+			background-color: $darkSecondaryBg;
+		}
+
+		a code {
+			color: $accentColor;
+		}
+	}
+
+	tr {
+		border-top-color: $darkBorderColor;
+
+		&:nth-child(2n) {
+			background-color: $darkSecondaryBg;
+		}
+	}
+
+	th, td {
+		border-color: $darkBorderColor;
+	}
+
+	// @parent-theme/components/AlgoliaSearchBox.vue
+	.algolia-search-wrapper .algolia-autocomplete {
+		.ds-dropdown-menu {
+			background-color: $darkPrimaryBg;
+			border-color: $darkBorderColor;
+
+			&::before {
+				background-color: $darkPrimaryBg;
+				border-color: $darkBorderColor;
+			}
+
+			[class^="ds-dataset-"] {
+				background-color: $darkPrimaryBg;
+			}
+
+			.ds-suggestion {
+				border-color: $darkBorderColor;
+			}
+
+			.ds-cursor .algolia-docsearch-suggestion--content {
+				color: $darkTextColor;
+				background-color: $darkSecondaryBg !important;
+
+				&::before {
+					background-color: $darkBorderColor;
+				}
+			}
+
+			.algolia-docsearch-suggestion--content::before {
+				background-color: $darkBorderColor;
+			}
+		}
+
+		.algolia-docsearch-suggestion--category-header {
+			border-color: $darkBorderColor;
+		}
+
+		.algolia-docsearch-suggestion {
+			color: $darkTextColor;
+			background-color: $darkPrimaryBg;
+			border-color: $darkBorderColor;
+
+			.algolia-docsearch-suggestion--category-header {
+				color: $darkTextColor;
+			}
+
+			 .algolia-docsearch-suggestion--title {
+				 color: $darkAltTextColor;
+			 }
+
+			.algolia-docsearch-suggestion--subcategory-column {
+				color: $darkTextColor;
+				background-color: $darkPrimaryBg;
+				border-color: $darkBorderColor;
+
+				&::before {
+					background-color: $darkBorderColor;
+				}
+
+				.algolia-docsearch-suggestion--highlight {
+					color: $accentColor;
+				}
+			}
+
+			.algolia-docsearch-suggestion--subcategory-column-text {
+				color: $darkTextColor;
+			}
+
+			@media (max-width: $MQMobile) {
+				.algolia-docsearch-suggestion--subcategory-column-text {
+					background-color: rgba(#fff, 0.1);
+				}
+			}
+		}
+	}
+
+	// @parent-theme/components/Home.vue
+	.home {
+		.hero .description,
+		.feature h2,
+		.feature p {
+			color: $darkTextColor;
+		}
+
+		.features {
+			border-top-color: $darkBorderColor;
+		}
+
+		.footer {
+			color: $darkAltTextColor;
+			border-top-color: $darkBorderColor;
+		}
+	}
+
+	// @theme/components/Navbar.vue
+	.navbar {
+		color: $darkTextColor;
+		background-color: $darkPrimaryBg;
+		border-bottom-color: $darkBorderColor;
+
+		.links {
+			background-color: $darkPrimaryBg;
+		}
+
+		.site-name {
+			color: $darkTextColor;
+		}
+	}
+
+	// @parent-theme/components/NavLinks.vue
+	.nav-links {
+		a,
+		.dropdown-wrapper .dropdown-title,
+		.dropdown-wrapper .mobile-dropdown-title {
+			color: $darkTextColor;
+
+			&:hover,
+			&.router-link-active {
+				color: $accentColor;
+			}
+		}
+
+		.dropdown-wrapper .nav-dropdown {
+			background-color: $darkPrimaryBg;
+			border-color: $darkBorderColor;
+		}
+	}
+
+	.yuu-theme-blue {
+		.nav-item > a:not(.external) {
+			&:hover,
+			&.router-link-active {
+				border-bottom-color: $blueAccentColor;
+			}
+		}
+	}
+
+	.yuu-theme-red {
+		.nav-item > a:not(.external) {
+			&:hover,
+			&.router-link-active {
+				border-bottom-color: $redAccentColor;
+			}
+		}
+	}
+
+	.yuu-theme-purple {
+		.nav-item > a:not(.external) {
+			&:hover,
+			&.router-link-active {
+				border-bottom-color: $purpleAccentColor;
+			}
+		}
+	}
+
+	// @parent-theme/components/PageEdit.vue
+	.page-nav .inner {
+		border-top-color: $darkBorderColor;
+	}
+
+	// @vuepress/plugin-search/SearchBox.vue
+	.search-box {
+		input,
+		.suggestions {
+			background-color: $darkSecondaryBg;
+			border-color: $darkBorderColor;
+		}
+
+		input {
+			color: $darkTextColor;
+
+			&:focus {
+				border-color: alpha($accentColor, 0.75);
+			}
+		}
+
+		.suggestion {
+			&.focused {
+				background-color: $darkPrimaryBg;
+
+				a {
+					color: $accentColor;
+				}
+			}
+
+			a {
+				color: $darkAltTextColor;
+			}
+		}
+	}
+
+	// @parent-theme/components/Sidebar.vue
+	.sidebar {
+		background-color: $darkPrimaryBg;
+		border-right-color: $darkBorderColor;
+		.nav-links {
+			border-bottom-color: $darkBorderColor;
+		}
+	}
+
+	// @parent-theme/components/SidebarLink.vue
+	a.sidebar-link {
+		color: $darkAltTextColor;
+
+		&:hover,
+		&.active {
+			color: $accentColor;
+		}
+	}
+
+	// @vuepress/plugin-pwa/lib/SWUpdatePopup.vue
+	.sw-update-popup {
+		background-color: $darkPrimaryBg;
+	}
+}

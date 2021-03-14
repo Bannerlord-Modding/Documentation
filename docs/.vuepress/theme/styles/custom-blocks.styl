@@ -1,0 +1,82 @@
+@import './variables.styl';
+
+.custom-block {
+	.custom-block-title {
+		font-weight: 600;
+		margin-bottom: -0.4rem;
+	}
+
+	&.tip, &.warning, &.danger {
+		padding: 0.1rem 1.5rem;
+		border-left-width: 0.5rem;
+		border-left-style: solid;
+		margin: 1rem 0;
+	}
+
+	&.tip {
+		background-color: lighten($tipGreen, 85%);
+		border-color: $tipGreen;
+		color: darken($tipGreen, 50%);
+
+		.custom-block-title {
+			color: darken($tipGreen, 20%);
+		}
+
+		a {
+			color: $tipGreen;
+		}
+	}
+
+	&.warning {
+		background-color: rgba(255, 229, 100, 0.3);
+		border-color: darken($warningYellow, 35%);
+		color: darken($warningYellow, 70%);
+
+		.custom-block-title {
+			color: darken($warningYellow, 50%);
+		}
+
+		a {
+			color: darken($warningYellow, 40%);
+		}
+	}
+
+	&.danger {
+		background-color: lighten($dangerRed, 90%);
+		border-color: $dangerRed;
+		color: darken($dangerRed, 50%);
+
+		.custom-block-title {
+			color: $dangerRed;
+		}
+
+		a {
+			color: lighten($dangerRed, 15%);
+		}
+	}
+
+	 &.details {
+		display: block;
+		position: relative;
+		border-radius: 2px;
+		margin: 1.6em 0;
+		padding: 1.6em;
+		background-color: #eee;
+
+		h4 {
+			margin-top: 0;
+		}
+
+		figure, p {
+			&:last-child {
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+		}
+
+		summary {
+			outline: none;
+			cursor: pointer;
+		}
+	}
+}

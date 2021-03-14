@@ -1,0 +1,21 @@
+{
+  "name": "bannerlord-documentation-website",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "authors": {
+    "name": "Ster"
+  },
+  "repository": "/bannerlord-documentation-website",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "vuepress": "^1.8.2",
+    "markdown-it": "^12.0.4",
+    "markdown-it-meta": "^0.0.1",
+    "vue-click-outside": "^1.1.0"
+  }
+}
