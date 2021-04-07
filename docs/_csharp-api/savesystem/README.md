@@ -83,7 +83,102 @@ With it you can store custom container data, such as:
         {
             dataStore.SyncData("customDataMap", ref _customDataMap);
         }
+        
+        public override void RegisterEvents() { }
     }
+```
+  
+## Alternative approach
+Instead of relying on the `SaveableTypeDefiner` that will lock the save file, the community found out another method of saving data without the issue, by using JSON serialization.  
+```csharp
+    public class CustomJSONBehavior : CampaignBehaviorBase
+    {
+        public class ExampleNested
+        {
+            public NestedStruct Data;
+        }
+        public struct NestedStruct
+        {
+            public bool Flag;
+        }
+
+        private List<ExampleNested> _customData = new List<ExampleNested>();
+
+        public override void SyncData(IDataStore dataStore)
+        {
+            if (dataStore.IsSaving)
+            {
+                var jsonString = JsonConvert.SerializeObject(_customData);
+                dataStore.SyncData("NestedStruct", ref jsonString);
+
+            }
+            if (dataStore.IsLoading)
+            {
+                var jsonString = "";
+                dataStore.SyncData("NestedStruct", ref jsonString);
+                if (dataStore.SyncData("NestedStruct", ref jsonString) && !string.IsNullOrEmpty(jsonString))
+                {
+                    _customData = JsonConvert.DeserializeObject<List<ExampleNested>>(jsonString);
+                }
+                else
+                {
+                    _customData = new List<ExampleNested>();
+                }
+            }
+        }
+
+        public override void RegisterEvents() { }
+    }
+```
+#### WARNING!  
+This approach should only used with custom objects. Do not hold inside the custom objects any references to the in-game classes like `Hero`! They will be serialized wrong and this will cause issues after loading the save!  
+  
+The game also has a hard limit on the string size. We don't know the exact maximum length, but it's something around `short.MaxValue - 1024`. If your final JSON string is bigger, we recommend splitting the string into `string[]` and using this for saving instead, here's an example for how you would do that:
+```csharp
+        ...
+        private static IEnumerable<string> ToChunks(string str, int maxChunkSize)
+        {
+            for (var i = 0; i < str.Length; i += maxChunkSize)
+                yield return str.Substring(i, Math.Min(maxChunkSize, str.Length-i));
+        }
+        private static string ChunksToString(string[] chunks)
+        {
+            if (chunks.Length == 0)
+                return string.Empty;
+            else if (chunks.Length == 1)
+                return chunks[0];
+
+            var strBuilder = new StringBuilder(short.MaxValue);
+
+            foreach (var chunk in chunks)
+                strBuilder.Append(chunk);
+
+            return strBuilder.ToString();
+        }
+        
+        ...
+        public override void SyncData(IDataStore dataStore)
+        {
+            if (dataStore.IsSaving)
+            {
+                var dataJson = JsonConvert.SerializeObject(_customData);
+                var chunks = ToChunks(dataJson, short.MaxValue - 1024).ToArray();
+                dataStore.SyncData("NestedStruct", ref chunks);
+            }
+
+            if (dataStore.IsLoading)
+            {
+                var jsonDataChunks = Array.Empty<string>();
+                if (dataStore.SyncData("NestedStruct", ref jsonDataChunks) && jsonDataChunks is not null)
+                {
+                    JsonConvert.DeserializeObject<List<ExampleNested>>(ChunksToString(jsonDataChunks));
+                }
+                else
+                {
+                    _customData = new List<ExampleNested>();
+                }
+            }
+        }
 ```
   
   
