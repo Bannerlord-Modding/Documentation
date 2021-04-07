@@ -115,7 +115,6 @@ Instead of relying on the `SaveableTypeDefiner` that will lock the save file, th
             if (dataStore.IsLoading)
             {
                 var jsonString = "";
-                dataStore.SyncData("NestedStruct", ref jsonString);
                 if (dataStore.SyncData("NestedStruct", ref jsonString) && !string.IsNullOrEmpty(jsonString))
                 {
                     _customData = JsonConvert.DeserializeObject<List<ExampleNested>>(jsonString);
