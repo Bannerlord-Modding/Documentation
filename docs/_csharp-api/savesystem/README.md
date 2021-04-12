@@ -6,7 +6,7 @@ If the data will be saved to the game's internal storage, upon removing your mod
 This will be the case when definining custom ``LogEntry`` types and passing them to the game (``LogEntry.AddLogEntry(customLog);``).  
 As a workaround, you should either include a feature to fully remove your custom data from the game or provide a mod for it.
 
-## Basic saving
+## Basic saving - SyncData
 
 The core of saving is ``CampaignBehaviorBase``'s ``SyncData`` function.  This will be called on any registered campaign behavior on both saving and loading.
 
@@ -27,6 +27,29 @@ public class CustomBehavior : CampaignBehaviorBase
     public override void RegisterEvents() { }
 }
 ```
+
+### Advanced pattern - serialization/deserialization in `SyncData`
+
+While it's most common to provide a ref to a class property, a ref can also be provided to a local variable, which can be used to specially serialize and deserialize data, alongside the ``IsLoading`` and ``IsSaving`` properties of the ``IDataStore``.
+
+```csharp
+public override void SyncData(IDataStore dataStore)
+{
+    var dataToSave = new List<string>();
+    if(dataStore.IsSaving) {
+        // Load the data to save into the list, can gather data from other parts of the mod
+        dataToSave = gatherData();
+    }
+    dataStore.SyncData("dataToSave", ref dataToSave);
+    if(dataStore.IsLoading) {
+        // The save data has been loaded into dataToSave array.
+        // Do whatever logic is necessary to restore the state based on the saved data
+        restoreData(dataToSave);
+    }
+}
+```
+
+A more complete example of this is shown below in the JSON serialization section
 
 ## SaveableTypeDefiner
 
