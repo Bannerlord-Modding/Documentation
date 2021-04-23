@@ -3,14 +3,14 @@
 ### Warning!  
 As of e1.0.10/e1.1.0 when defining custom data that inherits the game's basic types, be extra careful.  
 If the data will be saved to the game's internal storage, upon removing your mod the save won't be able to load because of your missing custom data.  
-This will be the case when definining custom ``LogEntry`` types and passing them to the game (``LogEntry.AddLogEntry(customLog);``).  
+This will be the case, for example, when definining custom ``LogEntry`` types and passing them to the game (``LogEntry.AddLogEntry(customLog);``).  
 As a workaround, you should either include a feature to fully remove your custom data from the game or provide a mod for it.
 
 ## Basic saving - SyncData
 
 The core of saving is ``CampaignBehaviorBase``'s ``SyncData`` function.  This will be called on any registered campaign behavior on both saving and loading.
 
-The method is provided a ``DataStore`` object with a ``SyncData`` method, which takes a [`ref` variable](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref). On save, data from the ref is read and stored in the savefile, on load, the ref will be populated with the data from the save file.
+The method is provided a ``DataStore`` object with a ``SyncData`` method, which takes a [`ref`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref) variable. On save, data from the ref is read and stored in the savefile, on load, the ref will be populated with the data from the save file.
 
 ```csharp
 public class CustomBehavior : CampaignBehaviorBase
@@ -53,14 +53,14 @@ A more complete example of this is shown below in the JSON serialization section
 
 ## SaveableTypeDefiner
 
-To save custom classes, structs, or built-in data structures (such as ``Array``, ``List``, ``Dictionary``, or ``Queue``), implement your own ``TaleWorlds.SaveSystem.SaveableTypeDefiner``, alongside the ``SyncData`` function.
+To save custom classes, structs, or built-in data structures (such as [``Array``](https://docs.microsoft.com/en-us/dotnet/api/system.array), [``List``](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1), [``Dictionary``](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2), or [``Queue``](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.queue-1)), implement your own ``TaleWorlds.SaveSystem.SaveableTypeDefiner``, alongside the ``SyncData`` function.
 You don't need to register it somewhere, the game will find it itself via reflection.
 
 ### Saving custom classes with SaveableTypeDefiner
 
 To make a custom class/struct saveable, register it inside ``DefineClassType`` in your ``SaveableTypeDefiner``.
 To mark data in your custom class/struct as saveable, use ``TaleWorlds.SaveSystem.SaveableFieldAttribute`` and ``TaleWorlds.SaveSystem.SaveablePropertyAttribute``.
-It seems that there is no real difference between ``SaveableField`` and ``SaveableProperty``, but if you used one of them, stick to the type. They are not interchangeable and the data won't be loaded if types awe switched.
+It seems that there is no real difference between ``SaveableField`` and ``SaveableProperty``, but if you used one of them, stick to the type. They are not interchangeable and the data won't be loaded if types are switched.
 See the complete example below for examples of proper handling of ``SaveableField`` and ``SaveableProperty`` ids.
 
 ### Saving data structures with SaveableTypeDefiner
@@ -155,7 +155,7 @@ public class ExampleNested
 The community should decide how to handle ``saveBaseId`` collisions.
 
 ## Alternative approach - JSON serialization
-Instead of relying on the `SaveableTypeDefiner` that will lock the save file, the community found out another method of saving data without the issue, by using JSON serialization.
+Instead of relying on the `SaveableTypeDefiner` with it's necessity of pre-defining things like containers, the community found out another method of saving data, by using JSON serialization.
 ```csharp
     public class CustomJSONBehavior : CampaignBehaviorBase
     {
@@ -196,7 +196,7 @@ Instead of relying on the `SaveableTypeDefiner` that will lock the save file, th
     }
 ```
 #### WARNING!  
-This approach should only used with custom objects. Do not hold inside the custom objects any references to the in-game classes like `Hero`! They will be serialized wrong and this will cause issues after loading the save!  
+This approach should only used with custom objects, not in-game classes with an `MBGUID` property. Do not hold inside the custom objects any references to the in-game classes like `Hero`! They will be serialized wrong and this will cause issues after loading the save!  
   
 The game also has a hard limit on the string size. We don't know the exact maximum length, but it's something around `short.MaxValue - 1024`. If your final JSON string is bigger, we recommend splitting the string into `string[]` and using this for saving instead, here's an example for how you would do that:
 ```csharp
