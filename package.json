@@ -13,9 +13,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "vuepress": "^1.8.2",
-    "markdown-it": "^12.0.4",
+    "markdown-it": "^12.0.6",
     "markdown-it-meta": "^0.0.1",
-    "vue-click-outside": "^1.1.0"
+    "vue-click-outside": "^1.1.0",
+    "vuepress": "^1.8.2"
   }
 }
