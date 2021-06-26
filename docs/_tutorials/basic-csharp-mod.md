@@ -104,3 +104,6 @@ Before setting up a project, it is important to know that **this is not required
 8. On the title screen, you should now see a button called `Message`, click it and you should see `Hello World` displayed in the bottom-left corner of your screen (in chat).
 9. You have now successfully created your first Bannerlord mod!
 
+## Module Templates
+
+If you use Visual Studio 2019 or higher, you can also use this [Bannerlord Module Template](https://github.com/BUTR/Bannerlord.Module.Template) to create a basic C# module automatically!
