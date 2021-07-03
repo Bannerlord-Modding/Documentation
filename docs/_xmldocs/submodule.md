@@ -6,7 +6,7 @@
 * `Id` - The id of your Module (do not use spaces).
 * `Version` - The current version of your Module.
 * `SinglePlayerModule` - Whether or not your module is meant for Single Player mode.
-* `MultiPlayerModule` - Whether or not your module is meant for Mutli Player mode.
+* `MultiPlayerModule` - Whether or not your module is meant for Multi Player mode.
 * `DependedModules` - Modules that your module requires in order to function properly.
 * `SubModules` - The SubModules (DLLs) that your modules consists of.
 * `Xmls` - Contains Paths to XML files in the ModuleData Folder(s).
