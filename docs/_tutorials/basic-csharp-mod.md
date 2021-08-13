@@ -96,7 +96,7 @@ Before setting up a project, it is important to know that **this is not required
         new TextObject("Message", null),
         9990,
         () => { InformationManager.DisplayMessage(new InformationMessage("Hello World!")); },
-        () => false));
+        () => { return  (false, null); }));
    ```
 
 6. Compile your project and confirm that it was outputted to `Modules\ExampleMod\bin\Win64_Shipping_Client`.
