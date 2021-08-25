@@ -1,6 +1,6 @@
 Sometimes you might wanna alter some of existing behaviors.Here we try to do this wit 2 different aproach.
 ### 1-With GameModels
-GameModels derived from TaleWorlds.Core.GameModel class,there is naming convention like this  *Something*Model(abstract class derived from GameModels)  and *DefaultSomething*Model(derived from *Something*Model)
+[GameModels](../_csharp-api/core/gamemodel.md) derived from TaleWorlds.Core.GameModel class,there is naming convention like this  *Something*Model(abstract class derived from GameModels)  and *DefaultSomething*Model(derived from *Something*Model)
 
 Some behaviors has related game models which includes key factors for behaviors.You need to check whether your need in model(if there is) or not.
 
