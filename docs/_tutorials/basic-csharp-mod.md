@@ -82,7 +82,7 @@ Before setting up a project, it is important to know that **this is not required
 2. Add the following using directives to your class:
 
    ```csharp
-    using TaleWorlds.Core;
+    using TaleWorlds.Library;
     using TaleWorlds.Localization;
     using TaleWorlds.MountAndBlade;
    ```
