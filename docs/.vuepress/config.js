@@ -98,6 +98,48 @@ module.exports = {
         selectText: '选择语言',
         label: '简体中文',
         editLinkText: '在 GitHub 上编辑此页',
+        algolia: {},
+        nav: [
+          {
+            text: '主页',
+            link: '/zh/',
+          },
+          {
+            text: '指南',
+            link: '/zh/_intro/getting-started'
+          }
+        ],
+        sidebar: [
+          {
+            title: '介绍',
+            sidebarDepth: 1,
+            children: [
+              '/zh/_intro/getting-started',
+              '/zh/_intro/folder-structure',
+              '/zh/_intro/advanced'
+            ]
+          },
+          {
+            title: '教程',
+            sidebarDepth: 1,
+            children: apiGen.getAPITree('docs/zh', '_tutorials')
+          },
+          {
+            title: 'C# API',
+            sidebarDepth: 1,
+            children: apiGen.getAPITree('docs/zh', '_csharp-api')
+          },
+          {
+            title: 'Gauntlet',
+            sidebarDepth: 1,
+            children: apiGen.getAPITree('docs/zh', '_gauntlet')
+          },
+          {
+            title: 'XML 文档',
+            sidebarDepth: 1,
+            children: apiGen.getAPITree('docs/zh', '_xmldocs', false)
+          }
+        ]
       }
     }
   },
