@@ -1,14 +1,14 @@
-# 基本 C\# Mod
+# 基本 C# Mod
 
 ## 介绍
 
-本文档旨在一步一步教你如何创建一个简单的 C\# Mod。这个Mod将会在单人模式的标题页面增加一个叫做 `消息` 的按钮。当点击按钮的时候，将会在聊天界面输出 `Hello World`。
+本文档旨在一步一步教你如何创建一个简单的 C# Mod。这个Mod将会在单人模式的标题页面增加一个叫做 `消息` 的按钮。当点击按钮的时候，将会在聊天界面输出 `Hello World`。
 
 ## 准备
 
 #### 在本教程中，我们的项目名字叫做 `ExampleMod`。
 
-### 配置你的Module \(SubModule.xml\)
+### 配置你的Module (SubModule.xml)
 
 1. 到你的游戏目录下并且选定 `Modules` 目录；
 2. 创建一个新的目录并且叫做 `ExampleMod` （这个目录名称必须和第四步里面的 Id 一致） Create a new folder and name it `ExampleMod` (Must be the same as the Id you use for Step #4)；
@@ -53,13 +53,14 @@
 
 ### 配置项目
 
-创建 C\# 项目之前，要明白的是，如果只是修改/增加物品，人物或场景的话，可以不需要创建项目。
+创建 C# 项目之前，要明白的是，如果只是修改/增加物品，人物或场景的话，可以不需要创建项目。
 
 1. 启动 Microsoft Visual Studio 并且选择 `创建新项目`。
 2. 选择 `类库 (.NET Framework)`。
-3. 给项目起名字并且选择框架 `.NET Framework 4.7.2`。如果不能选这个选项，可以从[这里](https://dotnet.microsoft.com/download/dotnet-framework/net472)下载。下载\(开发者包\)
+3. 给项目起名字并且选择框架 `.NET Framework 4.7.2`。如果不能选这个选项，可以从[这里](https://dotnet.microsoft.com/download/dotnet-framework/net472)下载。下载(开发者包)
 4. 现在你的项目已经创建好，设置你的[构建路径](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-change-the-build-output-directory?view=vs-2019)到你的游戏目录下的`Modules/MyModule/bin/Win64_Shipping_Client`。
-5. [引用](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2019) 游戏目录（不是指Modules目录）`bin\Win64_Shipping_Client`下的所有`TaleWorlds.*` DLLs 文件。并且引用每个官方模组的 `TaleWorlds.*` DLLs文件，目录为 `Modules\ModuleName\bin\Win64_Shipping_Client`。
+5. [引用](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2019) 游戏目录（不是指Modules目录）`bin\Win64_Shipping_Client`下的所有`TaleWorlds.*` DLLs 文件。
+6. [引用](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2019) 每个官方模组的 `TaleWorlds.*` DLLs文件，目录为 `Modules\ModuleName\bin\Win64_Shipping_Client`。
 
 ### Debugging 项目 (可选)
 
@@ -81,7 +82,7 @@
 2. 添加如下的引用。
 
    ```csharp
-    using TaleWorlds.Core;
+    using TaleWorlds.Library;
     using TaleWorlds.Localization;
     using TaleWorlds.MountAndBlade;
    ```
@@ -95,7 +96,7 @@
         new TextObject("消息", null),
         9990,
         () => { InformationManager.DisplayMessage(new InformationMessage("Hello World!")); },
-        false));
+        () => { return  (false, null); }));
    ```
 
 6. 编译你的项目并且确认输出到 `Modules\ExampleMod\bin\Win64_Shipping_Client` 下
@@ -104,3 +105,6 @@
 9. 现在你已经成功创建了第一个骑马与砍杀2：霸主的Mod！
 
 
+## 模组模板
+
+如果您使用Visual Studio 2019或更高版本，也可以使用[Bannerlord Module Template](https://github.com/BUTR/Bannerlord.Module.Template)自动创建一个基本的C# Mod！
