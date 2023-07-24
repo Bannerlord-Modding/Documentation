@@ -8,12 +8,12 @@ The following guide will walk you through step-by-step on how to create a basic 
 
 #### For this tutorial, we will be naming our project `ExampleMod`.
 
+
 ### Setting up your Module (SubModule.xml)
 
 1. Go to your game files and locate the `Modules` directory.
 2. Create a new folder and name it `ExampleMod` (Must be the same as the Id you use for Step #4).
-3. Create a new folder named `bin` and inside this directory, create a new folder called `Win64_Shipping_Client`.
-4. Create a new `SubModule.xml` file (must be named this) inside the folder you created in Step #2 and then paste the following into it:
+3. Create a new `SubModule.xml` file (must be named this) inside the folder you created in Step #2 and then paste the following into it:
 
    ```xml
     <Module>
@@ -46,7 +46,8 @@ The following guide will walk you through step-by-step on how to create a basic 
 
     **Note**: `MySubModule` is the name of the class we will be using in the [Programming](#programming) section of the tutorial.
 
-5. If you are using different names, change the above values to match that of your Module/SubModule.
+4. If you are using different names, change the above values to match that of your Module/SubModule.
+5. Create a new folder named `bin` and inside this directory, create a new folder called `Win64_Shipping_Client`.
 6. Start the launcher and make sure your mod appears under `Singleplayer` &gt; `Mods`.
 
 For more information on the Module folder structure, [Click Here](../_intro/folder-structure.md).
@@ -85,6 +86,7 @@ Before setting up a project, it is important to know that **this is not required
     using TaleWorlds.Library;
     using TaleWorlds.Localization;
     using TaleWorlds.MountAndBlade;
+    using TaleWorlds.Library;
    ```
 
 3. Inherit from the `MBSubModuleBase` class.
@@ -95,7 +97,7 @@ Before setting up a project, it is important to know that **this is not required
     Module.CurrentModule.AddInitialStateOption(new InitialStateOption("Message",
         new TextObject("Message", null),
         9990,
-        () => { InformationManager.DisplayMessage(new InformationMessage("Hello World!")); },
+        () => { TaleWorlds.Library.InformationManager.DisplayMessage(new InformationMessage("Hello World!")); },
         () => { return  (false, null); }));
    ```
 
