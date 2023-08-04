@@ -12,6 +12,8 @@
 * [Modding Gauntlet UIs Without C#](_tutorials/modding-gauntlet-without-csharp.md) (Easy)
 * [Packing your Mods for Vortex](_tutorials/packing_mods_for_vortex.md) (Easy)
 * [Modifying/Adding Settlements](_tutorials/new_settlements.md) (Easy)
+* [Modifying CampaignBehaviors - GameModels](_tutorials/altering_existing_behavior_via_gamemodels.md) (Easy)
+* [Modifying CampaignBehaviors - Reregister Event](_tutorials/altering_existing_behavior_via_reregistering_events.md) (Medicore)
 
 ## [C# API Documentation](_csharp-api/)
 
